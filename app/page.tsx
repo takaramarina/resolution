@@ -2,8 +2,8 @@
 import { Check, Instagram, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState, useRef } from "react";
-import RotatingImage from '../components/RotatingImage';
-// import PurchaseInquiryButton from '../components/PurchaseInquiryButton';
+// import RotatingImage from '../components/RotatingImage';
+import PurchaseInquiryButton from '../components/PurchaseInquiryButton';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -84,11 +84,11 @@ export default function Home() {
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex self-start cursor-pointer" 
             onClick={() => handleImageClick("/images/round.PNG")}>
-            <RotatingImage 
+            {/* <RotatingImage 
               src="/images/round.PNG"
               alt="Round Art Piece" 
               speed={70}  
-            />
+            /> */}
           </div>
 
           {/* Modal for Full-screen Image */}
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className="text-lg">$2,500</div>
 
-            {/* <PurchaseInquiryButton /> */}
+            <PurchaseInquiryButton />
 
             <p className="text-lg leading-relaxed">
               言語は生きている、<br />
