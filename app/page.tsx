@@ -3,7 +3,7 @@ import { Check, Instagram, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState, useRef } from "react";
 import RotatingImage from '../components/RotatingImage';
-import PurchaseInquiry from '../components/PurchaseInquiry';
+import PurchaseInquiryButton from '../components/PurchaseInquiryButton';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className="text-lg">$2,500</div>
 
-            <PurchaseInquiry />
+            <PurchaseInquiryButton />
 
             <p className="text-lg leading-relaxed">
               言語は生きている、<br />
