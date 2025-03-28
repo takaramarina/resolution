@@ -67,7 +67,7 @@ export default function Home() {
             <Menu className="h-5 w-5" />
             <span>Index</span>
           </button>
-          <Link href="#" aria-label="Instagram">
+          <Link href="https://www.instagram.com/rei_dan/" aria-label="Instagram">
             <Instagram className="h-5 w-5" />
           </Link>
         </div>
@@ -137,9 +137,9 @@ export default function Home() {
           {/* Text Content */}
           <div className="flex flex-col gap-8">
               <div className="text-lg">
-                Ink on paper <br />
-                40cm x 60cm <br />
-                2024
+                Ink and pastels on wood panel <br />
+                53cm x 53cm <br />
+                2025
               </div>
               <div className="text-lg">$1,000</div>
             <p className="text-lg leading-relaxed">
