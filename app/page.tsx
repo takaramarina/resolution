@@ -83,7 +83,7 @@ export default function Home() {
         {/* Project Content */}
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex self-start cursor-pointer" 
-          onClick={() => handleImageClick("/images/round.png")}>
+          onClick={() => handleImageClick("/images/round.PNG")}>
             <RotatingImage 
               src="/images/round.PNG"
               alt="Round Art Piece" 
