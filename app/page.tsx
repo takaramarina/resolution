@@ -77,7 +77,7 @@ export default function Home() {
       <main className="px-5 md:px-10">
         {/* Title */}
         <h1 className="mb-20 mt-10 text-center text-7xl font-normal md:text-8xl">
-          World History
+          Rotations: Element
         </h1>
 
         {/* Project Content */}
