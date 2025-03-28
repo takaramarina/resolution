@@ -85,7 +85,7 @@ export default function Home() {
           <div className="flex self-start cursor-pointer" 
           onClick={() => handleImageClick("/images/round.png")}>
             <RotatingImage 
-              src="/images/round.png"
+              src="/images/round.PNG"
               alt="Round Art Piece" 
               speed={70}  
             />
