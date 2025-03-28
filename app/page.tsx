@@ -2,7 +2,8 @@
 import { Check, Instagram, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState, useRef } from "react";
-import RotatingImage from '../components/rotatingImage';
+import RotatingImage from '../components/RotatingImage';
+import PurchaseInquiry from '../components/PurchaseInquiry';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -61,35 +62,34 @@ export default function Home() {
       {/* Header */}
       <header className="flex items-center justify-between px-5 py-6 md:px-10">
         <div className="text-lg font-medium">Reiji Shimane</div>
-        <div className="text-lg">Gallery</div>
+        {/* <div className="text-lg">Gallery</div> */}
         <div className="flex items-center gap-6">
-          <button className="flex items-center gap-2">
-            <Menu className="h-5 w-5" />
-            <span>Index</span>
-          </button>
           <Link href="https://www.instagram.com/rei_dan/" aria-label="Instagram">
             <Instagram className="h-5 w-5" />
           </Link>
+          {/* <button className="flex items-center gap-2">
+            <Menu className="h-5 w-5" />
+          </button> */}
         </div>
       </header>
 
       {/* Main Content */}
       <main className="px-5 md:px-10">
         {/* Title */}
-        <h1 className="mb-20 mt-10 text-center text-7xl font-normal md:text-8xl">
+        {/* <h1 className="mb-20 mt-10 text-center text-7xl font-normal md:text-8xl">
           Rotation: Element
-        </h1>
+        </h1> */}
 
         {/* Project Content */}
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex self-start cursor-pointer" 
-          onClick={() => handleImageClick("/images/round.PNG")}>
+            onClick={() => handleImageClick("/images/round.PNG")}>
             <RotatingImage 
               src="/images/round.PNG"
               alt="Round Art Piece" 
               speed={70}  
             />
-          </div>          
+          </div>
 
           {/* Modal for Full-screen Image */}
           {isModalOpen && (
@@ -136,12 +136,18 @@ export default function Home() {
 
           {/* Text Content */}
           <div className="flex flex-col gap-8">
-              <div className="text-lg">
-                Ink and pastels on wood panel <br />
-                53cm x 53cm <br />
-                2025
-              </div>
-              <div className="text-lg">$1,000</div>
+            <div className="text-xl italic">
+              Rotation: Element
+            </div>
+            <div className="text-lg">
+              Ink and pastels on wood panel <br />
+              53cm x 53cm <br />
+              2025
+            </div>
+            <div className="text-lg">$2,500</div>
+
+            <PurchaseInquiry />
+
             <p className="text-lg leading-relaxed">
               言語は生きている、<br />
               はてまた言語に生かされてるのか、<br />
