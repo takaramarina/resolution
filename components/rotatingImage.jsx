@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RotatingImage = ({ src, alt = 'Rotating Image', speed = 10 }) => {
+export default function RotatingImage({ src, alt = 'Rotating Image', speed = 10 }){
   return (
     <div className="rotating-image-container relative flex justify-center items-center w-full h-full">
       <img 
@@ -12,5 +12,3 @@ const RotatingImage = ({ src, alt = 'Rotating Image', speed = 10 }) => {
     </div>
   );
 };
-
-export default RotatingImage;
