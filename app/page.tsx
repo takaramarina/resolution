@@ -2,8 +2,8 @@
 import { Check, Instagram, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState, useRef } from "react";
-import RotatingImage from '../components/RotatingImage';
-import PurchaseInquiryButton from '../components/PurchaseInquiryButton';
+import RotatingImage from '../components/RotatingImage.jsx';
+import PurchaseInquiryButton from '../components/PurchaseInquiryButton.jsx';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
