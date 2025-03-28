@@ -83,11 +83,16 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+			'spin-reverse': {
+				'0%': { transform: 'rotate(0deg)' },
+				'100%': { transform: 'rotate(-360deg)' }, // Negative value for counterclockwise
+			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			'spin-counterclockwise': 'spin-reverse 70s linear infinite'
   		}
   	}
   },
