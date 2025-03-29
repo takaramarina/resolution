@@ -141,10 +141,10 @@ export default function Home() {
             </div>
             <div className="text-lg">
               Ink and pastels on wood panel <br />
-              53cm x 53cm <br />
+              90cm x 90cm x 2cm<br />
               2025
             </div>
-            <div className="text-lg">$2,500</div>
+            <div className="text-lg">$3,000</div>
 
             <PurchaseInquiryButton />
 

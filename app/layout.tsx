@@ -3,8 +3,8 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Lorem Ipsum",
-  description: "Project showcase",
+  title: "Reiji Shimane",
+  description: "Explore Reiji Shimane's gallery of artworks",
     generator: 'v0.dev'
 }
 
