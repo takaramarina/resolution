@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useRef } from "react";
 import PurchaseInquiryButton from '../components/PurchaseInquiryButton';
 import RotatingImage from '../components/RotatingImage';
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -192,6 +193,7 @@ export default function Home() {
             </div> */}
           </div>
         </div>
+        <Footer />
       </main>
     </div>
   );
