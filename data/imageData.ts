@@ -11,7 +11,7 @@ export const images = [
       src: "/images/round6.png",
       title: "Rotation: Kenny",
       tags: ["collaboration"],
-      url: null,
+      url: "/works/rotation-kenny",
     },
     {
       id: 4,

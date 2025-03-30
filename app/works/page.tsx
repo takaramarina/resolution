@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Works() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
-  const tags = ["all", "sketches", "for sale", "digital"];
+  const tags = ["all", "for sale", "sketches", "digital", "collaboration"];
 
   // Filter images based on selected tag
   const filteredImages = selectedTag && selectedTag !== "all"
