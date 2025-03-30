@@ -27,7 +27,7 @@ export default function PurchaseInquiryButton({ artworkName }) {
       
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-gray-300 p-8 rounded w-[500px]">
+          <div className="bg-[#bbbbbb] p-8 rounded w-[500px]">
             <h2 className="text-2xl mb-4 text-[#061202]">Purchase Inquiry</h2>
             <p className="text-lg mb-6 text-[#061202]">
               Thank you for your interest in Reiji Shimane's artwork. A member of our team
