@@ -58,7 +58,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       {/* Header */}
       <header className="flex items-center justify-between px-5 py-6 md:px-10">
         <div className="text-lg font-medium">Reiji Shimane</div>
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className="text-lg">$3,000</div>
 
-            <PurchaseInquiryButton />
+            <PurchaseInquiryButton artworkName="Rotation: Element"/>
 
             <p className="text-lg leading-relaxed">
               言語は生きている、<br />

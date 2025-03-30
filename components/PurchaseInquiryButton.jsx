@@ -1,14 +1,17 @@
 import { useState } from "react";
 
-export default function PurchaseInquiryButton() {
+export default function PurchaseInquiryButton({ artworkName }) {
   const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [artwork, setArtwork] = useState(artworkName);
 
   const handleSubmit = () => {
     const subject = encodeURIComponent("Purchase Inquiry");
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+    const body = encodeURIComponent(
+      `Artwork: ${artwork}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
+    );
     window.location.href = `mailto:fannymoneyonline@gmail.com?subject=${subject}&body=${body}`;
     setIsOpen(false);
   };
@@ -17,7 +20,7 @@ export default function PurchaseInquiryButton() {
     <div className="relative">
       <button 
         onClick={() => setIsOpen(true)}
-        className="px-6 py-3 border border-black bg-gray rounded font-semibold hover:bg-gray-200 transition"
+        className="px-6 py-3 border border-black bg-[#dadada] rounded text-black font-semibold hover:bg-gray-400 transition"
       >
         Purchase Inquiry
       </button>
@@ -30,6 +33,13 @@ export default function PurchaseInquiryButton() {
               Thank you for your interest in Reiji Shimane's artwork. A member of our team
               will reach out within 48 hours of your inquiry.
             </p>
+            <input 
+              type="text" 
+              placeholder="Artwork of Interest" 
+              value={"Inquiry on " + artwork} 
+              onChange={(e) => setArtwork(e.target.value)}
+              className="w-full p-3 mb-4 bg-white border border-black rounded"
+            />
             <input 
               type="text" 
               placeholder="Your Name" 
