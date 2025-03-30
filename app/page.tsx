@@ -129,8 +129,6 @@ export default function Home() {
               90cm x 90cm x 2cm<br />
               2025
             </div>
-            <div className="text-lg">$3,000</div>
-
             <PurchaseInquiryButton artworkName="Rotation: Organ-Space"/>
 
             <p className="text-lg leading-relaxed">
