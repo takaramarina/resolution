@@ -1,10 +1,10 @@
+// pages/index.tsx
 "use client";
-import { Check, Instagram, Menu } from "lucide-react";
-import Link from "next/link";
 import { useState, useRef } from "react";
 import PurchaseInquiryButton from '../components/PurchaseInquiryButton';
 import RotatingImage from '../components/RotatingImage';
 import Footer from "../components/Footer";
+import Header from "../components/Header"; // Import the Header component
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -59,29 +59,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="flex items-center justify-between px-5 py-6 md:px-10">
-        <div className="text-lg font-medium">Reiji Shimane</div>
-        {/* <div className="text-lg">Gallery</div> */}
-        <div className="flex items-center gap-6">
-          <Link href="https://www.instagram.com/rei_dan/" aria-label="Instagram">
-            <Instagram className="h-5 w-5" />
-          </Link>
-          {/* <button className="flex items-center gap-2">
-            <Menu className="h-5 w-5" />
-          </button> */}
-        </div>
-      </header>
+    <div className="min-h-screen bg-white mx-8 md:mx-[60px]">
+      {/* Use the Header component here */}
+      <Header />
 
       {/* Main Content */}
       <main className="px-5 md:px-10">
         {/* Title */}
-        {/* <h1 className="mb-20 mt-10 text-center text-7xl font-normal md:text-8xl">
-          Rotation: Element
-        </h1> */}
-
-        {/* Project Content */}
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex self-start cursor-pointer" 
             onClick={() => handleImageClick("/images/round.PNG")}>
@@ -101,7 +85,6 @@ export default function Home() {
             >
               <div
                 className="relative w-full h-full flex justify-center items-center"
-                // onClick={(e) => e.stopPropagation()} // Prevents closing when clicking on the image itself
               >
                 {/* Close Button (X) */}
                 <button
@@ -137,8 +120,9 @@ export default function Home() {
 
           {/* Text Content */}
           <div className="flex flex-col gap-8 ml-20 mr-20">
-            <div className="text-xl italic">
-              Rotation: Element
+            <div className="text-xl font-bold">
+              Reiji Shimane <br />
+              <em>Rotation: Element</em>
             </div>
             <div className="text-lg">
               Ink and pastels on wood panel <br />
@@ -176,21 +160,6 @@ export default function Home() {
               A tool that perfects *harmony* curates a welcoming space regardless of where we are.<br />
               That is the point of good art.
             </p>
-
-            {/* <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <Check className="h-5 w-5" />
-                <span>Sodales: Malesuada</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="h-5 w-5" />
-                <span>Nulla: Sapien</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="h-5 w-5" />
-                <span>Proin: Dignissim</span>
-              </div>
-            </div> */}
           </div>
         </div>
         <Footer />

@@ -6,13 +6,13 @@ export default function Footer() {
     <footer className="bg-white py-8 px-5 md:px-10 mt-20">
       <div className="max-w-4xl mx-auto text-center">
         {/* Tagline / Short Bio */}
-        <p className="text-lg italic mb-4">
-          Experimental digital and physical works by Reiji Shimane.
+        <p className="text-lg mb-4">
+          A collection of artworks by Reiji Shimane
         </p>
 
         {/* Contact Info */}
         <p className="mb-2">
-          Contact:{" "}
+          {" "}
           <a
             href="mailto:fannymoneyonline@gmail.com"
             className="underline hover:text-gray-400"

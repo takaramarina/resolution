@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Reiji Shimane",
+  title: "Reiji Shimane | Grandview Collective",
   description: "Explore Reiji Shimane's gallery of artworks",
   generator: 'v0.dev',
   icons: {
