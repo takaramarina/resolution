@@ -51,16 +51,16 @@ export const images = [
     {
         id: 15,
         src: "/images/digital.jpg",
-        title: "Digital Language",
+        title: "Digital Drawing",
         tags: ["sketches", "for sale"],
-        url: null,
+        url: "/works/digital-drawing",
     },
     {
         id: 16,
         src: "/images/physical.jpg",
-        title: "Physical Language",
+        title: "Physical Drawing",
         tags: ["sketches", "for sale"],
-        url: null,
+        url: "/works/physical-drawing",
     },
     {
         id: 17,
