@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-4xl mx-auto text-center">
         {/* Tagline / Short Bio */}
         <p className="text-lg italic mb-4">
-          Fannymoney | Experimental digital and physical works by Reiji Shimane.
+          Experimental digital and physical works by Reiji Shimane.
         </p>
 
         {/* Contact Info */}

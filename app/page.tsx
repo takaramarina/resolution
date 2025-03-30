@@ -136,7 +136,7 @@ export default function Home() {
           )}
 
           {/* Text Content */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 ml-20 mr-20">
             <div className="text-xl italic">
               Rotation: Element
             </div>
