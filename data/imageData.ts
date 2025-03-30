@@ -46,7 +46,7 @@ export const images = [
       src: "/images/cover.png",
       title: "World History",
       tags: ["for sale"],
-      url: null,
+      url: "/works/world-history",
     },
     {
         id: 15,
