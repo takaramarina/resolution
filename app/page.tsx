@@ -59,7 +59,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white mx-8 md:mx-[60px]">
+    <div className="min-h-screen bg-white mx-5 md:mx-[60px]">
       {/* Use the Header component here */}
       <Header />
 
@@ -119,7 +119,7 @@ export default function Home() {
           )}
 
           {/* Text Content */}
-          <div className="flex flex-col gap-8 ml-20 mr-20">
+          <div className="flex flex-col gap-8">
             <div className="text-xl font-bold">
               Reiji Shimane <br />
               <em>Rotation: Organ-Space</em>
