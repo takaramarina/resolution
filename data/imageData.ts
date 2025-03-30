@@ -63,6 +63,34 @@ export const images = [
         url: null,
     },
     {
+        id: 17,
+        src: "/images/StretchingTimeToBeOnTime.jpg",
+        title: "Linguistic Characters: Stretching Time To Be On Time",
+        tags: ["for sale"],
+        url: null,
+    },
+    {
+        id: 18,
+        src: "/images/MaterialityInSound.jpg",
+        title: "Linguistic Characters: Materiality In Sound",
+        tags: ["for sale"],
+        url: null,
+    },
+    {
+        id: 19,
+        src: "/images/ScaleOfEmotion.jpg",
+        title: "Linguistic Characters: Scale of Emotion",
+        tags: ["for sale"],
+        url: null,
+    },
+    {
+        id: 20,
+        src: "/images/ResolutionInSpeech.jpg",
+        title: "Linguistic Characters: Resolution in Speech",
+        tags: ["for sale"],
+        url: null,
+    },
+    {
         id: 7,
         src: "/images/digital1.jpeg",
         title: "Digital Sketch",
@@ -111,5 +139,7 @@ export const images = [
         tags: ["sketches", "digital"],
         url: null,
     },
+    // max 20
+
   ];
   
