@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { images } from "../../data/imageData"; // Import images
+import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Link from "next/link";
 
 export default function Works() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -27,7 +28,7 @@ export default function Works() {
           {tags.map((tag) => (
             <button
               key={tag}
-              className={`px-4 py-2 border rounded ${
+              className={`px-4 py-2 border rounded-md ${
                 selectedTag === tag ? "bg-black text-white" : "bg-gray-200"
               }`}
               onClick={() => setSelectedTag(tag === "all" ? null : tag)}
@@ -41,8 +42,17 @@ export default function Works() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
           {filteredImages.map((image) => (
             <div key={image.id} className="cursor-pointer">
-              <img src={image.src} alt={image.title} className="w-full h-auto object-cover" />
-              <p className="mt-2 text-center text-lg">{image.title}</p>
+              {image.url ? (
+                <Link href={image.url}>
+                  <img src={image.src} alt={image.title} className="w-full h-auto object-cover" />
+                  <p className="mt-2 text-center text-lg">{image.title}</p>
+                </Link>
+              ) : (
+                <>
+                  <img src={image.src} alt={image.title} className="w-full h-auto object-cover" />
+                  <p className="mt-2 text-center text-lg">{image.title}</p>
+                </>
+              )}
             </div>
           ))}
         </div>
