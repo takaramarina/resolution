@@ -18,7 +18,7 @@ export const images = [
       src: "/images/round4.jpg",
       title: "Rotation: Omni",
       tags: ["for sale", "collaboration"],
-      url: null,
+      url: "/works/rotation-omni",
     },
     {
       id: 5,
