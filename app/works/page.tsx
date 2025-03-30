@@ -23,11 +23,11 @@ export default function Works() {
         <h1 className="text-3xl font-bold mt-10">Works</h1>
 
         {/* Filter Buttons */}
-        <div className="mt-6 flex gap-4">
+        <div className="mt-6 flex gap-4 flex-wrap justify-start">
           {tags.map((tag) => (
             <button
               key={tag}
-              className={`px-4 py-2 border rounded-md ${
+              className={`px-4 py-2 border rounded ${
                 selectedTag === tag ? "bg-black text-white" : "bg-gray-200"
               }`}
               onClick={() => setSelectedTag(tag === "all" ? null : tag)}
@@ -39,12 +39,12 @@ export default function Works() {
 
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-            {filteredImages.map((image) => (
-                <div key={image.id} className="cursor-pointer">
-                <img src={image.src} alt={image.title} className="w-full h-auto object-cover" />
-                <p className="mt-2 text-center text-lg">{image.title}</p>
-                </div>
-            ))}
+          {filteredImages.map((image) => (
+            <div key={image.id} className="cursor-pointer">
+              <img src={image.src} alt={image.title} className="w-full h-auto object-cover" />
+              <p className="mt-2 text-center text-lg">{image.title}</p>
+            </div>
+          ))}
         </div>
       </main>
 
