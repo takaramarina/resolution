@@ -59,7 +59,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="flex items-center justify-between px-5 py-6 md:px-10">
         <div className="text-lg font-medium">Reiji Shimane</div>

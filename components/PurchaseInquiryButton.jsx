@@ -20,7 +20,7 @@ export default function PurchaseInquiryButton({ artworkName }) {
     <div className="relative">
       <button 
         onClick={() => setIsOpen(true)}
-        className="px-6 py-3 border border-black bg-[#dadada] rounded text-black font-semibold hover:bg-gray-400 transition"
+        className="px-6 py-3 border border-black bg-gray-100 rounded text-black font-semibold hover:bg-gray-300 transition"
       >
         Purchase Inquiry
       </button>

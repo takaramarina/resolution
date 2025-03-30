@@ -3,7 +3,7 @@ import { Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black py-8 px-5 md:px-10 mt-20">
+    <footer className="bg-white py-8 px-5 md:px-10 mt-20">
       <div className="max-w-4xl mx-auto text-center">
         {/* Tagline / Short Bio */}
         <p className="text-lg italic mb-4">
