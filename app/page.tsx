@@ -122,7 +122,7 @@ export default function Home() {
           <div className="flex flex-col gap-8 ml-20 mr-20">
             <div className="text-xl font-bold">
               Reiji Shimane <br />
-              <em>Rotation: Element</em>
+              <em>Rotation: Organ-Space</em>
             </div>
             <div className="text-lg">
               Ink and pastels on wood panel <br />
@@ -131,34 +131,13 @@ export default function Home() {
             </div>
             <div className="text-lg">$3,000</div>
 
-            <PurchaseInquiryButton artworkName="Rotation: Element"/>
+            <PurchaseInquiryButton artworkName="Rotation: Organ-Space"/>
 
             <p className="text-lg leading-relaxed">
-              言語は生きている、<br />
-              はてまた言語に生かされてるのか、<br />
-              人間の本質は体と言語との相互関係にあると思う。<br />
-              <br />
-              なんて考えながら、風呂を入る時、体を先に洗うのか、それとも髪を先に洗うのか、効率を考えれば髪なんだろうが、体から僕は洗う。<br />
-              <br />
-              現実世界は夢の中で、夢の中が現実なら、僕らは眠って起きるわけだが、いったい誰がこの夢を建設したんだろう。<br />
-              <br />
-              仏教寺院に行きまくった今日この頃、<br />
-              合理性の純度を上げる装置は、<br />
-              社会体系に関係なく、<br />
-              心地の良さを司る気がする。<br />
-              <br />
-              いいアートの先にある完成度の落とし所。<br />
-              <br />
-              When I say You or Me, I’m not just talking about our physical entity -<br />
-              Language is living, and we live through it,<br />
-              Humanity is not just about existence.<br />
-              <br />
-              I think this as I sit in the bath, should I wash my body first or my hair first? Logically, I should wash my hair first, but I choose to wash my body.<br />
-              <br />
-              Last night, I had a dream and I felt awake. When I woke up, I was asleep… who is awake in charge of construction in the real world?<br />
-              <br />
-              A tool that perfects *harmony* curates a welcoming space regardless of where we are.<br />
-              That is the point of good art.
+              ORGAN-SPACE <br /> <br />
+              What is interesting does not determine how we move our body. <br />
+              How we move our body determines what is interesting. <br />
+              If you change the way you move, you change your perception of the world.
             </p>
           </div>
         </div>
