@@ -27,9 +27,9 @@ export default function PurchaseInquiryButton({ artworkName }) {
       
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-gray-100 p-8 rounded w-[500px]">
-            <h2 className="text-2xl mb-4">Purchase Inquiry</h2>
-            <p className="text-lg mb-6">
+          <div className="bg-gray-300 p-8 rounded w-[500px]">
+            <h2 className="text-2xl mb-4 text-[#061202]">Purchase Inquiry</h2>
+            <p className="text-lg mb-6 text-[#061202]">
               Thank you for your interest in Reiji Shimane's artwork. A member of our team
               will reach out within 48 hours of your inquiry.
             </p>
@@ -38,38 +38,38 @@ export default function PurchaseInquiryButton({ artworkName }) {
               placeholder="Artwork of Interest" 
               value={"Inquiry on " + artwork} 
               onChange={(e) => setArtwork(e.target.value)}
-              className="w-full p-3 mb-4 bg-white border border-black rounded"
+              className="w-full p-3 text-[#061202] mb-4 bg-white rounded"
             />
             <input 
               type="text" 
               placeholder="Your Name" 
               value={name} 
               onChange={(e) => setName(e.target.value)}
-              className="w-full p-3 mb-4 bg-white border border-black rounded"
+              className="text-[#061202] w-full p-3 mb-4 bg-white rounded"
             />
             <input 
               type="email" 
               placeholder="Your Email" 
               value={email} 
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-3 mb-4 bg-white border border-black rounded"
+              className="text-[#061202] w-full p-3 mb-4 bg-white rounded"
             />
             <textarea 
               placeholder="Your Message" 
               value={message} 
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full p-3 h-40 bg-white border border-black rounded mb-4"
+              className="text-[#061202] w-full p-3 h-40 bg-white rounded mb-4"
             />
             <div className="flex justify-end gap-4">
               <button 
                 onClick={() => setIsOpen(false)} 
-                className="px-6 py-3 border border-black rounded bg-gray-200 hover:bg-gray-300 transition"
+                className="px-6 py-3 rounded text-[#061202] bg-gray-100 hover:bg-gray-200 transition"
               >
                 Cancel
               </button>
               <button 
                 onClick={handleSubmit} 
-                className="px-6 py-3 border-2 border-black rounded bg-black text-white hover:bg-gray-800 transition"
+                className="px-6 py-3 border-2 border-black rounded bg-black text-white hover:bg-gray-600 transition"
               >
                 Send
               </button>
