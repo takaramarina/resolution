@@ -6,6 +6,12 @@ export const images = [
       tags: ["for sale", "collaboration"],
     },
     {
+      id: 13,
+      src: "/images/round6.png",
+      title: "Rotation: Kenny",
+      tags: ["collaboration"],
+    },
+    {
       id: 4,
       src: "/images/round4.jpg",
       title: "Rotation: Omni",
@@ -34,6 +40,18 @@ export const images = [
       src: "/images/cover.png",
       title: "World History",
       tags: ["for sale"],
+    },
+    {
+        id: 15,
+        src: "/images/digital.jpg",
+        title: "Digital Language",
+        tags: ["sketches", "for sale"],
+    },
+    {
+        id: 16,
+        src: "/images/physical.jpg",
+        title: "Physical Language",
+        tags: ["sketches", "for sale"],
     },
     {
         id: 7,
@@ -70,6 +88,12 @@ export const images = [
         src: "/images/strong_canvas.jpeg",
         title: "Strong Canvas",
         tags: ["sketches"],
+    },
+    {
+        id: 14,
+        src: "/images/4622AB6D-55D1-4471-BD47-342998F5BB73.JPG",
+        title: "Sketch",
+        tags: ["sketches", "digital"],
     },
   ];
   
