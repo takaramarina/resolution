@@ -134,7 +134,7 @@ export default function Home() {
             <PurchaseInquiryButton artworkName="Rotation: Organ-Space"/>
 
             <p className="text-lg leading-relaxed">
-              ORGAN-SPACE <br /> <br />
+              <em>"ORGAN-SPACE" ー </em><br /> <br />
               What is interesting does not determine how we move our body. <br />
               How we move our body determines what is interesting. <br />
               If you change the way you move, you change your perception of the world.
