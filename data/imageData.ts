@@ -14,6 +14,13 @@ export const images = [
       url: "/works/rotation-kenny",
     },
     {
+      id: 21,
+      src: "/images/round7.png",
+      title: "Rotation: Dream",
+      tags: ["for sale", "collaboration"],
+      url: "/works/rotation-dream",
+    },
+    {
       id: 4,
       src: "/images/round4.jpg",
       title: "Rotation: Omni",
