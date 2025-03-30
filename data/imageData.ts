@@ -32,14 +32,14 @@ export const images = [
       src: "/images/round2.jpg",
       title: "Rotation: Wave",
       tags: ["for sale", "collaboration"],
-      url: null,
+      url: "/works/rotation-wave",
     },
     {
       id: 3,
       src: "/images/round3.jpg",
       title: "Rotation: Antihero",
       tags: ["for sale", "collaboration"],
-      url: null,
+      url: "/works/rotation-antihero",
     },
     {
       id: 6,
