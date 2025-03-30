@@ -21,9 +21,9 @@ export default function Home() {
   };
 
   const artworkImages = [
-    "/images/round4.jpg",
-    "/images/omni1.JPG",
-    "/images/omni2.JPG",
+    "/images/round5.jpg",
+    "/images/electro1.JPG",
+    "/images/electro2.JPG",
     "/images/roundup.JPG"
   ];
 
@@ -87,14 +87,14 @@ export default function Home() {
           <div className="flex flex-col gap-8">
             <div className="text-xl font-bold">
               Reiji Shimane <br />
-              <em>Rotation: Omni</em>
+              <em>Rotation: Electro</em>
             </div>
             <div className="text-lg">
               Ink and pastels on wood panel <br />
               90cm x 90cm x 2cm<br />
               2025
             </div>
-            <PurchaseInquiryButton artworkName="Rotation: Omni"/>
+            <PurchaseInquiryButton artworkName="Rotation: Electro"/>
 
             <p className="text-lg leading-relaxed">
               {/* explanation text */}

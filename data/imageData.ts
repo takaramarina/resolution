@@ -25,7 +25,7 @@ export const images = [
       src: "/images/round5.jpg",
       title: "Rotation: Electro",
       tags: ["for sale", "collaboration"],
-      url: null,
+      url: "/works/rotation-electro",
     },
     {
       id: 2,
