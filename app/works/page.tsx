@@ -28,7 +28,7 @@ export default function Works() {
           {tags.map((tag) => (
             <button
               key={tag}
-              className={`px-4 py-2 border rounded-md ${
+              className={`px-4 py-2 border rounded ${
                 selectedTag === tag ? "bg-black text-white" : "bg-gray-200"
               }`}
               onClick={() => setSelectedTag(tag === "all" ? null : tag)}
