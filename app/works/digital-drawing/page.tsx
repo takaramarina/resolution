@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <div className="text-lg">
               Graphite on paper <br />
-              60cm x 50cm<br />
+              90cm x 50cm<br />
               2024
             </div>
             <PurchaseInquiryButton artworkName="Digital Drawing"/>

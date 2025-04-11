@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div className="text-lg">
               Ink and pastels on wood panel <br />
-              60cm x 60cm x 2cm<br />
+              90cm x 90cm x 2cm<br />
               2025
             </div>
             {/* <PurchaseInquiryButton artworkName="Rotation: Kenny"/> */}
