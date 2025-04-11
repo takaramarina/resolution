@@ -29,7 +29,7 @@ export const images = [
     },
     {
       id: 4,
-      src: "/images/round4.jpg",
+      src: "/images/rotation-omni.png",
       title: "Rotation: Omni",
       tags: ["for sale", "collaboration"],
       url: "/works/rotation-omni",

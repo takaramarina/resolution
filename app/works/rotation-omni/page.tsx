@@ -21,6 +21,7 @@ export default function Home() {
   };
 
   const artworkImages = [
+    "/images/rotation-omni.png",
     "/images/round4.jpg",
     "/images/omni1.JPG",
     "/images/omni2.JPG",
