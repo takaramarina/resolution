@@ -33,14 +33,17 @@ export default function Home() {
         </div>
       )}
 
-      <div className="flex-grow overflow-auto">
+      <div className="flex-grow overflow-auto flex flex-col items-start">
         <div
-          className="bg-no-repeat bg-top-left w-[1332px] h-[1784px] sm:w-[2664px] sm:h-[3568px]"
+          className="w-[1332px] sm:w-[2664px] aspect-[1332/1784] bg-no-repeat bg-top-left bg-contain"
           style={{
             backgroundImage: "url('/images/hugedigital.jpg')",
-            backgroundSize: "contain",
-            backgroundPosition: "top left",
-            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
+          className="w-[1332px] sm:w-[2664px] aspect-[2566/1800] bg-no-repeat bg-center bg-contain"
+          style={{
+            backgroundImage: "url('/images/cover.png')",
           }}
         />
       </div>
