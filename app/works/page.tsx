@@ -31,10 +31,10 @@ export default function Works() {
 
       <main className="px-5 md:px-10">
         {/* View Toggle Buttons */}
-        <div className="flex flex-wrap gap-4 my-8">
+        <div className="flex flex-wrap gap-2 my-8">
           <button
             onClick={() => setView("categories")}
-            className={`min-w-[120px] px-4 py-2 rounded-2xl border text-center ${
+            className={`px-4 py-2 rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
               view === "categories" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
@@ -42,7 +42,7 @@ export default function Works() {
           </button>
           <button
             onClick={() => setView("available")}
-            className={`min-w-[120px] px-4 py-2 rounded-2xl border text-center ${
+            className={`px-4 py-2 rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
               view === "available" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
@@ -50,13 +50,14 @@ export default function Works() {
           </button>
           <button
             onClick={() => setView("seeAll")}
-            className={`min-w-[120px] px-4 py-2 rounded-2xl border text-center ${
+            className={`px-4 py-2 rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
               view === "seeAll" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
             All Works
           </button>
         </div>
+
 
         {/* Content Based on Selected View */}
         {view === "categories" && (
