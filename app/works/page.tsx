@@ -31,24 +31,30 @@ export default function Works() {
 
       <main className="px-5 md:px-10">
         {/* View Toggle Buttons */}
-        <div className="flex gap-4 my-8">
+        <div className="flex flex-wrap gap-4 my-8">
           <button
             onClick={() => setView("categories")}
-            className={`px-4 rounded py-2 border ${view === "categories" ? "bg-black text-white" : "bg-white text-black"}`}
+            className={`min-w-[120px] px-4 py-2 rounded-2xl border text-center ${
+              view === "categories" ? "bg-black text-white" : "bg-white text-black"
+            }`}
           >
-            By Category
+            Categories
           </button>
           <button
             onClick={() => setView("available")}
-            className={`px-4 py-2 rounded border ${view === "available" ? "bg-black text-white" : "bg-white text-black"}`}
+            className={`min-w-[120px] px-4 py-2 rounded-2xl border text-center ${
+              view === "available" ? "bg-black text-white" : "bg-white text-black"
+            }`}
           >
-            Available Works
+            Available
           </button>
           <button
             onClick={() => setView("seeAll")}
-            className={`px-4 py-2 rounded border ${view === "seeAll" ? "bg-black text-white" : "bg-white text-black"}`}
+            className={`min-w-[120px] px-4 py-2 rounded-2xl border text-center ${
+              view === "seeAll" ? "bg-black text-white" : "bg-white text-black"
+            }`}
           >
-            See All
+            All Works
           </button>
         </div>
 
