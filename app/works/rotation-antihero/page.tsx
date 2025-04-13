@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   const artworkImages = [
-    "/images/round3.jpg",
+    "/images/rotation-antihero.png",
     "/images/antihero1.JPG",
     "/images/roundup.JPG"
   ];

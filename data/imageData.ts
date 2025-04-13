@@ -59,7 +59,7 @@ export const images: Image[] = [
     },
     {
       id: 3,
-      src: "/images/round3.jpg",
+      src: "/images/rotation-antihero.png",
       title: "Rotation: Antihero",
       tags: ["Available Works", "collaboration", "Series: Rotation"],
       url: "/works/rotation-antihero",
