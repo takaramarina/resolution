@@ -13,7 +13,7 @@ export default function Home() {
       setTimeout(() => {
         setShowIntro(false);
       }, 1000);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -21,7 +21,28 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      
+
+      <div className="fixed top-1/2 left-0 right-0 flex flex-col items-center justify-center space-y-4 z-50">
+        <a
+          href="/works"
+          className="text-black text-xl hover:underline hover:decoration-black"
+        >
+          works
+        </a>
+        <a
+          href="/about"
+          className="text-black text-xl hover:underline hover:decoration-black"
+        >
+          about
+        </a>
+        <a
+          href="#contact"
+          className="text-black text-xl hover:underline hover:decoration-black"
+        >
+          contact
+        </a>
+      </div>
+
       {showIntro && (
         <div className={`fixed inset-0 flex flex-col justify-center items-center bg-white z-50 transition-opacity duration-1000 ${fadeOut ? "opacity-0" : "opacity-100"}`}>
           <h1 className="text-4xl font-bold mb-4 transition-transform duration-1000 transform ${fadeOut ? 'scale-90' : 'scale-110'}">

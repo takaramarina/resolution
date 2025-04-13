@@ -1,24 +1,71 @@
-// components/Header.tsx
-import { Instagram } from "lucide-react";
+import { Instagram, Menu, X } from "lucide-react";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Toggle menu visibility on mobile
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 py-5 md:px-[60px] bg-white">
       <div className="text-xl font-bold">
-        <Link href="/">REIJI SHIMANE</Link></div>
-      <nav className="flex gap-16 text-lg">
-        <Link href="/works" className="hover:underline">Works</Link>
-        {/* <Link href="/sketch" className="hover:underline">Sketch</Link>
-        <Link href="/digital" className="hover:underline">Digital</Link>
-        <Link href="/collaborations" className="hover:underline">Collaborations</Link> */}
-      </nav>
+        <Link href="/">REIJI SHIMANE</Link>
+      </div>
 
-      <div className="flex items-center gap-6">
+      {/* Desktop Navigation Links */}
+      <div className="hidden md:flex items-center gap-6 text-lg">
+        <Link href="/works" className="hover:underline">
+          Works
+        </Link>
+        <Link href="/about" className="hover:underline">
+          About
+        </Link>
+        <Link href="/contact" className="hover:underline">
+          Contact
+        </Link>
         <Link href="https://www.instagram.com/rei_dan/" aria-label="Instagram">
           <Instagram className="h-5 w-5" />
         </Link>
       </div>
+
+      {/* Mobile Menu Toggle Button */}
+      <div className="md:hidden flex items-center">
+        <button onClick={toggleMenu} className="text-black">
+          {isMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-0 left-0 w-full bg-white p-5 shadow-lg z-50">
+          <div className="flex flex-col items-center">
+            <Link href="/works" className="py-2 text-lg hover:underline">
+              Works
+            </Link>
+            <Link href="/about" className="py-2 text-lg hover:underline">
+              About
+            </Link>
+            <Link href="/contact" className="py-2 text-lg hover:underline">
+              Contact
+            </Link>
+            <Link
+              href="https://www.instagram.com/rei_dan/"
+              aria-label="Instagram"
+              className="py-2"
+            >
+              <Instagram className="h-6 w-6" />
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
