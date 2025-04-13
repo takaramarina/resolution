@@ -68,7 +68,7 @@ export default function Works() {
 
               return (
                 <section key={tag} className="mb-16">
-                  <h2 className="text-2xl font-bold mb-6 capitalize">{tag}</h2>
+                  <h2 className="text-2xl mb-6 capitalize">{tag}</h2>
                   <Carousel images={taggedImages} />
                 </section>
               );
