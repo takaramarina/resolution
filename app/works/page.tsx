@@ -1,29 +1,85 @@
 "use client";
 
+import { useState } from "react";
 import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Carousel from "../../components/Carousel"; // <-- import your new Carousel component
+import Carousel from "../../components/Carousel";
 
-const tags = ["Available Works", "drawings", "digital", "collaboration"];
+const tags = ["Series: Rotation", "Series: Linguistics", "Series: Cork", "drawings", "digital", "collaboration"];
 
 export default function Works() {
+  const [view, setView] = useState<"categories" | "seeAll" | "available">("categories");
+
+  const availableWorks = images.filter((img) => img.tags.includes("Available Works"));
+
+  const renderImage = (img: { src: string; url?: string }, index: number) => (
+    <div key={index} className="w-full">
+      {img.url ? (
+        <a href={img.url} target="_blank" rel="noopener noreferrer">
+          <img src={img.src} className="w-full object-cover" />
+        </a>
+      ) : (
+        <img src={img.src} className="w-full object-cover" />
+      )}
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
       <Header />
 
       <main className="px-5 md:px-10">
-        {tags.map((tag) => {
-          const taggedImages = images.filter((img) => img.tags.includes(tag));
-          if (taggedImages.length === 0) return null;
+        {/* View Toggle Buttons */}
+        <div className="flex gap-4 my-8">
+          <button
+            onClick={() => setView("categories")}
+            className={`px-4 py-2 border ${view === "categories" ? "bg-black text-white" : "bg-white text-black"}`}
+          >
+            By Category
+          </button>
+          <button
+            onClick={() => setView("available")}
+            className={`px-4 py-2 border ${view === "available" ? "bg-black text-white" : "bg-white text-black"}`}
+          >
+            Available Works
+          </button>
+          <button
+            onClick={() => setView("seeAll")}
+            className={`px-4 py-2 border ${view === "seeAll" ? "bg-black text-white" : "bg-white text-black"}`}
+          >
+            See All
+          </button>
+        </div>
 
-          return (
-            <section key={tag} className="mb-16">
-              <h2 className="text-2xl font-bold mb-6 capitalize">{tag}</h2>
-              <Carousel images={taggedImages} /> {/* <-- use the Carousel component */}
-            </section>
-          );
-        })}
+        {/* Content Based on Selected View */}
+        {view === "categories" && (
+          <div>
+            {tags.map((tag) => {
+              const taggedImages = images.filter((img) => img.tags.includes(tag));
+              if (taggedImages.length === 0) return null;
+
+              return (
+                <section key={tag} className="mb-16">
+                  <h2 className="text-2xl font-bold mb-6 capitalize">{tag}</h2>
+                  <Carousel images={taggedImages} />
+                </section>
+              );
+            })}
+          </div>
+        )}
+
+        {view === "seeAll" && (
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+            {images.map((img, index) => renderImage(img, index))}
+          </div>
+        )}
+
+        {view === "available" && (
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+            {availableWorks.map((img, index) => renderImage(img, index))}
+          </div>
+        )}
       </main>
 
       <Footer />
