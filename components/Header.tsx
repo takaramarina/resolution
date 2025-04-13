@@ -7,7 +7,7 @@ export default function Header() {
 
   // Toggle menu visibility on mobile
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prevState) => !prevState);
   };
 
   return (
@@ -33,8 +33,12 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu Toggle Button */}
-      <div className="md:hidden flex items-center">
-        <button onClick={toggleMenu} className="text-black">
+      <div className="md:hidden flex items-center z-50">
+        <button
+          onClick={toggleMenu}
+          className="text-black"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        >
           {isMenuOpen ? (
             <X className="h-6 w-6" />
           ) : (
@@ -44,28 +48,30 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute top-0 left-0 w-full bg-white p-5 shadow-lg z-50">
-          <div className="flex flex-col items-center">
-            <Link href="/works" className="py-2 text-lg hover:underline">
-              Works
-            </Link>
-            <Link href="/about" className="py-2 text-lg hover:underline">
-              About
-            </Link>
-            <Link href="/contact" className="py-2 text-lg hover:underline">
-              Contact
-            </Link>
-            <Link
-              href="https://www.instagram.com/rei_dan/"
-              aria-label="Instagram"
-              className="py-2"
-            >
-              <Instagram className="h-6 w-6" />
-            </Link>
-          </div>
+      <div
+        className={`md:hidden absolute top-0 left-0 w-full bg-white p-5 shadow-lg z-40 transition-transform transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col items-center">
+          <Link href="/works" className="py-2 text-lg hover:underline">
+            Works
+          </Link>
+          <Link href="/about" className="py-2 text-lg hover:underline">
+            About
+          </Link>
+          <Link href="/contact" className="py-2 text-lg hover:underline">
+            Contact
+          </Link>
+          <Link
+            href="https://www.instagram.com/rei_dan/"
+            aria-label="Instagram"
+            className="py-2"
+          >
+            <Instagram className="h-6 w-6" />
+          </Link>
         </div>
-      )}
+      </div>
     </header>
   );
 }
