@@ -39,7 +39,7 @@ export default function Works() {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 gap-[30vh] mt-6">
+        <div className="grid grid-cols-1 gap-5 md:gap-[30vh] mt-6">
           {filteredImages.map((image) => (
             <div key={image.id} className="cursor-pointer">
               {image.url ? (
