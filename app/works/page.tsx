@@ -34,19 +34,19 @@ export default function Works() {
         <div className="flex gap-4 my-8">
           <button
             onClick={() => setView("categories")}
-            className={`px-4 py-2 border ${view === "categories" ? "bg-black text-white" : "bg-white text-black"}`}
+            className={`px-4 rounded py-2 border ${view === "categories" ? "bg-black text-white" : "bg-white text-black"}`}
           >
             By Category
           </button>
           <button
             onClick={() => setView("available")}
-            className={`px-4 py-2 border ${view === "available" ? "bg-black text-white" : "bg-white text-black"}`}
+            className={`px-4 py-2 rounded border ${view === "available" ? "bg-black text-white" : "bg-white text-black"}`}
           >
             Available Works
           </button>
           <button
             onClick={() => setView("seeAll")}
-            className={`px-4 py-2 border ${view === "seeAll" ? "bg-black text-white" : "bg-white text-black"}`}
+            className={`px-4 py-2 rounded border ${view === "seeAll" ? "bg-black text-white" : "bg-white text-black"}`}
           >
             See All
           </button>
