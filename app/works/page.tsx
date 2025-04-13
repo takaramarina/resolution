@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Carousel from "../../components/Carousel";
 
-const tags = ["Series: Rotation", "Series: Linguistics", "Series: Cork", "drawings", "digital", "collaboration"];
+const tags = ["Series: Rotation", "Series: Materiality", "Series: Linguistic Characters", "drawings", "digital", "collaboration"];
 
 export default function Works() {
   const [view, setView] = useState<"categories" | "seeAll" | "available">("categories");
