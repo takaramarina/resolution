@@ -13,7 +13,7 @@ export default function Home() {
       setTimeout(() => {
         setShowIntro(false);
       }, 1000);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -24,7 +24,7 @@ export default function Home() {
       
       {showIntro && (
         <div className={`fixed inset-0 flex flex-col justify-center items-center bg-white z-50 transition-opacity duration-1000 ${fadeOut ? "opacity-0" : "opacity-100"}`}>
-          <h1 className="text-4xl mb-4 transition-transform duration-1000 transform ${fadeOut ? 'scale-90' : 'scale-110'}">
+          <h1 className="text-4xl font-bold mb-4 transition-transform duration-1000 transform ${fadeOut ? 'scale-90' : 'scale-110'}">
             REIJI SHIMANE
           </h1>
           <div className="flex items-center space-x-2">
@@ -35,10 +35,12 @@ export default function Home() {
 
       <div className="flex-grow overflow-auto">
         <div
-          className="w-[2664px] h-[3568px] bg-no-repeat bg-top-left"
+          className="bg-no-repeat bg-top-left w-full h-screen sm:w-[2664px] sm:h-[3568px]"
           style={{
             backgroundImage: "url('/images/hugedigital.jpg')",
             backgroundSize: "contain",
+            backgroundPosition: "top left",
+            backgroundRepeat: "no-repeat",
           }}
         />
       </div>
