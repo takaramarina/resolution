@@ -21,8 +21,8 @@ export default function Home() {
   };
 
   const artworkImages = [
-    "/images/round2.jpg",
-    "/images/wave1.JPG"
+    "/images/rotation-wave.png",
+    "/images/round2.jpg"
   ];
 
   return (

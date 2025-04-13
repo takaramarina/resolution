@@ -43,7 +43,7 @@ export const images = [
     },
     {
       id: 2,
-      src: "/images/round2.jpg",
+      src: "/images/rotation-wave.png",
       title: "Rotation: Wave",
       tags: ["for sale", "collaboration"],
       url: "/works/rotation-wave",
