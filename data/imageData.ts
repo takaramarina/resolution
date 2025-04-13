@@ -12,7 +12,7 @@ export const images: Image[] = [
       id: 1,
       src: "/images/round.PNG",
       title: "Rotation: Organ-Space",
-      tags: ["Available Works", "collaboration"],
+      tags: ["collaboration"],
       url: "/works/rotation-organ-space",
     },
     {
@@ -26,7 +26,7 @@ export const images: Image[] = [
       id: 5,
       src: "/images/rotation-electro.png",
       title: "Rotation: Electro",
-      tags: ["Available Works", "collaboration"],
+      tags: ["collaboration"],
       url: "/works/rotation-electro",
     },
     {
