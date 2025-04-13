@@ -21,6 +21,7 @@ export default function Home() {
   };
 
   const artworkImages = [
+    "/images/rotation-electro.png",
     "/images/round5.jpg",
     "/images/electro1.JPG",
     "/images/electro2.JPG",

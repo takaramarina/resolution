@@ -43,7 +43,7 @@ export const images = [
     },
     {
       id: 5,
-      src: "/images/round5.jpg",
+      src: "/images/rotation-electro.png",
       title: "Rotation: Electro",
       tags: ["for sale", "collaboration"],
       url: "/works/rotation-electro",
