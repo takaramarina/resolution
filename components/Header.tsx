@@ -11,41 +11,46 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 py-5 md:px-[60px] bg-white">
-      <div className="text-xl font-bold">
-        <Link href="/">REIJI SHIMANE</Link>
+    <header className="fixed top-0 left-0 w-full z-50 flex flex-col bg-white">
+      <div className="flex items-center justify-between px-5 py-5 md:px-[60px]">
+        <div className="text-xl font-bold">
+          <Link href="/">REIJI SHIMANE</Link>
+        </div>
+
+        {/* Desktop Navigation Links */}
+        <div className="hidden md:flex items-center gap-6 text-lg">
+          <Link href="/works" className="hover:underline">
+            Works
+          </Link>
+          <Link href="/about" className="hover:underline">
+            About
+          </Link>
+          <Link href="/contact" className="hover:underline">
+            Contact
+          </Link>
+          <Link href="https://www.instagram.com/rei_dan/" aria-label="Instagram">
+            <Instagram className="h-5 w-5" />
+          </Link>
+        </div>
+
+        {/* Mobile Menu Toggle Button */}
+        <div className="md:hidden flex items-center z-50">
+          <button
+            onClick={toggleMenu}
+            className="text-black"
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+        </div>
       </div>
 
-      {/* Desktop Navigation Links */}
-      <div className="hidden md:flex items-center gap-6 text-lg">
-        <Link href="/works" className="hover:underline">
-          Works
-        </Link>
-        <Link href="/about" className="hover:underline">
-          About
-        </Link>
-        <Link href="/contact" className="hover:underline">
-          Contact
-        </Link>
-        <Link href="https://www.instagram.com/rei_dan/" aria-label="Instagram">
-          <Instagram className="h-5 w-5" />
-        </Link>
-      </div>
-
-      {/* Mobile Menu Toggle Button */}
-      <div className="md:hidden flex items-center z-50">
-        <button
-          onClick={toggleMenu}
-          className="text-black"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        >
-          {isMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </button>
-      </div>
+      {/* Thin gray line */}
+      <div className="border-b border-gray-300 mx-5 md:mx-[60px]" />
 
       {/* Mobile Menu */}
       <div

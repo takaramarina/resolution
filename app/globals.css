@@ -12,7 +12,7 @@ main {
 
 @media (min-width: 768px) {
   main {
-    margin-top: 20vh; /* bigger space for desktop */
+    margin-top: 15vh; /* bigger space for desktop */
   }
 }
 
