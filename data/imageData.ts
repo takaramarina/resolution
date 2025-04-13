@@ -35,18 +35,18 @@ export const images = [
       url: "/works/rotation-omni",
     },
     {
-      id: 5,
-      src: "/images/round5.jpg",
-      title: "Rotation: Electro",
-      tags: ["for sale", "collaboration"],
-      url: "/works/rotation-electro",
-    },
-    {
       id: 2,
       src: "/images/rotation-wave.png",
       title: "Rotation: Wave",
       tags: ["for sale", "collaboration"],
       url: "/works/rotation-wave",
+    },
+    {
+      id: 5,
+      src: "/images/round5.jpg",
+      title: "Rotation: Electro",
+      tags: ["for sale", "collaboration"],
+      url: "/works/rotation-electro",
     },
     {
       id: 3,
