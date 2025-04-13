@@ -9,7 +9,7 @@ const tags = ["Available Works", "sketches", "digital", "collaboration"];
 
 export default function Works() {
   return (
-    <div className="min-h-screen bg-white mx-8 md:mx-[60px]">
+    <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
       <Header />
 
       <main className="px-5 md:px-10">
