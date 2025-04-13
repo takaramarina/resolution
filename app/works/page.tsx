@@ -5,7 +5,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Carousel from "../../components/Carousel"; // <-- import your new Carousel component
 
-const tags = ["Available Works", "sketches", "digital", "collaboration"];
+const tags = ["Available Works", "drawings", "digital", "collaboration"];
 
 export default function Works() {
   return (
