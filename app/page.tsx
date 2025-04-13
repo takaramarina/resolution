@@ -35,7 +35,7 @@ export default function Home() {
 
       <div className="flex-grow overflow-auto">
         <div
-          className="bg-no-repeat bg-top-left w-full h-screen sm:w-[2664px] sm:h-[3568px]"
+          className="bg-no-repeat bg-top-left w-[1332px] h-[1784px] sm:w-[2664px] sm:h-[3568px]"
           style={{
             backgroundImage: "url('/images/hugedigital.jpg')",
             backgroundSize: "contain",
