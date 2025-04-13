@@ -5,10 +5,6 @@ export default function Footer() {
   return (
     <footer className="bg-white py-8 px-5 md:px-10 mt-20">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Tagline / Short Bio */}
-        <p className="text-lg mb-4">
-          A collection of artworks by Reiji Shimane
-        </p>
 
         {/* Contact Info */}
         <p className="mb-2">
