@@ -129,7 +129,7 @@ export default function Home() {
               60cm x 60cm x 2cm<br />
               2025
             </div>
-            <PurchaseInquiryButton artworkName="Rotation: Organ-Space"/>
+            {/* <PurchaseInquiryButton artworkName="Rotation: Organ-Space"/> */}
 
             <p className="text-lg leading-relaxed">
               <em>"ORGAN-SPACE" ー </em><br /> <br />

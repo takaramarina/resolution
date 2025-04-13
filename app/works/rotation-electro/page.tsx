@@ -95,7 +95,7 @@ export default function Home() {
               90cm x 90cm x 2cm<br />
               2025
             </div>
-            <PurchaseInquiryButton artworkName="Rotation: Electro"/>
+            {/* <PurchaseInquiryButton artworkName="Rotation: Electro"/> */}
 
             <p className="text-lg leading-relaxed">
               {/* explanation text */}
