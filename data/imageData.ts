@@ -4,7 +4,7 @@ export const images = [
       src: "/images/round.PNG",
       title: "Rotation: Organ-Space",
       tags: ["for sale", "collaboration"],
-      url: "/",
+      url: "/works/rotation-organ-space",
     },
     {
       id: 22,
