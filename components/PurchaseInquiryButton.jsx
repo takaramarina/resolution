@@ -22,7 +22,7 @@ export default function PurchaseInquiryButton({ artworkName }) {
     }
 
     // Encode the data to safely insert into the mailto link
-    const subject = encodeURIComponent("Enquire");
+    const subject = encodeURIComponent("Inquire");
     const body = encodeURIComponent(
       `Artwork: ${artwork}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
     );
@@ -37,13 +37,13 @@ export default function PurchaseInquiryButton({ artworkName }) {
         onClick={() => setIsOpen(true)}
         className="px-6 py-3 bg-gray-300 rounded text-black font-semibold hover:bg-gray-400 transition"
       >
-        Enquire
+        Inquire
       </button>
       
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-[#babeba] bg-opacity-90 p-8 rounded w-[500px]">
-            <h2 className="text-2xl mb-4 text-[#061202]">Enquire</h2>
+            <h2 className="text-2xl mb-4 text-[#061202]">Inquire</h2>
             <p className="text-lg mb-6 text-[#061202]">
               Thank you for your interest in Reiji Shimane's artwork. A member of our team
               will reach out within 48 hours of your inquiry.
