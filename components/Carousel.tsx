@@ -106,14 +106,14 @@ export default function Carousel({ images }: { images: Image[] }) {
                   <img
                     src={image.src}
                     alt={image.title}
-                    className="w-full h-auto max-h-[70vh] object-contain mx-auto rounded-md group-hover:opacity-75 transition-opacity"
+                    className="w-full h-auto max-h-[70vh] object-contain mx-auto rounded-md"
                   />
                 </a>
               ) : (
                 <img
                   src={image.src}
                   alt={image.title}
-                  className="w-full h-auto max-h-[70vh] object-contain mx-auto rounded-md group-hover:opacity-75 transition-opacity"
+                  className="w-full h-auto max-h-[70vh] object-contain mx-auto rounded-md"
                 />
               )}
 
