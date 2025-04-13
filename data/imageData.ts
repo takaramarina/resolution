@@ -14,6 +14,13 @@ export const images = [
       url: "/works/rotation-adventure",
     },
     {
+      id: 5,
+      src: "/images/rotation-electro.png",
+      title: "Rotation: Electro",
+      tags: ["for sale", "collaboration"],
+      url: "/works/rotation-electro",
+    },
+    {
       id: 13,
       src: "/images/round6.png",
       title: "Rotation: Kenny",
@@ -40,13 +47,6 @@ export const images = [
       title: "Rotation: Wave",
       tags: ["for sale", "collaboration"],
       url: "/works/rotation-wave",
-    },
-    {
-      id: 5,
-      src: "/images/rotation-electro.png",
-      title: "Rotation: Electro",
-      tags: ["for sale", "collaboration"],
-      url: "/works/rotation-electro",
     },
     {
       id: 3,

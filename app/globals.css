@@ -7,3 +7,8 @@ body {
   color: #333;
 }
 
+main {
+  margin-top: 20vh; 
+  /* for having space for the header */
+}
+

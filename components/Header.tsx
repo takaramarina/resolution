@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-5 py-20 md:px-10">
+    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 py-5 md:px-[60px] bg-white">
       <div className="text-xl font-bold">
         <Link href="/">REIJI SHIMANE</Link></div>
       <nav className="flex gap-16 text-lg">
