@@ -36,8 +36,8 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center py-10 pt-20">
         <Header />
-      <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
-      <p className="text-lg mb-8">We would love to hear from you. Please fill out the form below.</p>
+      {/* <h1 className="text-4xl font-bold mb-6">Contact Us</h1> */}
+      <p className="text-lg mb-8">For any inquiries, please email fannymoneyonline@gmail.com or fill out the form below.</p>
 
       {isSubmitted ? (
         <div className="text-center text-green-600 mb-8">

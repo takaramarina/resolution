@@ -1,61 +1,29 @@
 "use client";
 
-import { useState } from "react";
 import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Link from "next/link";
+import Carousel from "../../components/Carousel"; // <-- import your new Carousel component
+
+const tags = ["Available Works", "sketches", "digital", "collaboration"];
 
 export default function Works() {
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
-
-  const tags = ["all", "for sale", "sketches", "digital", "collaboration"];
-
-  // Filter images based on selected tag
-  const filteredImages = selectedTag && selectedTag !== "all"
-    ? images.filter(image => image.tags.includes(selectedTag))
-    : images;
-
   return (
     <div className="min-h-screen bg-white mx-8 md:mx-[60px]">
       <Header />
 
       <main className="px-5 md:px-10">
-        <h1 className="text-3xl font-bold mt-10">Works</h1>
+        {tags.map((tag) => {
+          const taggedImages = images.filter((img) => img.tags.includes(tag));
+          if (taggedImages.length === 0) return null;
 
-        {/* Filter Buttons */}
-        <div className="mt-6 flex gap-4 flex-wrap justify-start">
-          {tags.map((tag) => (
-            <button
-              key={tag}
-              className={`px-4 py-2 border rounded ${
-                selectedTag === tag ? "bg-black text-white" : "bg-gray-200"
-              }`}
-              onClick={() => setSelectedTag(tag === "all" ? null : tag)}
-            >
-              {tag}
-            </button>
-          ))}
-        </div>
-
-        {/* Image Grid */}
-        <div className="grid grid-cols-1 gap-[10vh] md:gap-[30vh] mt-6">
-          {filteredImages.map((image) => (
-            <div key={image.id} className="cursor-pointer">
-              {image.url ? (
-                <Link href={image.url}>
-                  <img src={image.src} alt={image.title} className="w-full h-auto max-h-[80vh] object-contain mx-auto" />
-                  {/* <p className="mt-2 text-center text-lg">{image.title}</p> */}
-                </Link>
-              ) : (
-                <>
-                  <img src={image.src} alt={image.title} className="w-full h-auto max-h-[80vh] object-contain mx-auto" />
-                  {/* <p className="mt-2 text-center text-lg">{image.title}</p> */}
-                </>
-              )}
-            </div>
-          ))}
-        </div>
+          return (
+            <section key={tag} className="mb-16">
+              <h2 className="text-2xl font-bold mb-6 capitalize">{tag}</h2>
+              <Carousel images={taggedImages} /> {/* <-- use the Carousel component */}
+            </section>
+          );
+        })}
       </main>
 
       <Footer />

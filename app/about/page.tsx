@@ -8,8 +8,8 @@ export default function About() {
       <Header />
 
       {/* Main content */}
-      <div className="flex-grow flex flex-col items-center py-16 px-4 sm:px-8">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-8">About</h1>
+      <div className="flex-grow flex flex-col items-center py-16 px-4 sm:px-8 md:pt-[15vh]">
+        {/* <h1 className="text-3xl sm:text-4xl font-bold mb-8">About</h1> */}
 
         {/* Introduction section */}
         <section className="w-full max-w-3xl mb-12">

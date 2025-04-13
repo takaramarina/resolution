@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
+import "keen-slider/keen-slider.min.css";  // <-- Keen Slider base styles
 
 export const metadata: Metadata = {
   title: "Reiji Shimane",
