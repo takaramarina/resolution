@@ -179,7 +179,7 @@ export default function Home() {
                 onLoad={handleImageLoad}
                 loading="lazy"
                 className="max-w-full h-auto object-cover transition-opacity duration-500"
-                // style={{ opacity: imagesLoaded === totalImages ? 1 : 0 }}
+                style={{ height: '100%' }}
               />
             </div>
           ))}
