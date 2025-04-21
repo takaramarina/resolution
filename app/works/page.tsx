@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Carousel from "../../components/Carousel";
 
-const tags = ["Series: Rotation", "Series: Materiality", "Series: Linguistic Characters", "drawings", "digital", "collaboration"];
+const tags = ["Series: Rotation", "Series: Materiality", "Series: Linguistic Characters", "drawings", "collaboration"];
 
 export default function Works() {
   const [view, setView] = useState<"categories" | "seeAll" | "available">("categories");
@@ -58,7 +58,6 @@ export default function Works() {
           </button>
         </div>
 
-
         {/* Content Based on Selected View */}
         {view === "categories" && (
           <div>
@@ -79,7 +78,9 @@ export default function Works() {
 
         {view === "seeAll" && (
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
-            {images.map((img, index) => renderImage(img, index))}
+            {images
+              .filter((img) => !img.tags.includes("digital")) // Exclude images with the "digital" tag
+              .map((img, index) => renderImage(img, index))}
           </div>
         )}
 
