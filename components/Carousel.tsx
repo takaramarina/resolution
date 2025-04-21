@@ -2,7 +2,6 @@ import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
 import { useState } from "react";
 import { Image } from "../data/imageData"; // assuming you added the Image type
 
-// Custom plugin to allow smooth scroll interaction with the mouse wheel
 const WheelControls: KeenSliderPlugin = (slider) => {
   let touchTimeout: ReturnType<typeof setTimeout>;
   let position: {
@@ -98,22 +97,22 @@ export default function Carousel({ images }: { images: Image[] }) {
     <div className="relative">
       <div ref={sliderRef} className="keen-slider">
         {images.map((image) => (
-          <div key={image.id} className="keen-slider__slide relative group">
-            <div className="relative">
+          <div key={image.id} className="keen-slider__slide relative group flex justify-center items-center">
+            <div className="relative w-full h-full flex justify-center items-center">
               {/* Image */}
               {image.url ? (
                 <a href={image.url}>
                   <img
                     src={image.src}
                     alt={image.title}
-                    className="w-full h-auto max-h-[70vh] object-contain mx-auto rounded-md"
+                    className="w-full h-auto max-h-[70vh] object-contain mx-auto"
                   />
                 </a>
               ) : (
                 <img
                   src={image.src}
                   alt={image.title}
-                  className="w-full h-auto max-h-[70vh] object-contain mx-auto rounded-md"
+                  className="w-full h-auto max-h-[70vh] object-contain mx-auto"
                 />
               )}
             </div>
