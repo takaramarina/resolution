@@ -9,7 +9,7 @@ import Carousel from "../../components/Carousel";
 const tags = ["Series: Rotation", "Series: Materiality", "Series: Linguistic Characters", "drawings", "collaboration"];
 
 export default function Works() {
-  const [view, setView] = useState<"categories" | "seeAll" | "available">("categories");
+  const [view, setView] = useState<"categories" | "seeAll" | "available">("seeAll");
 
   const availableWorks = images.filter((img) => img.tags.includes("Available Works"));
 
