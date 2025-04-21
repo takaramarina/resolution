@@ -12,8 +12,8 @@ export default function Home() {
       setFadeOut(true);
       setTimeout(() => {
         setShowIntro(false);
-      }, 1000);
-    }, 2000);
+      }, 0);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, []);
@@ -43,7 +43,7 @@ export default function Home() {
         </a>
       </div>
 
-      {showIntro && (
+      {/* {showIntro && (
         <div className={`fixed inset-0 flex flex-col justify-center items-center bg-white z-50 transition-opacity duration-1000 ${fadeOut ? "opacity-0" : "opacity-100"}`}>
           <h1 className="text-4xl font-bold mb-4 transition-transform duration-1000 transform ${fadeOut ? 'scale-90' : 'scale-110'}">
             REIJI SHIMANE
@@ -52,7 +52,7 @@ export default function Home() {
             <div className="w-3 h-3 bg-black rounded-full animate-ping"></div>
           </div>
         </div>
-      )}
+      )} */}
 
       <div className="flex-grow overflow-auto flex flex-col items-start">
         <div

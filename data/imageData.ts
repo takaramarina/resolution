@@ -51,6 +51,13 @@ export const images: Image[] = [
       url: "/works/rotation-omni",
     },
     {
+      id: 23,
+      src: "/images/IMG_9918.png",
+      title: "Rotation: Glass",
+      tags: ["Available Works", "collaboration", "Series: Rotation"],
+      url: "works/rotation-glass",
+    },
+    {
       id: 2,
       src: "/images/rotation-wave.png",
       title: "Rotation: Wave",
@@ -157,7 +164,7 @@ export const images: Image[] = [
     },
     {
         id: 14,
-        src: "/images/4622AB6D-55D1-4471-BD47-342998F5BB73.JPG",
+        src: "/images/0D84005B-E626-4C41-8A5F-0589F8C7B263_4_5005_c.jpeg",
         title: "drawing",
         tags: ["drawings", "digital"],
         url: undefined,

@@ -66,9 +66,9 @@ export default function Home() {
         {/* Title */}
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex self-start cursor-pointer" 
-            onClick={() => handleImageClick("/images/rotation-adventure.png")}>
+            onClick={() => handleImageClick("/images/IMG_9918.png")}>
             <RotatingImage 
-              src="/images/rotation-adventure.png"
+              src="/images/IMG_9918.png"
               alt="Round Art Piece" 
               speed={70}  
             />
@@ -120,14 +120,14 @@ export default function Home() {
           <div className="flex flex-col gap-8">
             <div className="text-xl font-bold">
               Reiji Shimane <br />
-              <em>Rotation: Adventure</em>
+              <em>Rotation: Glass</em>
             </div>
             <div className="text-lg">
               Ink and pastels on wood panel <br />
               90cm x 90cm x 2cm<br />
               2025
             </div>
-            <PurchaseInquiryButton artworkName="Rotation: Adventure"/>
+            <PurchaseInquiryButton artworkName="Rotation: Glass"/>
 
             <p className="text-lg leading-relaxed">
               
