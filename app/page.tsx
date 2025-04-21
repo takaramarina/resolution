@@ -177,8 +177,9 @@ export default function Home() {
                 src={src}
                 alt={`Sketch ${index + 1}`}
                 onLoad={handleImageLoad}
-                className="w-full h-full object-cover m-0 transition-opacity duration-500 opacity-0"
-                style={{ opacity: imagesLoaded === totalImages ? 1 : 0 }}
+                loading="lazy"
+                className="max-w-full h-auto object-cover transition-opacity duration-500"
+                // style={{ opacity: imagesLoaded === totalImages ? 1 : 0 }}
               />
             </div>
           ))}
