@@ -12,7 +12,7 @@ export default function DigitalPage() {
       <Header />
 
       <main className="px-0 md:px-10 py-0 md:py-10">
-      <h1 className="text-2xl md:text-4xl font-semibold my-4 md:my-8 mx-4 md:mx-0">Digital Works</h1>
+      <h1 className="text-2xl md:text-4xl font-semibold my-4 md:my-8 mx-4 md:mx-0">Digital Artput</h1>
 
         {digitalItems.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 md:gap-6">
