@@ -114,19 +114,25 @@ export default function Home() {
           href="/works"
           className="text-black text-xl hover:underline hover:decoration-black"
         >
-          works
+          Works
+        </a>
+        <a
+          href="/digital"
+          className="text-black text-xl hover:underline hover:decoration-black"
+        >
+          Digital
         </a>
         <a
           href="/about"
           className="text-black text-xl hover:underline hover:decoration-black"
         >
-          about
+          About
         </a>
         <a
           href="#contact"
           className="text-black text-xl hover:underline hover:decoration-black"
         >
-          contact
+          Contact
         </a>
       </div>
 
