@@ -6,8 +6,8 @@ import Footer from "../components/Footer";
 
 // List all the image file names manually (from scan1 to scan55)
 const scannedSketches = [
+  "/images/scanned-sketches/scan.jpeg",
   "/images/scanned-sketches/scan1.jpeg",
-  "/images/scanned-sketches/scan2.jpeg",
   "/images/scanned-sketches/scan3.jpeg",
   "/images/scanned-sketches/scan4.jpeg",
   "/images/scanned-sketches/scan5.jpeg",
@@ -20,6 +20,7 @@ const scannedSketches = [
   "/images/scanned-sketches/scan12.jpeg",
   "/images/scanned-sketches/scan13.jpeg",
   "/images/scanned-sketches/scan14.jpeg",
+  "/images/scanned-sketches/scan2.jpeg",
   "/images/scanned-sketches/scan15.jpeg",
   "/images/scanned-sketches/scan16.jpeg",
   "/images/scanned-sketches/scan17.jpeg",
@@ -62,6 +63,7 @@ const scannedSketches = [
   "/images/scanned-sketches/scan54.jpeg",
   "/images/scanned-sketches/scan55.jpeg"
 ];
+
 const classifyImagesByOrientation = (images: string[]) => {
   const landscape: string[] = [];
   const portrait: string[] = [];
@@ -86,6 +88,8 @@ export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
   const [imageCategories, setImageCategories] = useState<{ landscape: string[], portrait: string[] }>({ landscape: [], portrait: [] });
+  const [imagesLoaded, setImagesLoaded] = useState(0);
+  const totalImages = scannedSketches.length;
 
   useEffect(() => {
     const classify = () => {
@@ -99,17 +103,41 @@ export default function Home() {
       setFadeOut(true);
       setTimeout(() => {
         setShowIntro(false);
-      }, 0);
-    }, 0);
+      }, 500); // Match the duration of the fade-out animation
+    }, 1000); // Delay intro animation for 1 second
 
     return () => clearTimeout(timer);
   }, []);
 
+  const handleImageLoad = () => {
+    setImagesLoaded((prev) => prev + 1);
+  };
+
+  useEffect(() => {
+    if (imagesLoaded === totalImages) {
+      // All images are loaded, trigger an action or animation if necessary
+      console.log("All images are loaded!");
+    }
+  }, [imagesLoaded]);
+
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      {/* Header hidden during intro */}
+      <Header className={`transition-opacity duration-500 ${showIntro ? "opacity-0" : "opacity-100"}`} />
 
-      <div className="fixed top-1/2 left-0 right-0 flex flex-col items-center justify-center space-y-4 z-50">
+      {/* Intro animation */}
+      {showIntro && (
+        <div
+          className={`fixed inset-0 flex items-center justify-center bg-white transition-opacity duration-500 ${
+            fadeOut ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          <h1 className="text-4xl font-bold text-black">Reiji Shimane</h1>
+        </div>
+      )}
+
+      {/* Links container hidden during intro */}
+      <div className={`fixed top-1/2 left-0 right-0 flex flex-col items-center justify-center space-y-4 z-50 transition-opacity duration-500 ${showIntro ? "opacity-0" : "opacity-100"}`}>
         <a
           href="/works"
           className="text-black text-xl hover:underline hover:decoration-black"
@@ -148,7 +176,9 @@ export default function Home() {
               <img
                 src={src}
                 alt={`Sketch ${index + 1}`}
-                className="w-full h-full object-cover m-0"
+                onLoad={handleImageLoad}
+                className="w-full h-full object-cover m-0 transition-opacity duration-500 opacity-0"
+                style={{ opacity: imagesLoaded === totalImages ? 1 : 0 }}
               />
             </div>
           ))}

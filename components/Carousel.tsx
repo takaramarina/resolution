@@ -1,13 +1,10 @@
-import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useKeenSlider } from "keen-slider/react";
 import { Image } from "../data/imageData"; // assuming you added the Image type
 
-const WheelControls: KeenSliderPlugin = (slider) => {
+const WheelControls = (slider: any) => {
   let touchTimeout: ReturnType<typeof setTimeout>;
-  let position: {
-    x: number;
-    y: number;
-  };
+  let position: { x: number; y: number };
   let wheelActive: boolean;
 
   function dispatch(e: WheelEvent, name: string) {
@@ -62,28 +59,45 @@ const WheelControls: KeenSliderPlugin = (slider) => {
 
 export default function Carousel({ images }: { images: Image[] }) {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
-    {
-      loop: true, // Loop to make it circular
-      mode: "free",
-      slides: {
-        perView: 1,
-        spacing: 15,
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const updateScreenWidth = () => {
+      setIsMobile(window.innerWidth < 768); // Adjust this threshold as needed
+    };
+
+    updateScreenWidth(); // Initial check
+    window.addEventListener("resize", updateScreenWidth); // Update on resize
+
+    return () => window.removeEventListener("resize", updateScreenWidth); // Clean up event listener
+  }, []);
+
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    loop: true, // Loop to make it circular
+    mode: "free",
+    slides: {
+      perView: 1,
+      spacing: 15,
+    },
+    breakpoints: {
+      "(min-width: 768px)": {
+        slides: { perView: 2, spacing: 20 },
       },
-      breakpoints: {
-        "(min-width: 768px)": {
-          slides: { perView: 2, spacing: 20 },
-        },
-        "(min-width: 1200px)": {
-          slides: { perView: 3, spacing: 30 },
-        },
-      },
-      slideChanged(slider) {
-        setCurrentSlide(slider.track.details.rel); // track current index
+      "(min-width: 1200px)": {
+        slides: { perView: 3, spacing: 30 },
       },
     },
-    [WheelControls] // Add custom plugin here
-  );
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel); // track current index
+    },
+  });
+
+  // Initialize the WheelControls plugin separately
+  useEffect(() => {
+    if (instanceRef.current) {
+      WheelControls(instanceRef.current);
+    }
+  }, [instanceRef]);
 
   const handlePrev = () => {
     instanceRef.current?.prev();
