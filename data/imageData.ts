@@ -51,7 +51,7 @@ export const images: Image[] = [
   {
     id: 14,
     src: "/images/IMG_8926.png",
-    title: "drawing",
+    title: "Linguistic Vehicle",
     tags: ["digital"],
     url: undefined,
     type: "image",
@@ -244,7 +244,7 @@ export const images: Image[] = [
   {
     id: 7,
     src: "/images/digital1.jpeg",
-    title: "Digital drawing",
+    title: "PowerUp",
     tags: ["drawings", "digital"],
     url: undefined,
     type: "image",
@@ -260,7 +260,7 @@ export const images: Image[] = [
   {
     id: 9,
     src: "/images/sketch1.jpeg",
-    title: "drawing",
+    title: "Common Sense",
     tags: ["drawings"],
     url: undefined,
     type: "image",
@@ -268,7 +268,7 @@ export const images: Image[] = [
   {
     id: 10,
     src: "/images/sketch2.jpeg",
-    title: "drawing",
+    title: "Whimsy",
     tags: ["drawings", "digital"],
     url: undefined,
     type: "image",
@@ -276,7 +276,7 @@ export const images: Image[] = [
   {
     id: 11,
     src: "/images/sketch3.jpeg",
-    title: "drawing",
+    title: "Live Music",
     tags: ["drawings"],
     url: undefined,
     type: "image",

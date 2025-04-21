@@ -13,17 +13,32 @@ export default function Works() {
 
   const availableWorks = images.filter((img) => img.tags.includes("Available Works"));
 
-  const renderImage = (img: { src: string; url?: string }, index: number) => (
-    <div key={index} className="w-full">
-      {img.url ? (
-        <a href={img.url} target="_blank" rel="noopener noreferrer">
+  const renderImage = (img: { src: string; url?: string; title?: string }, index: number) => (
+    <div
+      key={index}
+      className="flex flex-col lg:flex-row w-full gap-4 items-start"
+    >
+      {/* Title positioning */}
+      
+      <div className="w-full lg:w-1/2">
+        {img.url ? (
+          <a href={img.url} target="_blank" rel="noopener noreferrer">
+            <img src={img.src} className="w-full object-cover" />
+          </a>
+        ) : (
           <img src={img.src} className="w-full object-cover" />
-        </a>
-      ) : (
-        <img src={img.src} className="w-full object-cover" />
-      )}
+        )}
+      </div>
+      <div className="w-full lg:w-1/2 flex justify-center">
+        {img.title && (
+          <p className="text-base md:text-2xl mt-2 italic text-gray-800 text-center lg:text-left lg:mt-[55%]">
+            {img.title}
+          </p>
+        )}
+      </div>
     </div>
   );
+  
 
   return (
     <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
@@ -77,15 +92,15 @@ export default function Works() {
         )}
 
         {view === "seeAll" && (
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-y-[10vh] sm:gap-y-[10vh] gap-x-[5vw]">
             {images
-              .filter((img) => !img.tags.includes("digital")) // Exclude images with the "digital" tag
+              .filter((img) => !img.tags.includes("digital"))
               .map((img, index) => renderImage(img, index))}
           </div>
         )}
 
         {view === "available" && (
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-y-[10vh] sm:gap-y-[10vh] gap-x-[5vw]">
             {availableWorks.map((img, index) => renderImage(img, index))}
           </div>
         )}
