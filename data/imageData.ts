@@ -129,7 +129,7 @@ export const images: Image[] = [
     },
     {
         id: 8,
-        src: "/images/dragon.jpeg",
+        src: "/images/dragon.JPG",
         title: "Dragon",
         tags: ["digital"],
         url: undefined,
