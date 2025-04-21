@@ -17,23 +17,28 @@ export default function Works() {
     <div
       key={index}
       className="flex flex-col lg:flex-row w-full gap-4 items-start"
-    >      
-      <div className="w-full lg:w-1/2">
+    >
+      {/* IMAGE: Right-aligned on desktop */}
+      <div className="w-full lg:w-1/2 lg:flex lg:justify-end">
         {img.url ? (
           <a href={img.url} target="_blank" rel="noopener noreferrer">
             <img
               src={img.src}
-              className="w-full max-h-[80vh] object-contain"
+              className="w-full max-h-[90vh] object-contain lg:w-auto"
             />
           </a>
         ) : (
-          <img src={img.src} className="w-full max-h-[80vh] object-contain" />
+          <img
+            src={img.src}
+            className="w-full max-h-[90vh] object-contain lg:w-auto"
+          />
         )}
       </div>
-      
-      <div className="w-full lg:w-1/2 flex justify-center">
+  
+      {/* TITLE: Left-aligned on desktop */}
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
         {img.title && (
-          <p className="text-base md:text-2xl mt-2 italic text-gray-800 text-center lg:text-left lg:mt-[55%]">
+          <p className="text-base md:text-2xl mt-2 italic text-gray-800 text-center lg:text-left lg:mt-[55%] lg:ml-[10%]">
             {img.title}
           </p>
         )}
