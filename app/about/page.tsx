@@ -8,7 +8,7 @@ export default function About() {
       <Header />
 
       {/* Main content */}
-      <div className="flex-grow flex flex-col items-center py-16 px-4 sm:px-8 md:pt-[15vh]">
+      <div className="flex-grow flex flex-col items-center py-16 px-4 sm:px-8 pt-[80px]">
         {/* <h1 className="text-3xl sm:text-4xl font-bold mb-8">About</h1> */}
 
         {/* Introduction section */}
@@ -18,7 +18,7 @@ export default function About() {
             Global artist currently based in Tokyo.<br />
           </p>
         </section>
-    </div>
+      </div>
 
       <Footer />
     </div>
