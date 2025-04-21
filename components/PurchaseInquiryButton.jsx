@@ -22,7 +22,7 @@ export default function PurchaseInquiryButton({ artworkName }) {
     }
 
     // Encode the data to safely insert into the mailto link
-    const subject = encodeURIComponent("Inquire");
+    const subject = encodeURIComponent("Inquiry on Artwork");
     const body = encodeURIComponent(
       `Artwork: ${artwork}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
     );
