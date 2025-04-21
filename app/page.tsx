@@ -164,7 +164,7 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="flex-grow overflow-y-auto flex flex-col items-center bg-gray-100">
+      <div className="flex-grow overflow-y-auto flex flex-col items-center bg-gray-100 pt-[69px]">
         {/* Display all Images in a single grid */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 mb-10">
           {/* Combine both landscape and portrait images */}
