@@ -16,7 +16,7 @@ export default function Works() {
   const renderImage = (img: { src: string; url?: string; title?: string }, index: number) => (
     <div
       key={index}
-      className="flex flex-col lg:flex-row w-full gap-4 items-start"
+      className="flex flex-col lg:flex-row w-full gap-4 items-center"
     >
       {/* IMAGE: Right-aligned on desktop */}
       <div className="w-full lg:w-1/2 lg:flex lg:justify-end">
@@ -24,13 +24,25 @@ export default function Works() {
           <a href={img.url} target="_blank" rel="noopener noreferrer">
             <img
               src={img.src}
-              className="w-full max-h-[90vh] object-contain lg:w-auto"
+              className="w-full max-h-[80vh]"
+              style={{
+                width: "100%",
+                height: "auto",
+                objectFit: "contain",
+                imageRendering: "auto", // or "pixelated" if you like the aesthetic
+              }}
             />
           </a>
         ) : (
           <img
             src={img.src}
-            className="w-full max-h-[90vh] object-contain lg:w-auto"
+            className="w-full max-h-[80vh]"
+            style={{
+              width: "100%",
+              height: "auto",
+              objectFit: "contain",
+              imageRendering: "auto", // or "pixelated" if you like the aesthetic
+            }}
           />
         )}
       </div>
