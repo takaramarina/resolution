@@ -17,18 +17,20 @@ export default function Works() {
     <div
       key={index}
       className="flex flex-col lg:flex-row w-full gap-4 items-start"
-    >
-      {/* Title positioning */}
-      
+    >      
       <div className="w-full lg:w-1/2">
         {img.url ? (
           <a href={img.url} target="_blank" rel="noopener noreferrer">
-            <img src={img.src} className="w-full object-cover" />
+            <img
+              src={img.src}
+              className="w-full max-h-[80vh] object-contain"
+            />
           </a>
         ) : (
-          <img src={img.src} className="w-full object-cover" />
+          <img src={img.src} className="w-full max-h-[80vh] object-contain" />
         )}
       </div>
+      
       <div className="w-full lg:w-1/2 flex justify-center">
         {img.title && (
           <p className="text-base md:text-2xl mt-2 italic text-gray-800 text-center lg:text-left lg:mt-[55%]">
