@@ -116,11 +116,6 @@ export default function Carousel({ images }: { images: Image[] }) {
                   className="w-full h-auto max-h-[70vh] object-contain mx-auto rounded-md"
                 />
               )}
-
-              {/* Title Overlay */}
-              {/* <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-white text-xl font-bold">{image.title}</span>
-              </div> */}
             </div>
           </div>
         ))}
@@ -132,7 +127,7 @@ export default function Carousel({ images }: { images: Image[] }) {
         className="absolute top-1/2 -translate-y-1/2 left-2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md"
         aria-label="Previous Slide"
       >
-        ◀
+        &lt; {/* Left arrow */}
       </button>
 
       {/* Right Arrow */}
@@ -141,7 +136,7 @@ export default function Carousel({ images }: { images: Image[] }) {
         className="absolute top-1/2 -translate-y-1/2 right-2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md"
         aria-label="Next Slide"
       >
-        ▶
+        &gt; {/* Right arrow */}
       </button>
     </div>
   );

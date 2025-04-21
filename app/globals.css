@@ -15,4 +15,28 @@ main {
     margin-top: 15vh; /* bigger space for desktop */
   }
 }
+.carousel-arrow {
+  background: transparent;
+  border: none;
+  font-size: 2rem; /* Adjust the size */
+  color: #000; /* Set color */
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  color: #333; /* Change color on hover */
+}
+
+.left-arrow {
+  transform: rotate(180deg); /* Rotate for left arrow */
+}
+
+.right-arrow {
+  transform: rotate(0deg); /* Default right arrow */
+}
 
