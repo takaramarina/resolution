@@ -10,7 +10,6 @@ const scannedSketches = [
   "/images/scanned-sketches/scan1.jpeg",
   "/images/scanned-sketches/scan3.jpeg",
   "/images/scanned-sketches/scan4.jpeg",
-  "/images/scanned-sketches/scan5.jpeg",
   "/images/scanned-sketches/scan6.jpeg",
   "/images/scanned-sketches/scan7.jpeg",
   "/images/scanned-sketches/scan8.jpeg",
@@ -59,6 +58,7 @@ const scannedSketches = [
   "/images/scanned-sketches/scan50.jpeg",
   "/images/scanned-sketches/scan51.jpeg",
   "/images/scanned-sketches/scan52.jpeg",
+  "/images/scanned-sketches/scan5.jpeg",
   "/images/scanned-sketches/scan53.jpeg",
   "/images/scanned-sketches/scan54.jpeg",
   "/images/scanned-sketches/scan55.jpeg"
@@ -123,7 +123,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header hidden during intro */}
-      <Header className={`transition-opacity duration-500 ${showIntro ? "opacity-0" : "opacity-100"}`} />
+      <Header />
 
       {/* Intro animation */}
       {showIntro && (
@@ -168,7 +168,7 @@ export default function Home() {
         {/* Display all Images in a single grid */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 mb-10">
           {/* Combine both landscape and portrait images */}
-          {[...imageCategories.portrait, ...imageCategories.landscape].map((src, index) => (
+          {[...imageCategories.landscape, ...imageCategories.portrait].map((src, index) => (
             <div
               key={index}
               className="w-full h-full flex justify-center items-center m-0"
