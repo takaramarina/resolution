@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Carousel from "../../components/Carousel";
 
-const tags = ["Series: Rotation", "Series: Materiality", "Series: Linguistic Characters", "drawings", "collaboration"];
+const tags = ["Series: Rotation", "Series: Materiality", "drawings", "Series: Linguistic Characters", "collaboration"];
 
 export default function Works() {
   const [view, setView] = useState<"categories" | "seeAll" | "available">("seeAll");
@@ -18,7 +18,6 @@ export default function Works() {
       key={index}
       className="flex flex-col lg:flex-row w-full gap-4 items-center"
     >
-      {/* IMAGE: Right-aligned on desktop */}
       <div className="w-full lg:w-1/2 lg:flex lg:justify-end">
         {img.url ? (
           <a href={img.url} target="_blank" rel="noopener noreferrer">
@@ -29,7 +28,7 @@ export default function Works() {
                 width: "100%",
                 height: "auto",
                 objectFit: "contain",
-                imageRendering: "auto", // or "pixelated" if you like the aesthetic
+                imageRendering: "auto",
               }}
             />
           </a>
@@ -41,13 +40,12 @@ export default function Works() {
               width: "100%",
               height: "auto",
               objectFit: "contain",
-              imageRendering: "auto", // or "pixelated" if you like the aesthetic
+              imageRendering: "auto",
             }}
           />
         )}
       </div>
   
-      {/* TITLE: Left-aligned on desktop */}
       <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
         {img.title && (
           <p className="text-base md:text-2xl mt-2 italic text-gray-800 text-center lg:text-left lg:mt-[55%] lg:ml-[10%]">
@@ -58,13 +56,41 @@ export default function Works() {
     </div>
   );
   
-
+  const renderCategoryImage = (img: { src: string; url?: string; title?: string }, index: number) => (
+    <div
+      key={index}
+      className="flex-shrink-0"
+    >
+      <div className="w-full flex justify-center">
+        {img.url ? (
+          <a href={img.url} target="_blank" rel="noopener noreferrer">
+            <img
+              src={img.src}
+              className="max-w-[80vw] max-h-[50vh] object-contain"
+              style={{ imageRendering: "auto" }}
+            />
+          </a>
+        ) : (
+          <img
+            src={img.src}
+            className="max-w-[80vw] max-h-[50vh] object-contain"
+            style={{ imageRendering: "auto" }}
+          />
+        )}
+      </div>
+      {img.title && (
+        <p className="text-sm md:text-base text-center italic text-gray-700 mt-2">
+          {img.title}
+        </p>
+      )}
+    </div>
+  );
+  
   return (
     <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
       <Header />
       
-      <main className="px-5 md:px-10">
-        {/* View Toggle Buttons */}
+      <main className="px-5 md:px-0">
         <div className="flex flex-wrap gap-2 my-8">
           <button
             onClick={() => setView("categories")}
@@ -92,7 +118,6 @@ export default function Works() {
           </button>
         </div>
 
-        {/* Content Based on Selected View */}
         {view === "categories" && (
           <div>
             {tags.map((tag) => {
@@ -103,7 +128,9 @@ export default function Works() {
                 <section key={tag} className="mb-16">
                   <div className="mt-4 border-t border-gray-300 mb-[5px]" />
                   <h2 className="text-l md:text-2xl mb-6 capitalize">{tag}</h2>
-                  <Carousel images={taggedImages} />
+                  <div className="flex overflow-x-auto gap-x-[10vw] py-4 px-4">
+                    {taggedImages.map((img, index) => renderCategoryImage(img, index))}
+                  </div>
                 </section>
               );
             })}
