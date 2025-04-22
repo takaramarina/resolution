@@ -27,7 +27,7 @@ export const images: Image[] = [
   {
     id: 26,
     src: "/images/digi1.jpg",
-    title: "Tsumiki Drawing 1",
+    title: "Sugi",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -35,7 +35,7 @@ export const images: Image[] = [
   {
     id: 27,
     src: "/images/digi2.jpg",
-    title: "Tsumiki Drawing 2",
+    title: "Using Fingers",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -43,7 +43,7 @@ export const images: Image[] = [
   {
     id: 28,
     src: "/images/digi3.jpg",
-    title: "Tsumiki Drawing 3",
+    title: "Using Feet",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -59,7 +59,7 @@ export const images: Image[] = [
   {
     id: 29,
     src: "/images/digi4.jpg",
-    title: "Tsumiki Drawing 4",
+    title: "Three Selves",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -67,7 +67,7 @@ export const images: Image[] = [
   {
     id: 30,
     src: "/images/digi5.jpg",
-    title: "Tsumiki Drawing 5",
+    title: "Great Thanks",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -75,7 +75,7 @@ export const images: Image[] = [
   {
     id: 31,
     src: "/images/digi6.jpg",
-    title: "Tsumiki Drawing 6",
+    title: "Diagram of a Tinted Point",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -83,7 +83,7 @@ export const images: Image[] = [
   {
     id: 32,
     src: "/images/digi7.jpg",
-    title: "Tsumiki Drawing 7",
+    title: "Living",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -91,7 +91,7 @@ export const images: Image[] = [
   {
     id: 33,
     src: "/images/digi8.jpg",
-    title: "Tsumiki Drawing 8",
+    title: "Reflection",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -99,7 +99,7 @@ export const images: Image[] = [
   {
     id: 34,
     src: "/images/digi9.jpg",
-    title: "Tsumiki Drawing 9",
+    title: "Flexibility",
     tags: ["digital"],
     type: "image",
     url: undefined,
@@ -107,7 +107,7 @@ export const images: Image[] = [
   {
     id: 35,
     src: "/images/digi10.jpg",
-    title: "Tsumiki Drawing 10",
+    title: "Correctness Kills",
     tags: ["digital"],
     type: "image",
     url: undefined,

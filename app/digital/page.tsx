@@ -8,16 +8,18 @@ export default function DigitalPage() {
   const digitalItems = images.filter((img) => img.tags.includes("digital"));
 
   return (
-    <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
+    <div className="min-h-screen bg-white">
       <Header />
 
-      <main className="px-0 md:px-10 py-0 md:py-10">
-      <h1 className="text-2xl md:text-4xl font-semibold my-4 md:my-8 mx-4 md:mx-0">Digital Artput</h1>
-
+      <main>
+        <h1 className="text-2xl md:text-2xl font-semibold pl-5 md:pl-[60px] mt-2 mb-6">Digital Artput</h1>
         {digitalItems.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 md:gap-6">
+          <div className="flex overflow-x-auto whitespace-nowrap gap-6 px-6 snap-x snap-mandatory">
             {digitalItems.map((item, index) => (
-              <div key={index} className="w-full">
+              <div
+                key={index}
+                className="flex-shrink-0 w-auto flex flex-col justify-center items-center"
+              >
                 {item.type === "video" ? (
                   item.url ? (
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
@@ -26,7 +28,7 @@ export default function DigitalPage() {
                         loop
                         muted
                         playsInline
-                        className="w-full h-auto"
+                        className="object-contain max-h-[80vh] max-w-[80vw] h-[380px] w-auto md:max-h-[70vh] md:h-auto"
                       >
                         <source src={item.src} type="video/mp4" />
                         Your browser does not support the video tag.
@@ -38,7 +40,7 @@ export default function DigitalPage() {
                       loop
                       muted
                       playsInline
-                      className="w-full h-auto"
+                      className="object-contain max-h-[80vh] max-w-[80vw] h-[380px] w-auto md:max-h-[70vh] md:h-auto"
                     >
                       <source src={item.src} type="video/mp4" />
                       Your browser does not support the video tag.
@@ -46,16 +48,30 @@ export default function DigitalPage() {
                   )
                 ) : item.url ? (
                   <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    <img src={item.src} alt={`Artwork ${index}`} className="w-full object-cover" />
+                    <img
+                      src={item.src}
+                      alt={`Artwork ${index}`}
+                      className="object-contain max-h-[80vh] max-w-[80vw] h-[380px] w-auto md:max-h-[70vh] md:h-auto"
+                    />
                   </a>
                 ) : (
-                  <img src={item.src} alt={`Artwork ${index}`} className="w-full object-cover" />
+                  <img
+                    src={item.src}
+                    alt={`Artwork ${index}`}
+                    className="object-contain max-h-[80vh] max-w-[80vw] h-[380px] w-auto md:max-h-[70vh] md:h-auto"
+                  />
+                )}
+
+                {item.title && (
+                  <p className="mt-2 text-sm text-center text-gray-800 italic max-w-[80vw] px-2">
+                    {item.title}
+                  </p>
                 )}
               </div>
             ))}
           </div>
         ) : (
-          <p className="text-lg text-gray-500">No digital works available at the moment.</p>
+          <p className="text-lg text-gray-500 px-6">No digital works available at the moment.</p>
         )}
       </main>
 
