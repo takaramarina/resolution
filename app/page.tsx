@@ -30,7 +30,7 @@ export default function Home() {
           Works
         </a>
         <a
-          href="#digital"
+          href="/digital"
           className="text-black text-xl hover:underline hover:decoration-black"
         >
           Digital
@@ -42,7 +42,7 @@ export default function Home() {
           About
         </a>
         <a
-          href="#contact"
+          href="/contact"
           className="text-black text-xl hover:underline hover:decoration-black"
         >
           Contact
