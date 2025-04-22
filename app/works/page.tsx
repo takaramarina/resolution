@@ -4,7 +4,6 @@ import { useState } from "react";
 import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Carousel from "../../components/Carousel";
 
 const tags = ["Series: Rotation", "Series: Materiality", "drawings", "Series: Linguistic Characters", "collaboration"];
 
