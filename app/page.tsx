@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       )} */}
 
-      <div className="flex-grow overflow-auto flex flex-col items-start">
+      <div className="flex-grow overflow-auto flex flex-col items-start pt-[69px]">
         <div
           className="w-[1332px] sm:w-[2664px] aspect-[1332/1784] bg-no-repeat bg-top-left bg-contain"
           style={{
