@@ -4,9 +4,9 @@ import "./globals.css"
 import "keen-slider/keen-slider.min.css";  // <-- Keen Slider base styles
 // app/layout.tsx
 import "./globals.css";
-import { Cormorant_Garamond } from "next/font/google";
+import { Noto_Serif_JP } from "next/font/google";
 
-const cormorant = Cormorant_Garamond({
+const noto_serif_jp = Noto_Serif_JP({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-serif",
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={cormorant.className}>
+    <html lang="en" className={noto_serif_jp.className}>
       <body>{children}</body>
     </html>
   )

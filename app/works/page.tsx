@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 const tags = ["Series: Rotation", "Series: Materiality", "drawings", "Series: Linguistic Characters", "collaboration"];
 
 export default function Works() {
-  const [view, setView] = useState<"categories" | "seeAll" | "available">("seeAll");
+  const [view, setView] = useState<"categories" | "seeAll" | "available">("categories");
 
   const availableWorks = images.filter((img) => img.tags.includes("Available Works"));
 
@@ -93,7 +93,7 @@ export default function Works() {
         <div className="flex flex-wrap gap-2 my-8">
           <button
             onClick={() => setView("categories")}
-            className={`px-4 py-2 rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
+            className={`px-4 py-2 text-sm rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
               view === "categories" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
@@ -101,7 +101,7 @@ export default function Works() {
           </button>
           <button
             onClick={() => setView("available")}
-            className={`px-4 py-2 rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
+            className={`px-4 py-2 text-sm rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
               view === "available" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
@@ -109,7 +109,7 @@ export default function Works() {
           </button>
           <button
             onClick={() => setView("seeAll")}
-            className={`px-4 py-2 rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
+            className={`px-4 py-2 text-sm rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
               view === "seeAll" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >

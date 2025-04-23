@@ -18,7 +18,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center gap-6 text-lg">
+        <div className="hidden md:flex items-center gap-6 text-base">
           <Link href="/works" className="hover:underline">
             Works
           </Link>
@@ -31,7 +31,7 @@ export default function Header() {
           <Link href="/contact" className="hover:underline">
             Contact
           </Link>
-          <Link href="https://www.instagram.com/rei_dan/" aria-label="Instagram">
+          <Link href="https://www.instagram.com/shimanereiji/" aria-label="Instagram">
             <Instagram className="h-5 w-5" />
           </Link>
         </div>
@@ -53,7 +53,7 @@ export default function Header() {
       </div>
 
       {/* Thin gray line */}
-      <div className="border-b border-gray-300 mx-5 md:mx-[60px]" />
+      {/* <div className="border-b border-gray-300 mx-5 md:mx-[60px]" /> */}
 
       {/* Mobile Menu */}
       <div
@@ -62,20 +62,20 @@ export default function Header() {
         }`}
       >
         <div className="flex flex-col items-center">
-          <Link href="/works" className="py-2 text-lg hover:underline">
+          <Link href="/works" className="py-2 text-base hover:underline">
             Works
           </Link>
-          <Link href="/digital" className="py-2 text-lg hover:underline">
+          <Link href="/digital" className="py-2 text-base hover:underline">
             Digital
           </Link>
-          <Link href="/about" className="py-2 text-lg hover:underline">
+          <Link href="/about" className="py-2 text-base hover:underline">
             About
           </Link>
-          <Link href="/contact" className="py-2 text-lg hover:underline">
+          <Link href="/contact" className="py-2 text-base hover:underline">
             Contact
           </Link>
           <Link
-            href="https://www.instagram.com/rei_dan/"
+            href="https://www.instagram.com/shimanereiji/"
             aria-label="Instagram"
             className="py-2"
           >
