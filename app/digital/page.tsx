@@ -12,7 +12,7 @@ export default function DigitalPage() {
       <Header />
 
       <main>
-        <h1 className="text-2xl md:text-2xl font-semibold pl-5 md:pl-[60px] mt-2 mb-6">Digital Artput</h1>
+        {/* <h1 className="text-2xl md:text-2xl font-semibold pl-5 md:pl-[60px] mt-2 mb-6">Digital Artput</h1> */}
         {digitalItems.length > 0 ? (
           <div className="flex overflow-x-auto whitespace-nowrap gap-10 md:gap-20 px-6 snap-x snap-mandatory">
             {digitalItems.map((item, index) => (
