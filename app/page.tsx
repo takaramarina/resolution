@@ -67,12 +67,6 @@ export default function Home() {
             backgroundImage: "url('/images/hugedigital.jpg')",
           }}
         />
-        <div
-          className="w-[1332px] sm:w-[2664px] aspect-[2566/1800] bg-no-repeat bg-center bg-contain"
-          style={{
-            backgroundImage: "url('/images/cover.png')",
-          }}
-        />
       </div>
 
       <Footer />
