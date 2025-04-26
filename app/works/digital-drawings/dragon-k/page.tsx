@@ -7,7 +7,7 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/digital-drawing/Dragon-K.webp",  // Image source
+    src: "/images/digital-drawings/Dragon-K.webp",  // Image source
     title: "Reiji Shimane",
     artworkTitle: "Dragon-K",
     medium: "Digital drawing",
