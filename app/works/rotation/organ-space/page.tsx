@@ -8,7 +8,7 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details
   const artwork = {
-    src: "/images/rotation/Organ-Spaec.webp",  // Image source
+    src: "/images/rotation/Organ-Space.webp",  // Image source
     title: "Reiji Shimane",
     artworkTitle: "Rotation: Organ-Space",
     medium: "Ink and pastels on wood panel",
