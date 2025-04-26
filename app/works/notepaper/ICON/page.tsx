@@ -7,6 +7,7 @@ import Header from "../../../../components/Header";
 export default function Home() {
   const artwork = {
     src: "/images/notepaper/ICON.webp",
+    highres: "/images/notepaper/ICON.jpeg",
     title: "Reiji Shimane",
     artworkTitle: "ICON",
     medium: "Graphite on paper",
@@ -79,7 +80,7 @@ export default function Home() {
               src={artwork.src}
               alt={artwork.artworkTitle}
               className="max-h-[80vh] object-contain cursor-pointer"
-              onClick={() => handleImageClick(artwork.src)} // Trigger modal on click
+              onClick={() => handleImageClick(artwork.highres)} // Trigger modal on click
             />
           </div>
 

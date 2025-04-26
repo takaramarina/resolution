@@ -8,6 +8,7 @@ export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
     src: "/images/linguistic-characters/Resolution-in-Speech.webp",  // Image source
+    highres: "/images/linguistic-characters/ResolutionInSpeech.jpg",
     title: "Reiji Shimane",
     artworkTitle: "Resolution in Speech",
     medium: "Ink on Mounted Cork",
@@ -80,7 +81,7 @@ export default function Home() {
               src={artwork.src}
               alt={artwork.artworkTitle}
               className="max-h-[80vh] object-contain cursor-pointer"
-              onClick={() => handleImageClick(artwork.src)} // Trigger modal on click
+              onClick={() => handleImageClick(artwork.highres)} // Trigger modal on click
             />
           </div>
 

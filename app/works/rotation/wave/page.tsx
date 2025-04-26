@@ -9,6 +9,7 @@ export default function Home() {
   // Artwork details
   const artwork = {
     src: "/images/rotation/Wave.webp",  // Image source
+    highres: "/images/rotation/Wave.png",
     title: "Reiji Shimane",
     artworkTitle: "Rotation: Wave",
     medium: "Ink and pastels on wood panel",
@@ -76,7 +77,7 @@ export default function Home() {
         {/* Title */}
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex self-start cursor-pointer" 
-            onClick={() => handleImageClick(artwork.src)}>
+            onClick={() => handleImageClick(artwork.highres)}>
             <RotatingImage 
               src={artwork.src}
               alt="Round Art Piece" 

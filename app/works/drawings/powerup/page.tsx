@@ -8,6 +8,7 @@ export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
     src: "/images/drawings/PowerUp.webp",  // Image source
+    highres: "/images/drawings/PowerUp.jpeg",
     title: "Reiji Shimane",
     artworkTitle: "PowerUp",
     medium: "Ink, digital color on paper",
@@ -80,7 +81,7 @@ export default function Home() {
               src={artwork.src}
               alt={artwork.artworkTitle}
               className="max-h-[80vh] object-contain cursor-pointer"
-              onClick={() => handleImageClick(artwork.src)} // Trigger modal on click
+              onClick={() => handleImageClick(artwork.highres)} // Trigger modal on click
             />
           </div>
 
