@@ -7,7 +7,7 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/drawing/PowerUp.webp",  // Image source
+    src: "/images/drawings/PowerUp.webp",  // Image source
     title: "Reiji Shimane",
     artworkTitle: "PowerUp",
     medium: "Ink, digital color on paper",
