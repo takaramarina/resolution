@@ -22,9 +22,6 @@ export default function Header() {
           <Link href="/works" className="hover:underline">
             Works
           </Link>
-          <Link href="/digital" className="hover:underline">
-            Digital
-          </Link>
           <Link href="/about" className="hover:underline">
             About
           </Link>
@@ -64,9 +61,6 @@ export default function Header() {
         <div className="flex flex-col items-center">
           <Link href="/works" className="py-2 text-base hover:underline">
             Works
-          </Link>
-          <Link href="/digital" className="py-2 text-base hover:underline">
-            Digital
           </Link>
           <Link href="/about" className="py-2 text-base hover:underline">
             About

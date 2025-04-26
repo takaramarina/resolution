@@ -5,150 +5,74 @@ import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-const tags = ["Series: Rotation", "Series: Materiality", "drawings", "Series: Linguistic Characters", "collaboration"];
+const physicalTags = ["notepaper", "graphite", "rotation", "drawings", "linguistic-characters"];
+const digitalTags = ["tsumiki", "digital-drawings"];
 
 export default function Works() {
-  const [view, setView] = useState<"categories" | "seeAll" | "available">("categories");
+  const [view, setView] = useState<"physical" | "digital">("physical");
 
-  const availableWorks = images.filter((img) => img.tags.includes("Available Works"));
+  const renderSeriesPreview = (tag: string) => {
+    const seriesImages = images.filter((img) => img.tags.includes(tag));
+    if (seriesImages.length === 0) return null;
+    const previewImage = seriesImages[0];
+    const href = `/works/${tag.replace(/\s+/g, '-').toLowerCase()}`;
 
-  const renderImage = (img: { src: string; url?: string; title?: string }, index: number) => (
-    <div
-      key={index}
-      className="flex flex-col lg:flex-row w-full gap-4 items-center"
-    >
-      <div className="w-full lg:w-1/2 lg:flex lg:justify-end">
-        {img.url ? (
-          <a href={img.url} target="_blank" rel="noopener noreferrer">
+    return (
+      <div key={tag} className="flex flex-col md:flex-row w-full gap-8 mb-16 items-center md:items-center">
+        {/* Left Side: Image */}
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+          <a href={href}>
             <img
-              src={img.src}
-              className="w-full max-h-[80vh]"
-              style={{
-                width: "100%",
-                height: "auto",
-                objectFit: "contain",
-                imageRendering: "auto",
-              }}
-            />
-          </a>
-        ) : (
-          <img
-            src={img.src}
-            className="w-full max-h-[80vh]"
-            style={{
-              width: "100%",
-              height: "auto",
-              objectFit: "contain",
-              imageRendering: "auto",
-            }}
-          />
-        )}
-      </div>
-  
-      <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-        {img.title && (
-          <p className="text-base md:text-2xl mt-2 italic text-gray-800 text-center lg:text-left lg:mt-[55%] lg:ml-[10%]">
-            {img.title}
-          </p>
-        )}
-      </div>
-    </div>
-  );
-  
-  const renderCategoryImage = (img: { src: string; url?: string; title?: string }, index: number) => (
-    <div
-      key={index}
-      className="flex-shrink-0"
-    >
-      <div className="w-full flex justify-center">
-        {img.url ? (
-          <a href={img.url} target="_blank" rel="noopener noreferrer">
-            <img
-              src={img.src}
-              className="max-w-[80vw] max-h-[50vh] object-contain"
+              src={previewImage.src}
+              className="w-[400px] max-w-full h-auto object-contain"
               style={{ imageRendering: "auto" }}
+              alt={previewImage.title || tag}
             />
           </a>
-        ) : (
-          <img
-            src={img.src}
-            className="max-w-[80vw] max-h-[50vh] object-contain"
-            style={{ imageRendering: "auto" }}
-          />
-        )}
+        </div>
+
+        {/* Right Side: Text */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-4 md:px-0">
+          <h2 className="text-2xl font-semibold mb-4 capitalize">{tag.replace(/-/g, ' ')}</h2>
+          <a href={href} className="text-base underline hover:text-black transition">
+            See more →
+          </a>
+        </div>
       </div>
-      {img.title && (
-        <p className="text-sm md:text-base text-center italic text-gray-700 mt-2">
-          {img.title}
-        </p>
-      )}
-    </div>
-  );
-  
+    );
+  };
+
+  const selectedTags = view === "physical" ? physicalTags : digitalTags;
+
   return (
     <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
       <Header />
-      
+
       <main className="px-5 md:px-0">
-        <div className="flex flex-wrap gap-2 my-8">
+        {/* Toggle Buttons */}
+        <div className="flex justify-center my-8 gap-4 text-lg md:text-xl">
           <button
-            onClick={() => setView("categories")}
-            className={`px-4 py-2 text-sm rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
-              view === "categories" ? "bg-black text-white" : "bg-white text-black"
+            onClick={() => setView("physical")}
+            className={`px-6 py-3 border rounded-full transition font-medium ${
+              view === "physical" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
-            Categories
+            Physical
           </button>
           <button
-            onClick={() => setView("available")}
-            className={`px-4 py-2 text-sm rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
-              view === "available" ? "bg-black text-white" : "bg-white text-black"
+            onClick={() => setView("digital")}
+            className={`px-6 py-3 border rounded-full transition font-medium ${
+              view === "digital" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
-            Available
-          </button>
-          <button
-            onClick={() => setView("seeAll")}
-            className={`px-4 py-2 text-sm rounded-2xl border text-center flex-1 max-w-[110px] sm:max-w-[120px] md:max-w-[160px] ${
-              view === "seeAll" ? "bg-black text-white" : "bg-white text-black"
-            }`}
-          >
-            All Works
+            Digital
           </button>
         </div>
 
-        {view === "categories" && (
-          <div>
-            {tags.map((tag) => {
-              const taggedImages = images.filter((img) => img.tags.includes(tag));
-              if (taggedImages.length === 0) return null;
-
-              return (
-                <section key={tag} className="mb-16">
-                  <div className="mt-4 border-t border-gray-300 mb-[5px]" />
-                  <h2 className="text-l md:text-2xl mb-6 capitalize">{tag}</h2>
-                  <div className="flex overflow-x-auto gap-x-[10vw] py-4 px-4">
-                    {taggedImages.map((img, index) => renderCategoryImage(img, index))}
-                  </div>
-                </section>
-              );
-            })}
-          </div>
-        )}
-
-        {view === "seeAll" && (
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-y-[10vh] sm:gap-y-[10vh] gap-x-[5vw]">
-            {images
-              .filter((img) => !img.tags.includes("digital"))
-              .map((img, index) => renderImage(img, index))}
-          </div>
-        )}
-
-        {view === "available" && (
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-y-[10vh] sm:gap-y-[10vh] gap-x-[5vw]">
-            {availableWorks.map((img, index) => renderImage(img, index))}
-          </div>
-        )}
+        {/* Content */}
+        <div className="flex flex-col">
+          {selectedTags.map(renderSeriesPreview)}
+        </div>
       </main>
 
       <Footer />

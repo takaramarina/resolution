@@ -24,7 +24,7 @@ export default function Home() {
 
       <div className="flex-grow flex flex-col items-center justify-center text-center space-y-4 px-4">
         <img
-          src="/images/home.jpg"
+          src="/images/notepaper/T.webp"
           alt="Digital Artwork"
           className="h-[40vh] md:h-[60vh] object-contain"
         />
@@ -112,5 +112,5 @@ export default function Home() {
   Japanese is an odd language. Very expressive and encapsulating,
   or maybe I don't know English to its full potential...
   Anyway, the introduction page will feature Reiji's drawing(s).
-  
+
 */

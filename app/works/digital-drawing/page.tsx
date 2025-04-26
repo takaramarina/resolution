@@ -1,100 +1,67 @@
 "use client";
-import { useState, useRef } from "react";
-import PurchaseInquiryButton from '../../../components/PurchaseInquiryButton';
-import Footer from "../../../components/Footer";
+
+import { images } from "../../../data/imageData";
 import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 
-export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [imageSrc, setImageSrc] = useState("");
-  const imageRef = useRef<HTMLImageElement>(null);
-  const modalRef = useRef<HTMLDivElement>(null);
+export default function SeriesPage() {
+  // Convert URL slug into actual tag name
+  const seriesName = "digital-drawings";
+  const seriesImages = images.filter((img) => img.tags.includes(seriesName));
 
-  const handleImageClick = (src: string) => {
-    setImageSrc(src);
-    setIsModalOpen(true);
-  };
+  if (seriesImages.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p>Invalid series.</p>
+      </div>
+    );
+  }
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const seriesExcerpt = "";
 
   return (
-    <div className="min-h-screen bg-white mx-5 md:mx-[60px]">
+    <div className="min-h-screen bg-white mx-0 md:mx-[60px] mt-[69px]">
       <Header />
 
-      {/* Main Content */}
-      <main className="px-5 md:px-10">
-        {/* Title */}
-        <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
-          <div className="flex self-start cursor-pointer" 
-            onClick={() => handleImageClick("/images/digital.jpg")}>
-            <img 
-                src="/images/digital.jpg" 
-                alt="Digital Drawing" 
-                className="w-full h-auto object-cover"
-            />
-          </div>
+      <main className="px-5 md:px-0 my-12">
+        {/* Series Title and Excerpt */}
+        <h1 className="text-2xl md:text-4xl capitalize mb-6 text-center">{seriesName.replace(/-/g, ' ')}</h1>
+        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">{seriesExcerpt}</p>
 
-          {/* Modal for Full-screen Image */}
-          {isModalOpen && (
-            <div
-              ref={modalRef}
-              className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50"
-              onClick={closeModal} // Close modal when clicking on the background
-            >
-              <div
-                className="relative w-full h-full flex justify-center items-center"
-              >
-                {/* Close Button (X) */}
-                <button
-                  onClick={closeModal}
-                  className="absolute top-4 right-4 text-white text-3xl font-bold"
-                >
-                  &times; {/* The X */}
-                </button>
+        {/* Content */}
+        <div className="flex flex-col">
+          {seriesImages.map((img, index) => {
+            const pieceSlug = img.title ? img.title.replace(/\s+/g, "-").toLowerCase() : "untitled";
+            const pieceUrl = `/works/${seriesName}/${pieceSlug}`;
 
-                <img
-                  ref={imageRef}
-                  src={imageSrc}
-                  alt="Full-screen view"
-                  className="max-w-full max-h-full object-contain cursor-zoom-in"
-                  style={{
-                    transform: "scale(1)",
-                    transition: "transform 0.2s",
-                  }}
-                  onWheel={(e) => {
-                    e.preventDefault();
-                    const scale = e.deltaY < 0 ? 1.1 : 0.9;
-                    // Cast the event target to HTMLImageElement
-                    const imgElement = e.target as HTMLImageElement;
-                    imgElement.style.transform = `scale(${scale})`;
-                  }}
-                />
+            return (
+              <div key={index} className="flex flex-col md:flex-row w-full gap-8 mb-16 items-center md:items-center">
+                {/* Left Side: Image */}
+                <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+                  <a href={pieceUrl}>
+                    <img
+                      src={img.src}
+                      className="w-[400px] max-w-full h-auto object-contain"
+                      style={{ imageRendering: "auto" }}
+                      alt={img.title || "Untitled"}
+                    />
+                  </a>
+                </div>
+
+                {/* Right Side: Text */}
+                <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-4 md:px-0">
+                  <h2 className="text-2xl font-semibold mb-4 capitalize italic">{img.title || "Untitled"}</h2>
+                  <a href={pieceUrl} className="text-base underline hover:text-black transition">
+                    See more →
+                  </a>
+                </div>
               </div>
-            </div>
-          )}
-
-          {/* Text Content */}
-          <div className="flex flex-col gap-8">
-            <div className="text-xl font-bold">
-              Reiji Shimane <br />
-              <em>Digital Drawing</em>
-            </div>
-            <div className="text-lg">
-              Graphite on paper <br />
-              90cm x 50cm<br />
-              2024
-            </div>
-            <PurchaseInquiryButton artworkName="Digital Drawing"/>
-
-            <p className="text-lg leading-relaxed">
-              {/* explanation text */}
-            </p>
-          </div>
+            );
+          })}
         </div>
-        <Footer />
       </main>
+
+      <Footer />
     </div>
   );
 }
