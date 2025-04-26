@@ -2,12 +2,11 @@
 import { useState, useRef } from "react";
 import PurchaseInquiryButton from '../../../../components/PurchaseInquiryButton';
 import Footer from "../../../../components/Footer";
-import Header from "../../../../components/Header"; // Import the Header component
+import Header from "../../../../components/Header";
 
 export default function Home() {
-  // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/notepaper/ICON.webp",  // Image source
+    src: "/images/notepaper/ICON.webp",
     title: "Reiji Shimane",
     artworkTitle: "ICON",
     medium: "Graphite on paper",
