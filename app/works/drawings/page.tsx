@@ -52,7 +52,7 @@ export default function SeriesPage() {
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-4 md:px-0">
                   <h2 className="text-2xl font-semibold mb-4 capitalize italic">{img.title || "Untitled"}</h2>
                   <a href={pieceUrl} className="text-base underline hover:text-black transition">
-                    See more →
+                    See details →
                   </a>
                 </div>
               </div>
