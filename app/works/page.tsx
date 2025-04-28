@@ -33,7 +33,7 @@ export default function Works() {
 
         {/* Right Side: Text */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-4 md:px-0">
-          <h2 className="text-2xl font-semibold mb-4 capitalize">{tag.replace(/-/g, ' ')}</h2>
+          <h2 className="text-2xl font-semibold mb-4 capitalize">{'Series: ' + tag.replace(/-/g, ' ')}</h2>
           <a href={href} className="text-base underline hover:text-black transition">
             See more →
           </a>
