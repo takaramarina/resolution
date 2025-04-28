@@ -8,7 +8,7 @@ export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
     src: "/images/tsumiki/Using-Feet.webp",  // Image source
-    highres: "/images/tsumiki/Using-Feet.png",
+    highres: "/images/tsumiki/Using-Feet.jpg",
     title: "Reiji Shimane",
     artworkTitle: "Using Feet",
     medium: "Digital Drawing",

@@ -363,7 +363,7 @@ export const images: Image[] = [
 
     {
       id: 34,
-      src: "/images/tsumiki/Linguistic-Vehicle.webp",
+      src: "/images/digital-drawings/Linguistic-Vehicle.webp",
       title: "Linguistic Vehicle",
       tags: ["digital-drawings", "Digital"],
       type: "image",

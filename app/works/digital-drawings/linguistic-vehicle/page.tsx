@@ -7,8 +7,8 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/tsumiki/Linguistic-Vehicle.webp",  // Image source
-    highres: "/images/tsumiki/Linguistic-Vehicle.png",
+    src: "/images/digital-drawings/Linguistic-Vehicle.webp",  // Image source
+    highres: "/images/digital-drawings/Linguistic-Vehicle.png",
     title: "Reiji Shimane",
     artworkTitle: "Linguistic Vehicle",
     medium: "Digital Drawing",
