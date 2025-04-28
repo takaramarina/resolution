@@ -113,4 +113,19 @@ export default function Home() {
   or maybe I don't know English to its full potential...
   Anyway, the introduction page will feature Reiji's drawing(s).
 
+  There's a certain pathway that I like to take to gradually warm 
+  someone up to Reiji's art. It's exactly the same way that I was 
+  introduced to it myself. First, you get a bold, dark piece that
+  clearly demonstrates drawing skill in quite an objective way. 
+  When I first met him, Reiji showed me a charcoal drawing of a man,
+  the marks of formal training in its dessin. This is the first 
+  impression of the art practice where credibility is built, and
+  positions the artist within the sphere of innate ability. For 
+  this reason, I want the title page to contain a very dark and bold
+  pencil drawing, such as T. Regardless of the reason why you like
+  (or even dislike) Reiji's art, I will not allow for any questioning
+  of the objective drawing skills on this digital platform.
+
+  
+
 */
