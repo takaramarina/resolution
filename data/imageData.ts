@@ -32,6 +32,14 @@ export const images: Image[] = [
     url: "works/notepaper/Game.tsx"
   },
   {
+    id: 42,
+    src: "/images/notepaper/T.webp",
+    title: "T",
+    tags: ["notepaper", "Physical", "available works"],
+    type: "image",
+    url: "works/notepaper/t.tsx"
+  },
+  {
     id: 11,
     src: "/images/notepaper/Three-Selves.webp",
     title: "Three Selves",
@@ -46,14 +54,6 @@ export const images: Image[] = [
     tags: ["notepaper", "Physical", "available works"],
     type: "image",
     url: "works/notepaper/ICON.tsx"
-  },
-  {
-    id: 42,
-    src: "/images/notepaper/T.webp",
-    title: "T",
-    tags: ["notepaper", "Physical", "available works"],
-    type: "image",
-    url: "works/notepaper/t.tsx"
   },
   {
     id: 17,
