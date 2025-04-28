@@ -32,41 +32,6 @@ export default function Home() {
     setIsModalOpen(false);
   };
 
-  const handleMouseDown = (e: React.MouseEvent) => {
-    if (imageRef.current) {
-      setDragging(true);
-      setDragStart({ x: e.clientX, y: e.clientY });
-    }
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (dragging && imageRef.current) {
-      const deltaX = e.clientX - dragStart.x;
-      const deltaY = e.clientY - dragStart.y;
-
-      const imgElement = imageRef.current;
-      const currentTransform = imgElement.style.transform.replace(
-        /translate\((.*)\)/,
-        "$1"
-      );
-
-      const [currentX, currentY] = currentTransform
-        ? currentTransform
-            .slice(1, -1)
-            .split(", ")
-            .map((value) => parseFloat(value))
-        : [0, 0];
-
-      imgElement.style.transform = `translate(${currentX + deltaX}px, ${currentY + deltaY}px)`;
-
-      setDragStart({ x: e.clientX, y: e.clientY });
-    }
-  };
-
-  const handleMouseUp = () => {
-    setDragging(false);
-  };
-
   return (
     <div className="min-h-screen bg-white mx-5 md:mx-[60px]">
       <Header />
@@ -131,16 +96,6 @@ export default function Home() {
                   transform: "scale(1)",
                   transition: "transform 0.2s",
                 }}
-                onWheel={(e) => {
-                  e.preventDefault();
-                  const scale = e.deltaY < 0 ? 1.1 : 0.9;
-                  // Cast the event target to HTMLImageElement
-                  const imgElement = e.target as HTMLImageElement;
-                  imgElement.style.transform = `scale(${scale})`;
-                }}
-                onMouseDown={handleMouseDown} // Start dragging
-                onMouseMove={handleMouseMove} // Move the image
-                onMouseUp={handleMouseUp} // Stop dragging
               />
             </div>
           </div>
