@@ -8,7 +8,7 @@ export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
     src: "/images/notepaper/ICON.webp",  // Image source
-    highres: "/images/notepaper/ICON.jpg",
+    highres: "/images/notepaper/ICON.jpeg",
     title: "Reiji Shimane",
     artworkTitle: "ICON",
     medium: "Graphite on paper",

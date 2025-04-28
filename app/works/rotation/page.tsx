@@ -20,12 +20,14 @@ export default function SeriesPage() {
   const seriesExcerpt = "";
 
   return (
-    <div className="min-h-screen bg-white mx-0 md:mx-[60px] mt-[69px]">
+    <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
       <Header />
 
-      <main className="px-5 md:px-0 my-12">
+      <main className="px-5 md:px-0">
         {/* Series Title and Excerpt */}
-        <h1 className="text-2xl md:text-4xl capitalize mb-6 text-center">{seriesName.replace(/-/g, ' ')}</h1>
+        <h1 className="text-3xl font-bold text-center mt-10 mb-8 tracking-tight capitalize">
+          {'Series: ' + seriesName.replace(/-/g, ' ')}
+        </h1>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">{seriesExcerpt}</p>
 
         {/* Content */}
