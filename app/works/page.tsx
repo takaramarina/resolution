@@ -49,8 +49,12 @@ export default function Works() {
       <Header />
 
       <main className="px-5 md:px-0">
+        <h1 className="text-3xl font-bold text-center mt-10 mb-8 tracking-tight">
+          Works
+        </h1>
+
         {/* Tabs */}
-        <div className="flex justify-center mt-8 mb-8">
+        <div className="flex justify-center mb-8">
           <div className="flex border-b border-gray-300 w-full max-w-md">
             <button
               onClick={() => setView("physical")}
