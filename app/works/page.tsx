@@ -49,25 +49,32 @@ export default function Works() {
       <Header />
 
       <main className="px-5 md:px-0">
-        {/* Toggle Buttons */}
-        <div className="flex justify-center my-8 gap-4 text-lg md:text-xl">
-          <button
-            onClick={() => setView("physical")}
-            className={`px-6 py-3 border rounded-full transition font-medium ${
-              view === "physical" ? "bg-black text-white" : "bg-white text-black"
-            }`}
-          >
-            Physical
-          </button>
-          <button
-            onClick={() => setView("digital")}
-            className={`px-6 py-3 border rounded-full transition font-medium ${
-              view === "digital" ? "bg-black text-white" : "bg-white text-black"
-            }`}
-          >
-            Digital
-          </button>
+        {/* Tabs */}
+        <div className="flex justify-center mt-8 mb-8">
+          <div className="flex border-b border-gray-300 w-full max-w-md">
+            <button
+              onClick={() => setView("physical")}
+              className={`flex-1 py-3 text-center transition font-medium ${
+                view === "physical"
+                  ? "border-b-2 border-black text-black"
+                  : "text-gray-500 hover:text-black"
+              }`}
+            >
+              Physical
+            </button>
+            <button
+              onClick={() => setView("digital")}
+              className={`flex-1 py-3 text-center transition font-medium ${
+                view === "digital"
+                  ? "border-b-2 border-black text-black"
+                  : "text-gray-500 hover:text-black"
+              }`}
+            >
+              Digital
+            </button>
+          </div>
         </div>
+
 
         {/* Content */}
         <div className="flex flex-col">
