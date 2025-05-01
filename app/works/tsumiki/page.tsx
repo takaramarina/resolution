@@ -39,7 +39,7 @@ export default function SeriesPage() {
             return (
               <div key={index} className="flex flex-col md:flex-row w-full gap-8 mb-16 items-center md:items-center">
                 {/* Left Side: Image */}
-                <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+                <div className="w-[60vw] md:w-1/2 flex justify-center md:justify-end">
                   <a href={pieceUrl}>
                     <img
                       src={img.src}

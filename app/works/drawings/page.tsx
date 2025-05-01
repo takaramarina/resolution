@@ -43,7 +43,7 @@ export default function SeriesPage() {
                   <a href={pieceUrl}>
                     <img
                       src={img.src}
-                      className="w-[400px] max-w-full h-auto object-contain"
+                      className="w-[60vw] md:w-[400px] max-w-full h-auto object-contain"
                       style={{ imageRendering: "auto" }}
                       alt={img.title || "Untitled"}
                     />
