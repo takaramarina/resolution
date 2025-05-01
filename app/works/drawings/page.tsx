@@ -37,7 +37,7 @@ export default function SeriesPage() {
             const pieceUrl = `/works/${seriesName}/${pieceSlug}`;
 
             return (
-              <div key={index} className="flex flex-col md:flex-row w-full gap-8 mb-16 items-center md:items-center">
+              <div key={index} className="flex flex-col md:flex-row w-full gap-8 my-[7vh] items-center md:items-center">
                 {/* Left Side: Image */}
                 <div className="w-full md:w-1/2 flex justify-center md:justify-end">
                   <a href={pieceUrl}>
@@ -52,8 +52,8 @@ export default function SeriesPage() {
 
                 {/* Right Side: Text */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-4 md:px-0">
-                  <h2 className="text-2xl font-semibold mb-4 capitalize italic">{img.title || "Untitled"}</h2>
-                  <a href={pieceUrl} className="text-base underline hover:text-black transition">
+                  <h2 className="text-base md:text-2xl font-semibold mb-4 capitalize italic">{img.title || "Untitled"}</h2>
+                  <a href={pieceUrl} className="text-sm text-base underline hover:text-black transition">
                     See details →
                   </a>
                 </div>
