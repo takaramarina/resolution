@@ -17,7 +17,16 @@ export default function SeriesPage() {
     );
   }
 
-  const seriesExcerpt = "";
+  const seriesExcerpt = `Media from a perspective of decades later. 
+If the medium as a material is the main audience of all expression, 
+this is a perspective that corroborates the personality of digital material. 
+
+To trust digital world as the level of peak satisfaction, 
+I first need to treat it like a woman, 
+providing the concept of death by insisting my expression to continue forever. 
+
+Here Digital art is defined to exposes functions in humanity as a vehicle of information, 
+acting as a point of 4 dimensional reference to package  explanation Of art  in each Era.`
 
   return (
     <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
