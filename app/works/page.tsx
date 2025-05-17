@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 const physicalTags = ["notepaper", "graphite", "rotation", "drawings", "linguistic-characters"];
-const digitalTags = ["tsumiki", "digital-drawings"];
+const digitalTags = ["tsumiki", "digital-drawings", "frog"];
 
 export default function Works() {
   const [view, setView] = useState<"physical" | "digital" | "all">("all");
