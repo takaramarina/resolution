@@ -760,7 +760,7 @@ export const images: Artwork[] = [
 {
   id: 50,
   slug: "suna-asobi",
-  src: "/images/frog/砂遊び.JPG",
+  src: "/images/frog/砂遊び.JPG",
       artist: "Reiji Shimane",
   title: "砂遊び",
   medium: "Digital drawing",
