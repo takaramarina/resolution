@@ -7,10 +7,10 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/graphite/Digital-Drawing.webp",  // Image source
-    highres: "/images/graphite/Digital-Drawing.jpg", 
+    src: "/images/drawings/Physical-Drawing.webp",  // Image source
+    highres: "/images/drawings/Physical-Drawing.jpg",
     title: "Reiji Shimane",
-    artworkTitle: "Digital Drawing",
+    artworkTitle: "Physical Drawing",
     medium: "Graphite on paper",
     dimensions: "90cm x 50cm",
     year: 2025,

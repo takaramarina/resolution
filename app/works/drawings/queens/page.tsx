@@ -5,15 +5,14 @@ import Footer from "../../../../components/Footer";
 import Header from "../../../../components/Header"; // Import the Header component
 
 export default function Home() {
-  // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/graphite/Physical-Drawing.webp",  // Image source
-    highres: "/images/graphite/Physical-Drawing.jpg",
+    src: "/images/drawings/Queens.webp",  // Image source
+    highres: "/images/drawings/Queens.jpg",
     title: "Reiji Shimane",
-    artworkTitle: "Physical Drawing",
-    medium: "Graphite on paper",
+    artworkTitle: "Queens",
+    medium: "Graphite on paper, tape, adhesive sheet",
     dimensions: "90cm x 50cm",
-    year: 2025,
+    year: 2024,
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false);

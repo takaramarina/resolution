@@ -7,13 +7,13 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/graphite/Queens.webp",  // Image source
-    highres: "/images/graphite/Queens.jpg",
+    src: "/images/drawings/Digital-Drawing.webp",  // Image source
+    highres: "/images/drawings/Digital-Drawing.jpg", 
     title: "Reiji Shimane",
-    artworkTitle: "Queens",
-    medium: "Graphite on paper, tape, adhesive sheet",
+    artworkTitle: "Digital Drawing",
+    medium: "Graphite on paper",
     dimensions: "90cm x 50cm",
-    year: 2024,
+    year: 2025,
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false);

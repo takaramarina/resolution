@@ -13,8 +13,8 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex flex-col bg-white">
       <div className="flex items-center justify-between px-5 py-5 md:px-[60px]">
-        <div className="text-xl font-bold">
-          <Link href="/">REIJI SHIMANE</Link>
+        <div className="text-l font-bold">
+          <Link href="/">Reiji Shimane</Link>
         </div>
 
         {/* Desktop Navigation Links */}
@@ -50,7 +50,7 @@ export default function Header() {
       </div>
 
       {/* Thin gray line */}
-      {/* <div className="border-b border-gray-300 mx-5 md:mx-[60px]" /> */}
+      <div className="border-b border-gray-300 mx-5 md:mx-[60px]" />
 
       {/* Mobile Menu */}
       <div

@@ -4,112 +4,61 @@ import { useState } from "react";
 import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import SeriesCarousel from "@/components/SeriesCarousel";
 
-const physicalTags = ["notepaper", "graphite", "rotation", "drawings", "linguistic-characters"];
-const digitalTags = ["tsumiki", "digital-drawings", "frog"];
+const allTags = [
+  "rotation",
+  "notepaper",
+  "graphite",
+  "drawings",
+  "linguistic-characters",
+  "tsumiki",
+  "digital-drawings",
+  "frog",
+];
 
 export default function Works() {
-  const [view, setView] = useState<"physical" | "digital" | "all">("all");
+  const [filterAvailable, setFilterAvailable] = useState(false);
 
   const renderSeriesPreview = (tag: string) => {
-    const seriesImages = images.filter((img) => img.tags.includes(tag));
+    let seriesImages = images.filter((img) => img.tags.includes(tag));
+    if (filterAvailable) {
+      seriesImages = seriesImages.filter((img) => img.tags.includes("available works"));
+    }
     if (seriesImages.length === 0) return null;
-    const previewImage = seriesImages[0];
-    const href = `/works/${tag.replace(/\s+/g, '-').toLowerCase()}`;
 
     return (
-      <div key={tag} className="flex flex-col md:flex-row w-full gap-8 mb-16 items-center md:items-center">
-        {/* Left Side: Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <a href={href}>
-            <img
-              src={previewImage.src}
-              className="w-[400px] max-w-full h-auto object-contain"
-              style={{ imageRendering: "auto" }}
-              alt={previewImage.title || tag}
-            />
-          </a>
-        </div>
+      <div key={tag} className="flex flex-col w-full gap-8 mb-20 items-left">
+        <h2 className="text-lg font-bold capitalize text-left">
+          {tag.replace(/-/g, " ")}
+        </h2>
 
-        {/* Right Side: Text */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-4 md:px-0">
-          <h2 className="text-2xl font-semibold mb-4 capitalize">{'Series: ' + tag.replace(/-/g, ' ')}</h2>
-          <a href={href} className="text-base underline hover:text-black transition">
-            See more →
-          </a>
-        </div>
+        <SeriesCarousel images={seriesImages} />
       </div>
     );
   };
-
-  // Select tags based on view
-  const selectedTags =
-    view === "physical"
-      ? physicalTags
-      : view === "digital"
-      ? digitalTags
-      : []; // for "all" we will show everything individually
 
   return (
     <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
       <Header />
 
       <main className="px-5 md:px-0">
-        <h1 className="text-3xl font-bold text-center mt-10 mb-8 tracking-tight">
+        <h1 className="text-xl md:text-3xl font-bold text-left mt-10 mb-8 tracking-tight">
           Works
         </h1>
 
-        {/* Tabs */}
-        <div className="flex justify-center mb-8">
-          <div className="flex border-b border-gray-300 w-full max-w-md">
-            {["physical", "digital", "all"].map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setView(tab as "physical" | "digital" | "all")}
-                className={`flex-1 py-3 text-center transition font-medium capitalize ${
-                  view === tab
-                    ? "border-b-2 border-black text-black"
-                    : "text-gray-500 hover:text-black"
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
+        <div className="fixed top-[10vh] right-4 z-50">
+          <button
+            onClick={() => setFilterAvailable(!filterAvailable)}
+            className="px-4 py-2 border border-gray-300 bg-white shadow-md rounded text-sm hover:bg-gray-100 transition"
+          >
+            {filterAvailable ? "Show All Works" : "Filter by Available Works"}
+          </button>
         </div>
 
         {/* Content */}
         <div className="flex flex-col">
-          {view === "all"
-            ? images.map((img, index) => {
-                const tag = img.tags[0] || "untitled";
-                const href = img.url ? `/${img.url.replace(/\.tsx$/, "").toLowerCase()}` : "#";
-
-                return (
-                  <div key={index} className="flex flex-col md:flex-row w-full gap-8 mb-16 items-center md:items-center">
-                    {/* Image */}
-                    <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                      <a href={href}>
-                        <img
-                          src={img.src}
-                          className="w-[400px] max-w-full h-auto object-contain"
-                          style={{ imageRendering: "auto" }}
-                          alt={img.title || tag}
-                        />
-                      </a>
-                    </div>
-
-                    {/* Text */}
-                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-4 md:px-0">
-                      <h2 className="text-2xl font-semibold mb-4 capitalize">{img.title || "Untitled"}</h2>
-                      <a href={href} className="text-base underline hover:text-black transition">
-                        See details →
-                      </a>
-                    </div>
-                  </div>
-                );
-              })
-            : selectedTags.map(renderSeriesPreview)}
+          {allTags.map(renderSeriesPreview)}
         </div>
       </main>
 
