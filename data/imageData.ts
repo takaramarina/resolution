@@ -22,20 +22,6 @@ export const images: Artwork[] = [
   */  
 
   {
-    id: 21,
-    slug: "Electro",
-    src: "/images/rotation/Electro.webp",
-    artist: "Reiji Shimane",
-    title: "Electro",
-    medium: "Ink and oil pastels on wood panel",
-    dimensions: "90cm x 90cm x 2cm",
-    year: 2025,
-    description: "",
-    tags: ["rotation", "Physical"],
-    
-    url: "works/rotation/Electro.tsx"
-  },
-  {
     id: 20,
     slug: "Adventure",
     src: "/images/rotation/Adventure.webp",
@@ -48,6 +34,20 @@ export const images: Artwork[] = [
     tags: ["rotation", "Physical", "available works"],
     
     url: "works/rotation/Adventure.tsx"
+  },
+  {
+    id: 21,
+    slug: "Electro",
+    src: "/images/rotation/Electro.webp",
+    artist: "Reiji Shimane",
+    title: "Electro",
+    medium: "Ink and oil pastels on wood panel",
+    dimensions: "90cm x 90cm x 2cm",
+    year: 2025,
+    description: "",
+    tags: ["rotation", "Physical"],
+    
+    url: "works/rotation/Electro.tsx"
   },
   {
     id: 24,

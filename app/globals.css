@@ -6,8 +6,10 @@ body {
   font-family: var(--font-serif), serif;
   color: #333;
 }
+
 main {
   margin-top: 10vh; /* smaller space for mobile */
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {

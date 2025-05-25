@@ -91,7 +91,6 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
           ))}
         </div>
       </div>
-      <div className="border-b border-gray-300 md:mx-[60px] pt-8" />
     </div>
   );
 }

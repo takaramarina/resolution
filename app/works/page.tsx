@@ -29,6 +29,7 @@ export default function Works() {
 
     return (
       <div key={tag} className="flex flex-col w-full gap-8 mb-20 items-left">
+        <div className="border-b border-gray-300 md:mx-[60px]" />
         <h2 className="text-lg font-bold capitalize text-left">
           {tag.replace(/-/g, " ")}
         </h2>
@@ -43,16 +44,16 @@ export default function Works() {
       <Header />
 
       <main className="px-5 md:px-0">
-        <h1 className="text-xl md:text-3xl font-bold text-left mt-10 mb-8 tracking-tight">
+        <h1 className="text-2xl md:text-3xl font-bold text-left mt-10 mb-4 tracking-tight">
           Works
         </h1>
 
         {/* <div className="fixed top-[10vh] right-4 z-50"> */}
           <button
             onClick={() => setFilterAvailable(!filterAvailable)}
-            className="px-4 py-2 border border-gray-300 bg-white shadow-md rounded text-sm hover:bg-gray-100 transition"
+            className="px-4 py-2 border mb-6 border-gray-300 bg-white rounded text-sm hover:bg-gray-100 transition"
           >
-            {filterAvailable ? "Show All Works" : "Filter by Available Works"}
+            {filterAvailable ? "Show All Works" : "Show Available Works"}
           </button>
         {/* </div> */}
 
