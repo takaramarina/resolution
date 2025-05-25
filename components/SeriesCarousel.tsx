@@ -6,9 +6,9 @@ import { Artwork } from '@/data/imageData';
 
 export default function SeriesCarousel({ images }: { images: Artwork[] }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true });
   const [thumbRef, thumbApi] = useEmblaCarousel({
-    dragFree: true,
+    dragFree: true
   });
 
   const onSelect = useCallback(() => {
@@ -72,12 +72,8 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
       </div>
 
       {/* Thumbnails */}
-      <div
-        className="mt-4 overflow-x-auto"
-        ref={thumbRef}
-        style={{ WebkitOverflowScrolling: "touch" }}
-        >
-        <div className="flex flex-nowrap gap-2 px-1 w-max">
+      <div className="mt-4 overflow-hidden" ref={thumbRef}>
+        <div className="flex flex-nowrap gap-2 px-1">
           {images.map((img, index) => (
             <button
               key={index}
