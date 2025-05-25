@@ -11,7 +11,7 @@ export default function Home() {
     highres: "/images/drawings/World-History.png",
     title: "Reiji Shimane",
     artworkTitle: "World History",
-    medium: "Ink on paper",
+    medium: "Exclusive edition print",
     dimensions: "90cm x 50cm",
     year: 2024,
   };

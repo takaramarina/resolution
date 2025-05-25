@@ -94,7 +94,7 @@ export default function AvailableWorks() {
                 collect your artifacts, and believe in your intuition of desire in motion to listen to the best version of your
                 world.
             </div> */}
-            {renderSeriesPreview("frog")}
+            {renderSeriesPreview("print")}
         </div>
       </main>
 

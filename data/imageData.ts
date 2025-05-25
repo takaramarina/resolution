@@ -386,7 +386,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/aozora-kyoushitsu.tsx"
   },
@@ -400,7 +400,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/mon.tsx"
   },
@@ -415,7 +415,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-      tags: ["Digital", "frog", "available works"],
+      tags: ["Digital", "frog", "print", "available works"],
       url: "works/frog/akago.tsx"
     },
   {
@@ -428,7 +428,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/keisatsu.tsx"
   },
@@ -442,7 +442,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/hyoushoushiki.tsx"
   },
@@ -456,7 +456,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/rakugaki.tsx"
   },
@@ -470,7 +470,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/ehon.tsx"
   },
@@ -484,7 +484,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/suna-asobi.tsx"
   },
@@ -498,7 +498,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/eiga.tsx"
   },
@@ -512,7 +512,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/kazoku-foto.tsx"
   },
@@ -526,7 +526,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/bosu.tsx"
   },
@@ -540,7 +540,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/sabori.tsx"
   },
@@ -554,7 +554,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/koma.tsx"
   },
@@ -568,7 +568,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital", "available works"],
+    tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/new-zukkoke.tsx"
   },
@@ -585,11 +585,11 @@ export const images: Artwork[] = [
     src: "/images/drawings/World-History.webp",
     artist: "Reiji Shimane",
     title: "World History",
-    medium: "Ink on paper",
+    medium: "Exclusive edition print",
     dimensions: "90cm x 50cm",
     year: 2024,
     description: "",
-    tags: ["drawings", "Physical"],
+    tags: ["drawings", "Physical", "print", "available works"],
     
     url: "works/drawings/World-History.tsx"
   },
