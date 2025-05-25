@@ -12,7 +12,7 @@ export default function Home() {
     title: "Reiji Shimane",
     artworkTitle: "Stretching Time to Be On Time",
     medium: "Ink on Mounted Cork",
-    dimensions: "90cm x 50cm",
+    dimensions: "60cm x 90cm",
     year: 2024,
   };
 

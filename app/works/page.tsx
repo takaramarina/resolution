@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { images } from "../../data/imageData";
 import Header from "../../components/Header";
@@ -49,12 +50,12 @@ export default function Works() {
         </h1>
 
         {/* <div className="fixed top-[10vh] right-4 z-50"> */}
-          <button
-            onClick={() => setFilterAvailable(!filterAvailable)}
-            className="px-4 py-2 border mb-6 border-gray-300 bg-white rounded text-sm hover:bg-gray-100 transition"
+          <Link
+            href="/available-works"
+            className="inline-block px-4 py-2 border mb-6 border-gray-300 bg-white rounded text-sm hover:bg-gray-100 transition"
           >
-            {filterAvailable ? "See All Works" : "See Available Works"}
-          </button>
+            See Available Works
+          </Link>
         {/* </div> */}
 
         {/* Content */}

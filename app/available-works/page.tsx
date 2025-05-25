@@ -61,6 +61,30 @@ export default function AvailableWorks() {
                 
             </div>
         </div>
+        <div className="border-b border-gray-300 md:mx-[60px] my-4" />
+        <div className="flex flex-col gap-4">
+            {/* rotation */}
+            <div className="text-lg font-bold capitalize text-left mb-4">
+                Series: Linguistic Characters
+            </div>
+            {/* <img
+                src="images/linguistic-characters/linguistic-character.webp"
+                alt="Linguistic characters"
+                className="w-[100vw] md:w-72"
+            /> */}
+            <div className="text-left text-sm">
+                In the digital age, renovate the limit of language. Ignite your words, be part of a big conversation,
+                collect your artifacts, and believe in your intuition of desire in motion to listen to the best version of your
+                world.
+            </div>
+            <a href="documents/linguistic-characters-statement.pdf" target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm underline hover:text-blue-800"
+                >
+                View Artist Statement (PDF)
+            </a>
+            {renderSeriesPreview("linguistic-characters")}
+        </div>
       </main>
 
       <Footer />

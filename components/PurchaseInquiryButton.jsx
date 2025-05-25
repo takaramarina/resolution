@@ -35,7 +35,7 @@ export default function PurchaseInquiryButton({ artworkName }) {
     <div className="relative">
       <button 
         onClick={() => setIsOpen(true)}
-        className="px-6 py-3 text-sm bg-white border border-black rounded text-black font-semibold hover:bg-gray-400 transition"
+        className="px-4 py-2 text-sm bg-white border border-gray-300 rounded text-black hover:bg-gray-400 transition"
       >
         Inquire
       </button>
