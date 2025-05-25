@@ -8,7 +8,7 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const [thumbRef, thumbApi] = useEmblaCarousel({
-    containScroll: 'keepSnaps',
+    containScroll: 'trimSnaps',
     dragFree: true,
   });
 
