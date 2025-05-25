@@ -13,7 +13,7 @@ const allTags = [
   "graphite",
   "drawings",
   "linguistic-characters",
-  "tsumiki",
+  // "tsumiki",
   "digital-drawings",
   "frog",
 ];

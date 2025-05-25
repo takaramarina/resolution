@@ -96,7 +96,7 @@ export default function Home() {
               {artwork.dimensions}<br />
               {artwork.year}
             </div>
-            <PurchaseInquiryButton artworkName={artwork.artworkTitle} />
+            {/* <PurchaseInquiryButton artworkName={artwork.artworkTitle} /> */}
 
             <p className="text-lg leading-relaxed">
               {/* Additional description or details can go here */}

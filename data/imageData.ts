@@ -699,7 +699,7 @@ export const images: Artwork[] = [
     dimensions: "",
     year: 2024,
     description: "",
-    tags: ["tsumiki", "Digital"],
+    tags: ["tsumiki", "digital-drawings", "Digital"],
     
     url: "works/tsumiki/sugi"
   },
@@ -713,7 +713,7 @@ export const images: Artwork[] = [
     dimensions: "",
     year: 2024,
     description: "",
-    tags: ["tsumiki", "Digital"],
+    tags: ["tsumiki", "digital-drawings", "Digital"],
     
     url: "works/tsumiki/using-fingers"
   },
@@ -727,7 +727,7 @@ export const images: Artwork[] = [
     dimensions: "",
     year: 2024,
     description: "",
-    tags: ["tsumiki", "Digital"],
+    tags: ["tsumiki", "digital-drawings", "Digital"],
     
     url: "works/tsumiki/using-feet"
   },
@@ -741,7 +741,7 @@ export const images: Artwork[] = [
     dimensions: "",
     year: 2024,
     description: "",
-    tags: ["tsumiki", "Digital"],
+    tags: ["tsumiki", "digital-drawings", "Digital"],
     
     url: "works/tsumiki/diagram-of-a-tinted-point"
   },
@@ -755,7 +755,7 @@ export const images: Artwork[] = [
     dimensions: "",
     year: 2024,
     description: "",
-    tags: ["tsumiki", "Digital"],
+    tags: ["tsumiki", "digital-drawings", "Digital"],
     
     url: "works/tsumiki/living"
   },
@@ -769,7 +769,7 @@ export const images: Artwork[] = [
     dimensions: "",
     year: 2024,
     description: "",
-    tags: ["tsumiki", "Digital"],
+    tags: ["tsumiki", "digital-drawings", "Digital"],
     
     url: "works/tsumiki/reflection"
   },
@@ -783,7 +783,7 @@ export const images: Artwork[] = [
     dimensions: "",
     year: 2024,
     description: "",
-    tags: ["tsumiki", "Digital"],
+    tags: ["tsumiki", "digital-drawings", "Digital"],
     
     url: "works/tsumiki/flexiblity"
   },
@@ -797,7 +797,7 @@ export const images: Artwork[] = [
     dimensions: "",
     year: 2024,
     description: "",
-    tags: ["tsumiki", "Digital"],
+    tags: ["tsumiki", "digital-drawings", "Digital"],
     
     url: "works/tsumiki/correctness-kills"
   },
