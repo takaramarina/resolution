@@ -46,7 +46,6 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["rotation", "Physical"],
-    
     url: "works/rotation/Electro.tsx"
   },
   {

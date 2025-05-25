@@ -53,7 +53,7 @@ export default function Works() {
             onClick={() => setFilterAvailable(!filterAvailable)}
             className="px-4 py-2 border mb-6 border-gray-300 bg-white rounded text-sm hover:bg-gray-100 transition"
           >
-            {filterAvailable ? "Show All Works" : "Show Available Works"}
+            {filterAvailable ? "See All Works" : "See Available Works"}
           </button>
         {/* </div> */}
 
