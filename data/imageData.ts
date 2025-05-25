@@ -168,6 +168,20 @@ export const images: Artwork[] = [
     url: "works/notepaper/Junichiro-Tanizaki.tsx"
   },
   {
+    id: 41,
+    slug: "Karajan",
+    src: "/images/notepaper/Karajan.webp",
+    artist: "Reiji Shimane",
+    title: "Karajan",
+    medium: "Graphite on paper",
+    dimensions: "210mm x 297mm",
+    year: 2025,
+    description: "",
+    tags: ["notepaper", "Physical", "available works"],
+    
+    url: "works/notepaper/Karajan.tsx"
+  },
+  {
     id: 18,
     slug: "Luck-of-the-Draw",
     src: "/images/notepaper/Luck-of-the-Draw.webp",
@@ -192,7 +206,7 @@ export const images: Artwork[] = [
     dimensions: "210mm x 297mm",
     year: 2025,
     description: "",
-    tags: ["notepaper", "Physical", "available works"],
+    tags: ["notepaper", "Physical"],
     url: "works/notepaper/Game.tsx"
   },
   {
@@ -251,27 +265,14 @@ export const images: Artwork[] = [
     tags: ["notepaper", "Physical", "available works"],
     url: "works/notepaper/On-Flow.tsx"
   },
-  {
-    id: 41,
-    slug: "Karajan",
-    src: "/images/notepaper/Karajan.webp",
-    artist: "Reiji Shimane",
-    title: "Karajan",
-    medium: "Graphite on paper",
-    dimensions: "210mm x 297mm",
-    year: 2025,
-    description: "",
-    tags: ["notepaper", "Physical", "available works"],
-    
-    url: "works/notepaper/Karajan.tsx"
-  },
+  
   {
     id: 12,
     slug: "Great-Thanks",
     src: "/images/notepaper/Great-Thanks.webp",
     artist: "Reiji Shimane",
     title: "Great Thanks",
-    medium: "Graphite on paper",
+    medium: "Graphite, ink, and colored pencil on paper",
     dimensions: "210mm x 297mm",
     year: 2025,
     description: "",
@@ -307,20 +308,20 @@ export const images: Artwork[] = [
     
     url: "works/notepaper/Common-Sense.tsx"
   },
-  {
-    id: 16,
-    slug: "Strong-Canvas",
-    src: "/images/notepaper/Strong-Canvas.webp",
-    artist: "Reiji Shimane",
-    title: "Strong Canvas",
-    medium: "Ink on paper",
-    dimensions: "210mm x 297mm",
-    year: 2024,
-    description: "",
-    tags: ["notepaper", "Physical", "available works"],
+  // {
+  //   id: 16,
+  //   slug: "Strong-Canvas",
+  //   src: "/images/notepaper/Strong-Canvas.webp",
+  //   artist: "Reiji Shimane",
+  //   title: "Strong Canvas",
+  //   medium: "Ink on paper",
+  //   dimensions: "210mm x 297mm",
+  //   year: 2024,
+  //   description: "",
+  //   tags: ["notepaper", "Physical", "available works"],
     
-    url: "works/notepaper/Strong-Canvas.tsx"
-  },
+  //   url: "works/notepaper/Strong-Canvas.tsx"
+  // },
 
   /* 
     ============================================================
@@ -386,7 +387,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/aozora-kyoushitsu.tsx"
   },
@@ -400,7 +401,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/mon.tsx"
   },
@@ -415,7 +416,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "A raw and introspective rendering of infancy and vulnerability.",
-      tags: ["Digital", "frog"],
+      tags: ["Digital", "frog", "available works"],
       url: "works/frog/akago.tsx"
     },
   {
@@ -428,7 +429,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/keisatsu.tsx"
   },
@@ -442,7 +443,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/hyoushoushiki.tsx"
   },
@@ -456,7 +457,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/rakugaki.tsx"
   },
@@ -470,7 +471,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/ehon.tsx"
   },
@@ -484,7 +485,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/suna-asobi.tsx"
   },
@@ -498,7 +499,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/eiga.tsx"
   },
@@ -512,7 +513,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/kazoku-foto.tsx"
   },
@@ -526,7 +527,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/bosu.tsx"
   },
@@ -540,7 +541,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/sabori.tsx"
   },
@@ -554,7 +555,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/koma.tsx"
   },
@@ -568,7 +569,7 @@ export const images: Artwork[] = [
       dimensions: "30cm x 50cm",
       year: 2020,
       description: "",
-    tags: ["frog", "Digital"],
+    tags: ["frog", "Digital", "available works"],
     
     url: "works/frog/new-zukkoke.tsx"
   },
@@ -593,34 +594,34 @@ export const images: Artwork[] = [
     
     url: "works/drawings/World-History.tsx"
   },
-  {
-    id: 2,
-    slug: "whimsy",
-    src: "/images/drawings/Whimsy.webp",
-    artist: "Reiji Shimane",
-    title: "Whimsy",
-    medium: "Ink on paper, digital drawing",
-    dimensions: "2024px x 2024px",
-    year: 2024,
-    description: "",
-    tags: ["drawings", "Physical"],
+  // {
+  //   id: 2,
+  //   slug: "whimsy",
+  //   src: "/images/drawings/Whimsy.webp",
+  //   artist: "Reiji Shimane",
+  //   title: "Whimsy",
+  //   medium: "Ink on paper, digital drawing",
+  //   dimensions: "2024px x 2024px",
+  //   year: 2024,
+  //   description: "",
+  //   tags: ["drawings", "Physical"],
     
-    url: "works/drawings/whimsy.tsx"
-  },
-  {
-    id: 1,
-    slug: "powerup",
-    src: "/images/drawings/PowerUp.webp",
-    artist: "Reiji Shimane",
-    title: "PowerUp",
-    medium: "Ink on paper",
-  dimensions: "21cm x 30cm",
-  year: 2024,
-  description: "",
-    tags: ["drawings", "Physical"],
+  //   url: "works/drawings/whimsy.tsx"
+  // },
+  // {
+  //   id: 1,
+  //   slug: "powerup",
+  //   src: "/images/drawings/PowerUp.webp",
+  //   artist: "Reiji Shimane",
+  //   title: "PowerUp",
+  //   medium: "Ink on paper",
+  // dimensions: "21cm x 30cm",
+  // year: 2024,
+  // description: "",
+  //   tags: ["drawings", "Physical"],
     
-    url: "works/drawings/powerup.tsx"
-  },
+  //   url: "works/drawings/powerup.tsx"
+  // },
   
   /* 
   ============================================================

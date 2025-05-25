@@ -47,14 +47,14 @@ export default function Works() {
           Works
         </h1>
 
-        <div className="fixed top-[10vh] right-4 z-50">
+        {/* <div className="fixed top-[10vh] right-4 z-50"> */}
           <button
             onClick={() => setFilterAvailable(!filterAvailable)}
             className="px-4 py-2 border border-gray-300 bg-white shadow-md rounded text-sm hover:bg-gray-100 transition"
           >
             {filterAvailable ? "Show All Works" : "Filter by Available Works"}
           </button>
-        </div>
+        {/* </div> */}
 
         {/* Content */}
         <div className="flex flex-col">
