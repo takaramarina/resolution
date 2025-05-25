@@ -8,7 +8,6 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const [thumbRef, thumbApi] = useEmblaCarousel({
-    containScroll: 'trimSnaps',
     dragFree: true,
   });
 
@@ -73,7 +72,11 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
       </div>
 
       {/* Thumbnails */}
-      <div className="mt-4 overflow-x-auto" ref={thumbRef}>
+      <div
+        className="mt-4 overflow-x-auto"
+        ref={thumbRef}
+        style={{ WebkitOverflowScrolling: "touch" }}
+        >
         <div className="flex flex-nowrap gap-2 px-1 w-max">
           {images.map((img, index) => (
             <button
