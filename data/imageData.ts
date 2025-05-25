@@ -72,7 +72,7 @@ export const images: Artwork[] = [
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,
     description: "",
-    tags: ["rotation", "Physical"],
+    tags: ["rotation", "Physical", "available works"],
     
     url: "works/rotation/Organ-Space.tsx"
   },
