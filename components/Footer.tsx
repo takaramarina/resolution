@@ -10,7 +10,10 @@ export default function Footer() {
         {/* Contact Info */}
           <div className="flex flex-col items-left text-sm">
           <Link href="/works" className="hover:underline">
-            Works
+          All Works
+          </Link>
+          <Link href="/available-works" className="hover:underline">
+            Available Works
           </Link>
           <Link href="/about" className="hover:underline">
             About
