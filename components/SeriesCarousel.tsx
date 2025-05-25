@@ -80,8 +80,8 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
             <button
               key={index}
               onClick={() => scrollTo(index)}
-              className={`border-2 ${
-                index === selectedIndex ? "border-black" : "border-transparent"
+              className={`border-2 p-2 ${
+                index === selectedIndex ? "rounded shadow-[0_5px_5px_rgba(0,0,255,0.25)]" : "border-transparent"
               } rounded-sm overflow-hidden transition flex-shrink-0`}
             >
               <img
