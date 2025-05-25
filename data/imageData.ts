@@ -154,6 +154,20 @@ export const images: Artwork[] = [
   */
 
   {
+    id: 57,
+    slug: "Junichiro-Tanizaki",
+    src: "/images/notepaper/Junichiro-Tanizaki.webp",
+    highres: "/images/notepaper/Junichiro-Tanizaki.jpeg",
+    artist: "Reiji Shimane",
+    title: "Junichiro Tanizaki",
+    medium: "Graphite on paper",
+    dimensions: "210mm x 297mm",
+    year: 2025,
+    description: "",
+    tags: ["notepaper", "Physical", "available works"],
+    url: "works/notepaper/Junichiro-Tanizaki.tsx"
+  },
+  {
     id: 18,
     slug: "Luck-of-the-Draw",
     src: "/images/notepaper/Luck-of-the-Draw.webp",
