@@ -33,7 +33,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/Adventure.tsx"
+    url: "works/rotation/adventure"
   },
   {
     id: 21,
@@ -46,7 +46,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["rotation", "Physical"],
-    url: "works/rotation/Electro.tsx"
+    url: "works/rotation/electro"
   },
   {
     id: 24,
@@ -60,7 +60,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/Omni.tsx"
+    url: "works/rotation/omni"
   },
   {
     id: 19,
@@ -73,8 +73,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["rotation", "Physical", "available works"],
-    
-    url: "works/rotation/Organ-Space.tsx"
+    url: "works/rotation/organ-space"
   },
   {
     id: 25,
@@ -88,7 +87,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/Glass.tsx"
+    url: "works/rotation/glass"
   },
   {
     id: 27,
@@ -102,7 +101,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/Antihero.tsx"
+    url: "works/rotation/antihero"
   },
   {
     id: 23,
@@ -116,7 +115,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/Dream.tsx"
+    url: "works/rotation/dream"
   },
   {
     id: 22,
@@ -130,7 +129,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical"],
     
-    url: "works/rotation/Kenny.tsx"
+    url: "works/rotation/kenny"
   },
   {
     id: 26,
@@ -144,7 +143,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/Wave.tsx"
+    url: "works/rotation/wave"
   },
   /*
     ============================================================
@@ -164,7 +163,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/Junichiro-Tanizaki.tsx"
+    url: "works/notepaper/junichiro-tanizaki"
   },
   {
     id: 41,
@@ -178,7 +177,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["notepaper", "Physical", "available works"],
     
-    url: "works/notepaper/Karajan.tsx"
+    url: "works/notepaper/karajan"
   },
   {
     id: 18,
@@ -192,7 +191,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/Luck-of-the-Draw.tsx"
+    url: "works/notepaper/luck-of-the-draw"
   },
   {
     id: 40,
@@ -206,7 +205,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical"],
-    url: "works/notepaper/Game.tsx"
+    url: "works/notepaper/game"
   },
   {
     id: 42,
@@ -220,7 +219,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/t.tsx"
+    url: "works/notepaper/t"
   },
   {
     id: 11,
@@ -234,7 +233,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/Three-Selves.tsx"
+    url: "works/notepaper/three-selves"
   },
   {
     id: 15,
@@ -248,7 +247,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/ICON.tsx"
+    url: "works/notepaper/icon"
   },
   {
     id: 17,
@@ -262,7 +261,7 @@ export const images: Artwork[] = [
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/On-Flow.tsx"
+    url: "works/notepaper/on-flow"
   },
   
   {
@@ -277,7 +276,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["notepaper", "Physical", "available works"],
     
-    url: "works/notepaper/Great-Thanks.tsx"
+    url: "works/notepaper/great-thanks"
   },
   {
     id: 14,
@@ -291,7 +290,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["notepaper", "Physical", "available works"],
     
-    url: "works/notepaper/Live-Music.tsx"
+    url: "works/notepaper/live-music"
   },
   {
     id: 13,
@@ -305,7 +304,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["notepaper", "Physical", "available works"],
     
-    url: "works/notepaper/Common-Sense.tsx"
+    url: "works/notepaper/common-sense"
   },
   // {
   //   id: 16,
@@ -319,7 +318,7 @@ export const images: Artwork[] = [
   //   description: "",
   //   tags: ["notepaper", "Physical", "available works"],
     
-  //   url: "works/notepaper/Strong-Canvas.tsx"
+  //   url: "works/notepaper/strong-canvas"
   // },
 
   /* 
@@ -340,7 +339,7 @@ export const images: Artwork[] = [
   description: "",
     tags: ["drawings", "Physical"],
     
-    url: "works/drawings/Physical-Drawing.tsx"
+    url: "works/drawings/physical-drawing"
   },
   {
     id: 5,
@@ -353,7 +352,7 @@ export const images: Artwork[] = [
     year: 2024,
     description: "",
     tags: ["drawings", "Physical"],
-    url: "works/drawings/Digital-Drawing.tsx"
+    url: "works/drawings/digital-drawing"
   },
   {
     id: 6,
@@ -366,7 +365,7 @@ export const images: Artwork[] = [
     year: 2023,
     description: "",
     tags: ["drawings", "Physical", "available works"],
-    url: "works/drawings/Queens.tsx"
+    url: "works/drawings/queens"
   },
 
 
@@ -388,7 +387,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/rakugaki.tsx"
+    url: "works/frog/rakugaki"
   },
   {
     id: 46,
@@ -402,7 +401,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/keisatsu.tsx"
+    url: "works/frog/keisatsu"
   },
   {
     id: 55,
@@ -416,7 +415,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/koma.tsx"
+    url: "works/frog/koma"
   },
   {
     id: 43,
@@ -430,7 +429,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/aozora-kyoushitsu.tsx"
+    url: "works/frog/aozora-kyoushitsu"
   },
   {
     id: 44,
@@ -444,7 +443,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/mon.tsx"
+    url: "works/frog/mon"
   },
   {
       id: 45,
@@ -458,7 +457,7 @@ export const images: Artwork[] = [
       year: 2020,
       description: "",
       tags: ["Digital", "frog", "print", "available works"],
-      url: "works/frog/akago.tsx"
+      url: "works/frog/akago"
     },
   {
     id: 47,
@@ -472,7 +471,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/hyoushoushiki.tsx"
+    url: "works/frog/hyoushoushiki"
   },
   {
     id: 49,
@@ -486,7 +485,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/ehon.tsx"
+    url: "works/frog/ehon"
   },
   {
     id: 50,
@@ -500,7 +499,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/suna-asobi.tsx"
+    url: "works/frog/suna-asobi"
   },
   {
     id: 51,
@@ -514,7 +513,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/eiga.tsx"
+    url: "works/frog/eiga"
   },
   {
     id: 52,
@@ -528,7 +527,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/kazoku-foto.tsx"
+    url: "works/frog/kazoku-foto"
   },
   {
     id: 53,
@@ -542,7 +541,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/bosu.tsx"
+    url: "works/frog/bosu"
   },
   {
     id: 54,
@@ -556,7 +555,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/sabori.tsx"
+    url: "works/frog/sabori"
   },
   {
     id: 56,
@@ -570,7 +569,7 @@ export const images: Artwork[] = [
       description: "",
     tags: ["frog", "print", "Digital", "available works"],
     
-    url: "works/frog/new-zukkoke.tsx"
+    url: "works/frog/new-zukkoke"
   },
 
   /* 
@@ -591,7 +590,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["drawings", "Physical", "print", "available works"],
     
-    url: "works/drawings/World-History.tsx"
+    url: "works/drawings/world-history"
   },
   // {
   //   id: 2,
@@ -605,7 +604,7 @@ export const images: Artwork[] = [
   //   description: "",
   //   tags: ["drawings", "Physical"],
     
-  //   url: "works/drawings/whimsy.tsx"
+  //   url: "works/drawings/whimsy"
   // },
   // {
   //   id: 1,
@@ -619,7 +618,7 @@ export const images: Artwork[] = [
   // description: "",
   //   tags: ["drawings", "Physical"],
     
-  //   url: "works/drawings/powerup.tsx"
+  //   url: "works/drawings/powerup"
   // },
   
   /* 
@@ -639,7 +638,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["linguistic-characters", "Physical", "available works"],
     
-    url: "works/linguistic-characters/Stretching-Time-to-Be-On-Time.tsx"
+    url: "works/linguistic-characters/stretching-time-to-be-on-time"
   },
   {
     id: 7,
@@ -653,7 +652,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["linguistic-characters", "Physical", "available works"],
     
-    url: "works/linguistic-characters/Materiality-in-Sound.tsx"
+    url: "works/linguistic-characters/materiality-in-sound"
   },
   {
     id: 9,
@@ -667,7 +666,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["linguistic-characters", "Physical", "available works"],
     
-    url: "works/linguistic-characters/Scale-of-Emotion.tsx"
+    url: "works/linguistic-characters/scale-of-emotion"
   },
   {
     id: 8,
@@ -681,7 +680,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["linguistic-characters", "Physical", "available works"],
     
-    url: "works/linguistic-characters/Resolution-in-Speech.tsx"
+    url: "works/linguistic-characters/resolution-in-speech"
   },
   
   /* 
@@ -702,7 +701,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "Digital"],
     
-    url: "works/tsumiki/Sugi.tsx"
+    url: "works/tsumiki/sugi"
   },
   {
     id: 32,
@@ -716,7 +715,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "Digital"],
     
-    url: "works/tsumiki/Using-Fingers.tsx"
+    url: "works/tsumiki/using-fingers"
   },
   {
     id: 33,
@@ -730,7 +729,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "Digital"],
     
-    url: "works/tsumiki/Using-Feet.tsx"
+    url: "works/tsumiki/using-feet"
   },
   {
     id: 35,
@@ -744,7 +743,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "Digital"],
     
-    url: "works/tsumiki/Diagram-of-a-Tinted-Point.tsx"
+    url: "works/tsumiki/diagram-of-a-tinted-point"
   },
   {
     id: 36,
@@ -758,7 +757,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "Digital"],
     
-    url: "works/tsumiki/Living.tsx"
+    url: "works/tsumiki/living"
   },
   {
     id: 37,
@@ -772,7 +771,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "Digital"],
     
-    url: "works/tsumiki/Reflection.tsx"
+    url: "works/tsumiki/reflection"
   },
   {
     id: 38,
@@ -786,7 +785,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "Digital"],
     
-    url: "works/tsumiki/Flexiblity.tsx"
+    url: "works/tsumiki/flexiblity"
   },
   {
     id: 39,
@@ -800,7 +799,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "Digital"],
     
-    url: "works/tsumiki/Correctness-Kills.tsx"
+    url: "works/tsumiki/correctness-kills"
   },
 
   /* 
@@ -822,7 +821,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["digital-drawings", "Digital"],
     
-    url: "works/digital-drawings/Linguistic-Vehicle.tsx"
+    url: "works/digital-drawings/linguistic-vehicle"
   },
   {
     id: 29,
@@ -836,7 +835,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["digital-drawings", "Digital"],
     
-    url: "works/digital-drawings/Stand.tsx"
+    url: "works/digital-drawings/stand"
   },
   {
     id: 28,
@@ -850,7 +849,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["digital-drawings", "Digital"],
     
-    url: "works/digital-drawings/Dragon-K.tsx"
+    url: "works/digital-drawings/dragon-k"
   },
   {
     id: 30,
@@ -864,7 +863,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["digital-drawings", "Digital"],
     
-    url: "works/digital-drawings/Dragon.tsx"
+    url: "works/digital-drawings/dragon"
   },
 
 ]

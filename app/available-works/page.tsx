@@ -129,13 +129,15 @@ export default function AvailableWorksMasonry() {
 
         <Masonry columns={{ xs: 2, md: 4 }} spacing={2}>
           {availableImages.map((img, index) => (
-            <img
-              key={index}
-              src={img.src}
-              alt={img.title || `Artwork ${index}`}
-              className="w-full"
-              loading="lazy"
-            />
+            <a key={index} href={img.url}>
+                <img
+                key={index}
+                src={img.src}
+                alt={img.title || `Artwork ${index}`}
+                className="w-full"
+                loading="lazy"
+                />
+            </a>
           ))}
         </Masonry>
       </main>
