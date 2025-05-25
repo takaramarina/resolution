@@ -377,6 +377,48 @@ export const images: Artwork[] = [
   */  
 
   {
+    id: 48,
+    slug: "rakugaki",
+    src: "/images/frog/落書き.JPEG",
+        artist: "Reiji Shimane",
+    title: "落書き",
+    medium: "Exclusive edition print",
+      dimensions: "30cm x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/rakugaki.tsx"
+  },
+  {
+    id: 46,
+    slug: "keisatsu",
+    src: "/images/frog/警察.JPEG",
+        artist: "Reiji Shimane",
+    title: "警察",
+    medium: "Exclusive edition print",
+      dimensions: "30cm x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/keisatsu.tsx"
+  },
+  {
+    id: 55,
+    slug: "koma",
+    src: "/images/frog/コマ.JPEG",
+        artist: "Reiji Shimane",
+    title: "コマ",
+    medium: "Exclusive edition print",
+      dimensions: "30cm x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/koma.tsx"
+  },
+  {
     id: 43,
     slug: "aozora-kyoushitsu",
     src: "/images/frog/青空教室.JPEG",
@@ -419,20 +461,6 @@ export const images: Artwork[] = [
       url: "works/frog/akago.tsx"
     },
   {
-    id: 46,
-    slug: "keisatsu",
-    src: "/images/frog/警察.JPEG",
-        artist: "Reiji Shimane",
-    title: "警察",
-    medium: "Exclusive edition print",
-      dimensions: "30cm x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/keisatsu.tsx"
-  },
-  {
     id: 47,
     slug: "hyoushoushiki",
     src: "/images/frog/表彰式.JPEG",
@@ -445,20 +473,6 @@ export const images: Artwork[] = [
     tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/hyoushoushiki.tsx"
-  },
-  {
-    id: 48,
-    slug: "rakugaki",
-    src: "/images/frog/落書き.JPEG",
-        artist: "Reiji Shimane",
-    title: "落書き",
-    medium: "Exclusive edition print",
-      dimensions: "30cm x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/rakugaki.tsx"
   },
   {
     id: 49,
@@ -543,20 +557,6 @@ export const images: Artwork[] = [
     tags: ["frog", "print", "Digital", "available works"],
     
     url: "works/frog/sabori.tsx"
-  },
-  {
-    id: 55,
-    slug: "koma",
-    src: "/images/frog/コマ.JPEG",
-        artist: "Reiji Shimane",
-    title: "コマ",
-    medium: "Exclusive edition print",
-      dimensions: "30cm x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/koma.tsx"
   },
   {
     id: 56,
