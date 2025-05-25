@@ -5,6 +5,7 @@ import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import SeriesCarousel from "@/components/SeriesCarousel";
+import PurchaseInquiryButton from "@/components/PurchaseInquiryButton";
 
 export default function AvailableWorks() {
   const [filterAvailable, setFilterAvailable] = useState(false);
@@ -34,8 +35,12 @@ export default function AvailableWorks() {
         <h1 className="text-2xl md:text-3xl font-bold text-left mt-10 mb-8 tracking-tight">
           Available Works
         </h1>
+        <div className="text-left text-sm mb-4">
+            Please contact fannymoneyonline@gmail.com for all inquiries.
+        </div>
+        <PurchaseInquiryButton artworkName={"artwork"}/>
 
-        <div className="border-b border-gray-300 md:mx-[60px] mb-4" />
+        <div className="border-b border-gray-300 md:mx-[60px] my-4" />
         <div className="flex flex-col gap-4">
             {/* rotation */}
             <div className="text-lg font-bold capitalize text-left mb-4">
