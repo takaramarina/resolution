@@ -115,7 +115,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/Dream"
+    url: "works/rotation/dream"
   },
   {
     id: 22,
