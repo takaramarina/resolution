@@ -8,10 +8,10 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details
   const artwork = {
-    src: "/images/rotation/Glass.webp",  // Image source
-    highres: "/images/rotation/Glass.png",
+    src: "/images/rotation/Fukuoka.webp",  // Image source
+    highres: "/images/rotation/Fukuoka.png",
     title: "Reiji Shimane",
-    artworkTitle: "Rotation: Glass",
+    artworkTitle: "Rotation: Fukuoka",
     medium: "Ink and pastels on wood panel",
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,

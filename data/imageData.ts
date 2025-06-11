@@ -23,71 +23,71 @@ export const images: Artwork[] = [
 
   {
     id: 20,
-    slug: "Adventure",
-    src: "/images/rotation/Adventure.webp",
+    slug: "Formula-1",
+    src: "/images/rotation/Formula-1.webp",
     artist: "Reiji Shimane",
-    title: "Adventure",
+    title: "Formula 1",
     medium: "Ink and oil pastels on wood panel",
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/adventure"
+    url: "works/rotation/formula-1"
   },
   {
     id: 21,
-    slug: "Electro",
-    src: "/images/rotation/Electro.webp",
+    slug: "Born",
+    src: "/images/rotation/Born.webp",
     artist: "Reiji Shimane",
-    title: "Electro",
+    title: "Born",
     medium: "Ink and oil pastels on wood panel",
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,
     description: "",
     tags: ["rotation", "Physical"],
-    url: "works/rotation/electro"
+    url: "works/rotation/born"
   },
   {
     id: 24,
-    slug: "Omni",
-    src: "/images/rotation/Omni.webp",
+    slug: "Filling",
+    src: "/images/rotation/Filling.webp",
     artist: "Reiji Shimane",
-    title: "Omni",
+    title: "Filling",
     medium: "Ink and oil pastels on wood panel",
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/omni"
+    url: "works/rotation/filling"
   },
   {
     id: 19,
-    slug: "Organ-Space",
-    src: "/images/rotation/Organ-Space.webp",
+    slug: "Organ",
+    src: "/images/rotation/Organ.webp",
     artist: "Reiji Shimane",
-    title: "Organ-Space",
+    title: "Organ",
     medium: "Ink and oil pastels on wood panel",
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,
     description: "",
     tags: ["rotation", "Physical", "available works"],
-    url: "works/rotation/organ-space"
+    url: "works/rotation/organ"
   },
   {
     id: 25,
-    slug: "Glass",
-    src: "/images/rotation/Glass.webp",
+    slug: "Fukuoka",
+    src: "/images/rotation/Fukuoka.webp",
     artist: "Reiji Shimane",
-    title: "Glass",
+    title: "Fukuoka",
     medium: "Ink and oil pastels on wood panel",
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/glass"
+    url: "works/rotation/fukuoka"
   },
   {
     id: 27,
@@ -115,7 +115,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/dream"
+    url: "works/rotation/Dream"
   },
   {
     id: 22,
@@ -133,17 +133,17 @@ export const images: Artwork[] = [
   },
   {
     id: 26,
-    slug: "Wave",
-    src: "/images/rotation/Wave.webp",
+    slug: "Sauna",
+    src: "/images/rotation/Sauna.webp",
     artist: "Reiji Shimane",
-    title: "Wave",
+    title: "Sauna",
     medium: "Ink and oil pastels on wood panel",
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,
     description: "",
     tags: ["rotation", "Physical", "available works"],
     
-    url: "works/rotation/wave"
+    url: "works/rotation/sauna"
   },
   /*
     ============================================================

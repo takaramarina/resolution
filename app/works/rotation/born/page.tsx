@@ -8,10 +8,10 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details
   const artwork = {
-    src: "/images/rotation/Wave.webp",  // Image source
-    highres: "/images/rotation/Wave.png",
+    src: "/images/rotation/Born.webp",  // Image source
+    highres: "/images/rotation/Born.png",  
     title: "Reiji Shimane",
-    artworkTitle: "Rotation: Wave",
+    artworkTitle: "Rotation: Born",
     medium: "Ink and pastels on wood panel",
     dimensions: "90cm x 90cm x 2cm",
     year: 2025,

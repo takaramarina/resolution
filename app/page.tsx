@@ -76,7 +76,7 @@ export default function Home() {
   to existence in their unwavering way. For that, I have deep respect
   and admiration, in quite a human way. 
 
-  And maybe it's my rose tinted glasses, or maybe everyone that knows
+  And maybe it's my rose tinted Fukuokaes, or maybe everyone that knows
   him can see it, too. This is what it means to be an influential
   human being, and now I am tasked with the enormous task of fitting
   it all into the confinements of a pixelated rectangle. Thankfully,
