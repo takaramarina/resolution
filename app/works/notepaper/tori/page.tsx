@@ -7,10 +7,10 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/notepaper/On-Flow.webp",  // Image source
-    highres: "/images/notepaper/On-Flow.jpeg",
+    src: "/images/notepaper/Tori.webp",  // Image source
+    highres: "/images/notepaper/Tori.jpg",
     title: "Reiji Shimane",
-    artworkTitle: "On Flow",
+    artworkTitle: "Tori",
     medium: "Graphite on paper",
     dimensions: "21cm x 30cm",
     year: 2025,

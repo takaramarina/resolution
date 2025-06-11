@@ -7,10 +7,10 @@ import Header from "../../../../components/Header"; // Import the Header compone
 export default function Home() {
   // Artwork details for another series (e.g., 'New Series')
   const artwork = {
-    src: "/images/notepaper/Luck-of-the-Draw.webp",  // Image source
-    highres: "/images/notepaper/Luck-of-the-Draw.jpeg",
+    src: "/images/notepaper/G-Bomb.webp",  // Image source
+    highres: "/images/notepaper/G-Bomb.jpeg",
     title: "Reiji Shimane",
-    artworkTitle: "Luck of the Draw",
+    artworkTitle: "G Bomb",
     medium: "Graphite on paper",
     dimensions: "21cm x 30cm",
     year: 2025,

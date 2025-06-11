@@ -6,10 +6,10 @@ import Header from "../../../../components/Header";
 
 export default function Home() {
   const artwork = {
-    src: "/images/notepaper/Three-Selves.webp",
-    highres: "/images/notepaper/Three-Selves.jpg",
+    src: "/images/notepaper/Conv.webp",
+    highres: "/images/notepaper/Conv.jpg",
     title: "Reiji Shimane",
-    artworkTitle: "Three Selves",
+    artworkTitle: "Conv",
     medium: "Graphite on paper",
     dimensions: "21cm x 30cm",
     year: 2025,

@@ -181,17 +181,17 @@ export const images: Artwork[] = [
   },
   {
     id: 18,
-    slug: "Luck-of-the-Draw",
-    src: "/images/notepaper/Luck-of-the-Draw.webp",
-    highres: "/images/notepaper/Luck-of-the-Draw.jpeg",
+    slug: "Toolism",
+    src: "/images/notepaper/Toolism.webp",
+    highres: "/images/notepaper/Toolism.jpeg",
     artist: "Reiji Shimane",
-    title: "Luck of the Draw",
+    title: "Toolism",
     medium: "Graphite on paper",
     dimensions: "210mm x 297mm",
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/luck-of-the-draw"
+    url: "works/notepaper/toolism"
   },
   {
     id: 40,
@@ -209,59 +209,59 @@ export const images: Artwork[] = [
   },
   {
     id: 42,
-    slug: "T",
-    src: "/images/notepaper/T.jpg",
-    highres: "/images/notepaper/T.webp",
+    slug: "Tori",
+    src: "/images/notepaper/Tori.jpg",
+    highres: "/images/notepaper/Tori.webp",
     artist: "Reiji Shimane",
-    title: "T",
+    title: "Tori",
     medium: "Graphite on paper",
     dimensions: "210mm x 297mm",
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/t"
+    url: "works/notepaper/tori"
   },
   {
     id: 11,
-    slug: "Three-Selves",
-    src: "/images/notepaper/Three-Selves.webp",
-    highres: "/images/notepaper/Three-Selves.jpg",
+    slug: "Conv",
+    src: "/images/notepaper/Conv.webp",
+    highres: "/images/notepaper/Conv.jpg",
     artist: "Reiji Shimane",
-    title: "Three Selves",
+    title: "Conv",
     medium: "Graphite on paper",
     dimensions: "210mm x 297mm",
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/three-selves"
+    url: "works/notepaper/conv"
   },
   {
     id: 15,
-    slug: "ICON",
-    src: "/images/notepaper/ICON.webp",
-    highres: "/images/notepaper/ICON.jpeg",
+    slug: "G-Bomb",
+    src: "/images/notepaper/G-Bomb.webp",
+    highres: "/images/notepaper/G-Bomb.jpeg",
     artist: "Reiji Shimane",
-    title: "ICON",
+    title: "G Bomb",
     medium: "Graphite on paper",
     dimensions: "210mm x 297mm",
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/icon"
+    url: "works/notepaper/g-bomb"
   },
   {
     id: 17,
-    slug: "On-Flow",
-    src: "/images/notepaper/On-Flow.webp",
-    highres: "/images/notepaper/On-Flow.jpeg",
+    slug: "Wivies",
+    src: "/images/notepaper/Wivies.webp",
+    highres: "/images/notepaper/Wivies.jpeg",
     artist: "Reiji Shimane",
-    title: "On Flow",
+    title: "Wivies",
     medium: "Graphite on paper",
     dimensions: "210mm x 297mm",
     year: 2025,
     description: "",
     tags: ["notepaper", "Physical", "available works"],
-    url: "works/notepaper/on-flow"
+    url: "works/notepaper/wivies"
   },
   
   {
