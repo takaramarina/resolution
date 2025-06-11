@@ -23,15 +23,15 @@ export default function Home() {
       <Header />
 
       <div className="flex-grow flex flex-col items-center justify-center text-center space-y-4 px-4">
-        <a href={`/works/notepaper/t`}>
+        <a href={`/works/notepaper/tori`}>
           <img
-            src="/images/notepaper/T.webp"
+            src="/images/notepaper/Tori.webp"
             alt="Digital Artwork"
             className="h-[40vh] md:h-[60vh] object-contain"
           />
         </a>
         <div className="text-sm md:text-base text-gray-700 mt-8">
-          <p><span className="font-medium italic">T</span>, 2025</p>
+          <p><span className="font-medium italic">Tori</span>, 2025</p>
         </div>
         <Link
           href="/works"
