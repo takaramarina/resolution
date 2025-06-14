@@ -3,8 +3,8 @@ import { Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-white py-8 px-5 md:px-10">
-      <div className="border-b border-gray-300 md:mx-[60px] mb-4" />
+    <footer className="bg-gray-100 py-8 px-5 md:px-10">
+      {/* <div className="border-b border-gray-300 md:mx-[60px] mb-4" /> */}
       <div className="max-w-4xl mx-auto text-left">
 
         {/* Contact Info */}

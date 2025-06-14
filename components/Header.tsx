@@ -20,7 +20,10 @@ export default function Header() {
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center gap-6 text-base">
           <Link href="/works" className="hover:underline">
-            Works
+            All Works
+          </Link>
+          <Link href="/available-works" className="py-2 text-base hover:underline">
+            Available Works
           </Link>
           <Link href="/about" className="hover:underline">
             About
@@ -60,7 +63,10 @@ export default function Header() {
       >
         <div className="flex flex-col items-center">
           <Link href="/works" className="py-2 text-base hover:underline">
-            Works
+            All Works
+          </Link>
+          <Link href="/available-works" className="py-2 text-base hover:underline">
+            Available Works
           </Link>
           <Link href="/about" className="py-2 text-base hover:underline">
             About

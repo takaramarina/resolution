@@ -29,8 +29,8 @@ export default function Works() {
     if (seriesImages.length === 0) return null;
 
     return (
-      <div key={tag} className="flex flex-col w-full gap-8 mb-20 items-left">
-        <div className="border-b border-gray-300 md:mx-[60px]" />
+      <div key={tag} className="flex flex-col w-full gap-8 mb-20 items-left mx-auto">
+        <div className="border-b border-gray-300" />
         <h2 className="text-lg font-bold capitalize text-left">
           {tag.replace(/-/g, " ")}
         </h2>
@@ -41,22 +41,22 @@ export default function Works() {
   };
 
   return (
-    <div className="min-h-screen bg-white mx-0 md:mx-[60px]">
+    <div className="min-h-screen bg-white">
       <Header />
 
-      <main className="px-5 md:px-0">
-        <h1 className="text-2xl md:text-3xl font-bold text-left mt-10 mb-4 tracking-tight">
+      <main className="px-5 md:px-10 lg:px-40 py-10" >
+        <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight">
           Works
         </h1>
 
-        {/* <div className="fixed top-[10vh] right-4 z-50"> */}
+        <div className="mb-8">
           <Link
             href="/available-works"
-            className="inline-block px-4 py-2 border mb-6 border-gray-300 bg-white rounded text-sm hover:bg-gray-100 transition"
+            className="text-sm hover:underline"
           >
-            See Available Works
+            See Available Works →
           </Link>
-        {/* </div> */}
+        </div>
 
         {/* Content */}
         <div className="flex flex-col">
