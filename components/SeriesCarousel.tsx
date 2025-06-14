@@ -44,14 +44,14 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
                             <img
                             src={img.src}
                             alt={img.title || `Artwork ${index}`}
-                            className="max-h-[60vh] max-w-[60vw] md:max-h-[50vh] md: max-w-full object-contain cursor-pointer"
+                            className="max-h-[60vh] max-w-[60vw] md:max-h-[50vh] md:max-w-full object-contain cursor-pointer"
                             />
                         </a>
                         ) : (
                         <img
                             src={img.src}
                             alt={img.title || `Artwork ${index}`}
-                            className="max-h-full max-w-full object-contain"
+                            className="max-h-[60vh] max-w-[60vw] md:max-h-[50vh] md:max-w-full object-contain cursor-pointer"
                         />
                         )}
                     </div>
