@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import PurchaseInquiryButton from "./PurchaseInquiryButton";
 import Footer from "./Footer";
 import Header from "./Header";
+import OptimizedImage from "./OptimizedImage";
 
 export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,11 +27,16 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Image */}
           <div className="relative flex flex-col items-center group">
-            <img
+            <OptimizedImage
               src={artwork.src}
               alt={artwork.title}
-              className="max-h-[80vh] w-auto max-w-full object-contain cursor-zoom-in transition duration-300 ease-in-out"
+              width={800}
+              height={600}
+              className="max-h-[60vh] w-auto max-w-full md:max-h-[40vh] object-contain cursor-zoom-in transition duration-300 ease-in-out"
               onClick={() => handleImageClick(artwork.highres ?? artwork.src)}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+              priority={true}
+              quality={85}
             />
             <p className="text-sm text-gray-400 mt-3">Tap image to view larger</p>
           </div>
