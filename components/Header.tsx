@@ -19,11 +19,14 @@ export default function Header() {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center gap-6 text-sm uppercase" style={{ letterSpacing: '0.03em' }}>
-          <Link href="/works" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
-            All Works
+          <Link href="/vector" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+            Vector
           </Link>
-          <Link href="/available-works" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
-            Available Works
+          <Link href="/raster" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+            Raster
+          </Link>
+          <Link href="/practice" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+            Practice
           </Link>
           <Link href="/about" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             About
@@ -59,11 +62,14 @@ export default function Header() {
         }`}
       >
         <div className="flex flex-col items-center uppercase" style={{ letterSpacing: '0.03em' }}>
-          <Link href="/works" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
-            All Works
+          <Link href="/vector" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+            Vector
           </Link>
-          <Link href="/available-works" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
-            Available Works
+          <Link href="/raster" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+            Raster
+          </Link>
+          <Link href="/practice" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+            Practice
           </Link>
           <Link href="/about" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             About
