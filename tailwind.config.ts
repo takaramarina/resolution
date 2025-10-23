@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-sans)', 'sans-serif'],
-        serif: ['var(--font-serif)', 'serif'],
+        sans: ['Gambetta-Regular', 'serif'],
+        serif: ['GeneralSans-Medium', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

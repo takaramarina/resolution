@@ -32,16 +32,17 @@ export default function PurchaseInquiryButton({ artworkName }) {
   };
 
   return (
-    <div className="relative">
+    <div className="fixed bottom-6 right-6 z-50">
       <button 
         onClick={() => setIsOpen(true)}
-        className="px-4 py-2 text-sm bg-white border border-gray-300 rounded text-black hover:bg-gray-400 transition"
+        className="inline-block px-4 py-2 text-sm bg-white border border-gray-300 rounded-full text-black hover:border-gray-400 transition-colors uppercase"
+        style={{ fontFamily: 'GeneralSans-Regular' }}
       >
         Inquire
       </button>
       
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[60]">
           <div className="bg-white p-8 rounded w-full h-full md:w-auto md:h-auto md:max-w-lg md:rounded-lg md:mx-auto md:my-20">
             <h2 className="text-lg mb-4 text-[#061202] font-semibold">Artwork Inquiry</h2>
             <p className="text-base mb-6 text-[#061202]">

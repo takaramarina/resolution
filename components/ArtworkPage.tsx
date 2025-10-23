@@ -23,7 +23,7 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
   return (
     <div className="min-h-screen bg-white mx-5 md:mx-[60px]">
       <Header />
-      <main className="px-5 md:px-10">
+      <main className="px-5 md:px-10 pt-24 pb-16">
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Image */}
           <div className="relative flex flex-col items-center group">
@@ -43,7 +43,7 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
 
           {/* Text */}
           <div className="flex flex-col gap-8">
-            <div className="text-xl font-bold font-serif">
+            <div className="text-xl font-bold" style={{ fontFamily: 'Gambetta-Semibold' }}>
               <em>{artwork.title}</em>
             </div>
             <div className="text-lg">

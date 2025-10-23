@@ -31,7 +31,7 @@ export default function Home() {
           />
         </a>
         <div className="text-sm md:text-base text-gray-700 mt-8">
-          <p><span className="font-medium italic font-serif">Tori</span>, 2025</p>
+          <p><span className="font-medium italic" style={{ fontFamily: 'Gambetta-Semibold' }}>Tori</span>, 2025</p>
         </div>
         <Link
           href="/works"

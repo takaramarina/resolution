@@ -12,23 +12,23 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex flex-col bg-white">
-      <div className="flex items-center justify-between px-5 py-5 md:px-10 lg:px-40">
-        <div className="text-l font-bold">
+      <div className="flex items-center justify-between content-padding py-5">
+        <div className="text-l font-serif uppercase" style={{ fontFamily: 'GeneralSans-Semibold', fontWeight: 600 }}>
           <Link href="/">Reiji Shimane</Link>
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center gap-6 text-sm">
-          <Link href="/works" className="hover:underline">
+        <div className="hidden md:flex items-center gap-6 text-sm uppercase" style={{ letterSpacing: '0.03em' }}>
+          <Link href="/works" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             All Works
           </Link>
-          <Link href="/available-works" className="py-2 text-sm hover:underline">
+          <Link href="/available-works" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             Available Works
           </Link>
-          <Link href="/about" className="hover:underline">
+          <Link href="/about" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             About
           </Link>
-          <Link href="/contact" className="hover:underline">
+          <Link href="/contact" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             Contact
           </Link>
           <Link href="https://www.instagram.com/moon_rail/" aria-label="Instagram">
@@ -58,17 +58,17 @@ export default function Header() {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col items-center">
-          <Link href="/works" className="py-2 text-sm hover:underline">
+        <div className="flex flex-col items-center uppercase" style={{ letterSpacing: '0.03em' }}>
+          <Link href="/works" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             All Works
           </Link>
-          <Link href="/available-works" className="py-2 text-sm hover:underline">
+          <Link href="/available-works" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             Available Works
           </Link>
-          <Link href="/about" className="py-2 text-sm hover:underline">
+          <Link href="/about" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             About
           </Link>
-          <Link href="/contact" className="py-2 text-sm hover:underline">
+          <Link href="/contact" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             Contact
           </Link>
           <Link

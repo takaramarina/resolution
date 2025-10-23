@@ -30,7 +30,7 @@ export default function Works() {
 
     return (
       <div key={tag} className="flex flex-col w-full gap-8 mb-20 items-left mx-auto">
-        <h2 className="text-lg font-bold capitalize text-left font-serif">
+        <h2 className="text-lg font-bold capitalize text-left font-serif uppercase">
           {tag.replace(/-/g, " ")}
         </h2>
 
@@ -40,25 +40,16 @@ export default function Works() {
   };
 
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
+    <div className="min-h-screen bg-white">
       <Header />
 
-      <main className="px-5 md:px-10 lg:px-40 md:py-10" >
-        <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight font-serif">
-          Works
-        </h1>
+      <h1 className="sticky top-[60px] md:top-[69px] z-40 bg-white text-3xl md:text-4xl font-bold text-left mb-0 md:mb-4 pt-6 md:pt-6 pb-0 md:pb-4 content-padding tracking-tight font-serif uppercase">
+        Works
+      </h1>
 
-        <div className="mb-8">
-          <Link
-            href="/available-works"
-            className="text-sm hover:underline"
-          >
-            See Available Works →
-          </Link>
-        </div>
-
+      <main className="content-padding overflow-x-hidden pt-1 md:pt-8">
         {/* Content */}
-        <div className="flex flex-col">
+        <div className="flex flex-col pb-10">
           {allTags.map(renderSeriesPreview)}
         </div>
       </main>

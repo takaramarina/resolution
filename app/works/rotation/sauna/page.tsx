@@ -73,7 +73,7 @@ export default function Home() {
       <Header />
 
       {/* Main Content */}
-      <main className="px-5 md:px-10">
+      <main className="px-5 md:px-10 pt-24 pb-16">
         {/* Title */}
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex self-start cursor-pointer" 
@@ -129,7 +129,7 @@ export default function Home() {
 
           {/* Text Content */}
           <div className="flex flex-col gap-8">
-            <div className="text-xl font-bold font-serif">
+            <div className="text-xl font-bold" style={{ fontFamily: 'Gambetta-Semibold' }}>
               <em>{artwork.artworkTitle}</em>
             </div>
             <div className="text-lg">

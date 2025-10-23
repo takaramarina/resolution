@@ -1,9 +1,45 @@
+@import './general-sans.css';
+@import './gambetta.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --content-padding-mobile: 1.25rem; /* px-5 */
+  --content-padding-tablet: 2.5rem; /* md:px-10 */
+  --content-padding-desktop: 20rem; /* lg:px-48 - increased for desktop */
+}
+
+@layer utilities {
+  .content-padding {
+    padding-left: var(--content-padding-mobile);
+    padding-right: var(--content-padding-mobile);
+  }
+  
+  @media (min-width: 768px) {
+    .content-padding {
+      padding-left: var(--content-padding-tablet);
+      padding-right: var(--content-padding-tablet);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .content-padding {
+      padding-left: var(--content-padding-desktop);
+      padding-right: var(--content-padding-desktop);
+    }
+  }
+}
+
+/* Add letter spacing to GeneralSans (sans-serif) */
+.font-serif,
+[class*="font-serif"] {
+  letter-spacing: 0.05em;
+}
+
 body {
-  font-family: var(--font-sans), sans-serif;
+  font-family: 'Gambetta-Regular', serif;
   color: #333;
   margin: 0;
   padding: 0;
@@ -16,7 +52,7 @@ main {
 
 @media (min-width: 768px) {
   main {
-    margin-top: 15vh; /* bigger space for desktop */
+    margin-top: 8vh; /* bigger space for desktop */
   }
 }
 .carousel-arrow {

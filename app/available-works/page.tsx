@@ -13,18 +13,20 @@ export default function AvailableWorksSingleColumn() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="px-5 md:px-10 lg:px-40 py-10">
-        <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight font-serif">
-          Available Works
-        </h1>
-        <div className="text-left text-sm mb-8">
+      
+      <h1 className="sticky top-[60px] md:top-[69px] z-40 bg-white text-3xl md:text-4xl font-bold text-left mb-0 md:mb-4 pt-6 md:pt-6 pb-0 md:pb-4 content-padding tracking-tight font-serif uppercase">
+        Available Works
+      </h1>
+      
+      <main className="content-padding pt-1 md:pt-8">
+        <div className="text-left text-sm mb-8 pt-4">
           Please contact <a href="mailto:fannymoneyonline@gmail.com" className="underline">fannymoneyonline@gmail.com</a> for all inquiries.
         </div>
         <div className="mb-10">
           <PurchaseInquiryButton artworkName={'artwork'} />
         </div>
 
-        <div className="flex flex-col gap-[20vh] md:gap-[30vh] items-center">
+        <div className="flex flex-col gap-[20vh] md:gap-[30vh] items-center pb-10">
           {availableImages.map((img, index) => (
             <div key={index} className="w-full max-w-2xl">
               <a href={img.url}>
@@ -35,7 +37,7 @@ export default function AvailableWorksSingleColumn() {
                 />
               </a>
               <div className="text-center text-xs md:text-sm text-gray-700 mt-8 leading-relaxed">
-                <div className="italic font-bold text-base md:text-lg font-serif mb-2">{img.title}</div>
+                <div className="italic text-base md:text-lg mb-2" style={{ fontFamily: 'Gambetta-Semibold' }}>{img.title}</div>
                 <div>{img.medium}</div>
                 <div>{img.dimensions}</div>
               </div>

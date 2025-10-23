@@ -3,7 +3,7 @@ import { Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 py-8 px-5 md:px-10 lg:px-40" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
+    <footer className="bg-gray-100 py-8 content-padding" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
       {/* <div className="border-b border-gray-300 md:mx-[60px] mb-4" /> */}
       <div className="flex flex-col items-left text-sm">
         <Link href="/works" className="hover:underline">

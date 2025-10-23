@@ -4,71 +4,73 @@ import Footer from "../../components/Footer";
 
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col bg-white overflow-x-hidden">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      <main className="px-5 md:px-10 lg:px-40 py-12 flex-grow">
-        <h1 className="text-2xl md:text-3xl font-semibold text-left mb-6 tracking-tight font-serif">
-          About
-        </h1>
+      <h1 className="sticky top-[60px] md:top-[69px] z-40 bg-white text-3xl md:text-4xl font-semibold text-left mb-0 md:mb-6 pt-6 md:pt-6 pb-0 md:pb-4 content-padding tracking-tight font-serif uppercase">
+        About
+      </h1>
 
-        {/* Artist Info */}
-        <section className="w-full max-w-3xl mb-8">
-          <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-            Reiji Shimane (b. 1997) is a global artist currently based in Tokyo.
-          </p>
-        </section>
+      <main className="content-padding overflow-x-hidden pt-1 md:pt-8">
+        <div className="space-y-12 py-4">
+          {/* Artist Info */}
+          <section>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+              Reiji Shimane (b. 1997) is a global artist currently based in Tokyo.
+            </p>
+          </section>
 
-        {/* Exhibitions & Shows */}
-        <section className="w-full max-w-3xl mb-8">
-          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4 font-serif">Exhibitions & Shows</h2>
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">"ぼくの好きなひと展"</h3>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">Den Gallery, Tokyo</p>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">July 2024</p>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-2">
-                "ぼくの好きなひと展" ("Dear People I Love") was a solo exhibition showcasing a carefully curated collection of graphite drawings, paintings, and projection installations.
-              </p>
+          {/* Exhibitions & Shows */}
+          <section>
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-6 font-serif">Exhibitions & Shows</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">"ぼくの好きなひと展"</h3>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Den Gallery, Tokyo</p>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">July 2024</p>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-2">
+                  "ぼくの好きなひと展" ("Dear People I Love") was a solo exhibition showcasing a carefully curated collection of graphite drawings, paintings, and projection installations.
+                </p>
+              </div>
             </div>
-            {/* Add more exhibitions here */}
-          </div>
-        </section>
+          </section>
 
-        {/* Education & Training */}
-        <section className="w-full max-w-3xl mb-8">
-          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4 font-serif">Education & Skills</h2>
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">Skills</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
-                {/* Professional Skills */}
-                <li>Artistic: Drawing (Ink and Graphite), Painting, Digital Art (Illustrator, Procreate)</li>
-                {/* Technical Skills */}
-                <li>Professional: Gallery Exhibition Coordinator, Artist Assistant</li>
-              </ul>
+          {/* Education & Training */}
+          <section>
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-6 font-serif">Education & Skills</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">Skills</h3>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
+                  <li>Artistic: Drawing (Ink and Graphite), Painting, Digital Art (Illustrator, Procreate)</li>
+                  <li>Professional: Gallery Exhibition Coordinator, Artist Assistant</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">BFA in Fine Arts, School of the Art Institute of Chicago</h3>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Chicago, 2022</p>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">
+                  Focus on architecture, painting, and performing arts.
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">BFA in Fine Arts, School of the Art Institute of Chicago</h3>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">Chicago, 2022</p>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">
-                Focus on architecture, painting, and performing arts.
-              </p>
-            </div>
-          </div>
-        </section>
-        <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">
-          See full professional CV {" "}
-          <a href="/documents/Reiji-CV.pdf" target="_blank" className="text-blue-500 hover:underline">
-             here
-          </a> 
-          {" "}(Japanese version {" "}
-          <a href="/documents/Reiji-CV-JP.pdf" target="_blank" className="text-blue-500 hover:underline">
-             here
-          </a>).
-        </p>
+          </section>
+
+          {/* CV Links */}
+          <section>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+              See full professional CV {" "}
+              <a href="/documents/Reiji-CV.pdf" target="_blank" className="text-blue-500 hover:underline">
+                 here
+              </a> 
+              {" "}(Japanese version {" "}
+              <a href="/documents/Reiji-CV-JP.pdf" target="_blank" className="text-blue-500 hover:underline">
+                 here
+              </a>).
+            </p>
+          </section>
+        </div>
       </main>
-
       <Footer />
     </div>
   );

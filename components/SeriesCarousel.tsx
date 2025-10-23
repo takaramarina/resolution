@@ -43,17 +43,17 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
                 key={index}
                 className="min-w-0 flex-[0_0_100%] flex justify-center items-center px-4"
               >
-                <div className="w-full max-w-[600px] h-[350px] flex items-center justify-center overflow-hidden">
+                <div className="w-full max-w-[50vh] h-[50vh] flex items-center justify-center overflow-hidden">
                   {img.url ? (
                     <a href={`/${img.url.replace(/\.tsx$/, "").toLowerCase()}`} className="flex items-center justify-center h-full w-full">
                       <OptimizedImage
                         src={img.src}
                         alt={img.title || `Artwork ${index}`}
                         width={600}
-                        height={350}
+                        height={600}
                         containerClassName="w-full h-full flex items-center justify-center"
                         className="object-contain cursor-pointer"
-                        style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
+                        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                         sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 600px"
                         priority={index === 0}
                         quality={index === 0 ? 75 : 60}
@@ -64,10 +64,10 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
                       src={img.src}
                       alt={img.title || `Artwork ${index}`}
                       width={600}
-                      height={350}
+                      height={600}
                       containerClassName="w-full h-full flex items-center justify-center"
                       className="object-contain cursor-pointer"
-                      style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                       sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 600px"
                         priority={index === 0}
                         quality={index === 0 ? 75 : 60}
@@ -81,7 +81,7 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
 
         {/* Image Metadata */}
         <div className="text-center text-xs md:text-sm text-gray-600 mb-6">
-          <div className="italic font-bold text-base md:text-lg font-serif mb-1 text-black">
+          <div className="italic text-base md:text-lg mb-1 text-black" style={{ fontFamily: 'Gambetta-Semibold' }}>
             {images[selectedIndex]?.title || "Untitled"}
           </div>
           {images[selectedIndex]?.medium && (
