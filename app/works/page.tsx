@@ -40,7 +40,7 @@ export default function Works() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Header />
 
       <main className="px-5 md:px-10 lg:px-40 md:py-10" >

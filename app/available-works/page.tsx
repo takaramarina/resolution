@@ -35,7 +35,7 @@ export default function AvailableWorksSingleColumn() {
                 />
               </a>
               <div className="text-center text-xs md:text-sm text-gray-700 mt-8 leading-relaxed">
-                <div className="italic font-bold">{img.title}</div>
+                <div className="italic font-bold text-base md:text-lg font-serif mb-2">{img.title}</div>
                 <div>{img.medium}</div>
                 <div>{img.dimensions}</div>
               </div>

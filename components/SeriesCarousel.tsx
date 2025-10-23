@@ -80,14 +80,16 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
         </div>
 
         {/* Image Metadata */}
-        <div className="text-center text-gray-600 mb-6">
-          <h3 className="font-bold text-lg mb-1 font-serif">
-            <span className="italic">{images[selectedIndex]?.title || "Untitled"}</span>
-            {images[selectedIndex]?.title && images[selectedIndex]?.year ? `, ${images[selectedIndex]?.year}` : ""}
-          </h3>
-          <p className="text-sm">
-            {[images[selectedIndex]?.medium, images[selectedIndex]?.dimensions].filter(Boolean).join(", ")}
-          </p>
+        <div className="text-center text-xs md:text-sm text-gray-600 mb-6">
+          <div className="italic font-bold text-base md:text-lg font-serif mb-1 text-black">
+            {images[selectedIndex]?.title || "Untitled"}
+          </div>
+          {images[selectedIndex]?.medium && (
+            <div>{images[selectedIndex]?.medium}</div>
+          )}
+          {images[selectedIndex]?.dimensions && (
+            <div>{images[selectedIndex]?.dimensions}</div>
+          )}
         </div>
       </div>
 
@@ -99,11 +101,7 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
               <button
                 key={index}
                 onClick={() => scrollTo(index)}
-                className={`border-2 p-1 rounded-sm overflow-hidden transition-all duration-200 flex-shrink-0 ${
-                  index === selectedIndex 
-                    ? "border-blue-500 shadow-lg" 
-                    : "border-gray-300 hover:border-gray-400"
-                }`}
+                className="p-1 rounded-sm overflow-hidden transition-all duration-200 flex-shrink-0 relative"
               >
                 <OptimizedImage
                   src={img.src}
@@ -114,6 +112,9 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
                   sizes="80px"
                   quality={50}
                 />
+                {index === selectedIndex && (
+                  <div className="absolute inset-0 bg-black bg-opacity-30 rounded-sm" />
+                )}
               </button>
             ))}
           </div>
