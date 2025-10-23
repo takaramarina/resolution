@@ -1,47 +1,63 @@
 'use client'
-import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Link from "next/link";
 
+const categories = [
+  {
+    name: 'VECTOR',
+    href: '/vector',
+    image: '/images/rotation/Born.webp',
+    alt: 'Born'
+  },
+  {
+    name: 'RASTER',
+    href: '/raster',
+    image: '/images/drawings/Queens.webp',
+    alt: 'Queens'
+  },
+  {
+    name: 'PRACTICE',
+    href: '/practice',
+    image: '/images/notepaper/Tori.webp',
+    alt: 'Tori'
+  }
+];
+
 export default function Home() {
-  const [showIntro, setShowIntro] = useState(true);
-  const [fadeOut, setFadeOut] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFadeOut(true);
-      setTimeout(() => {
-        setShowIntro(false);
-      }, 0);
-    }, 0);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="flex flex-col min-h-[90vh] mt-[69px]">
       <Header />
 
-      <div className="flex-grow flex flex-col items-center justify-center text-center space-y-4 px-4">
-        <a href={`/works/notepaper/tori`}>
-          <img
-            src="/images/notepaper/Tori.webp"
-            alt="Digital Artwork"
-            className="h-[40vh] md:h-[60vh] object-contain"
-          />
-        </a>
-        <div className="text-sm md:text-base text-gray-700 mt-8">
-          <p><span className="font-medium italic" style={{ fontFamily: 'Gambetta-Semibold' }}>Tori</span>, 2025</p>
-        </div>
-        <Link
-          href="/works"
-          className="text-sm md:text-base text-gray-500 hover:text-black transition"
-        >
-          See more works →
-        </Link>
-      </div>
+      <div className="flex-grow flex flex-col items-center justify-center px-5 md:px-10 lg:px-[20rem] py-16">
+        <div className="w-full max-w-4xl space-y-12 md:space-y-16">
+          {categories.map((category) => (
+            <Link
+              key={category.name}
+              href={category.href}
+              className="flex items-center gap-4 md:gap-8 group hover:opacity-80 transition-opacity"
+            >
+              {/* Small thumbnail on the left */}
+              <div className="flex-shrink-0 w-24 h-24 md:w-48 md:h-48 relative overflow-hidden">
+                <img
+                  src={category.image}
+                  alt={category.alt}
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-      {/* <Footer /> */}
+              {/* Large bold text on the right */}
+              <div className="flex-grow min-w-0">
+                <h2 
+                  className="text-4xl md:text-7xl lg:text-8xl uppercase tracking-tight break-words"
+                  style={{ fontFamily: 'GeneralSans-Bold' }}
+                >
+                  {category.name}
+                </h2>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
