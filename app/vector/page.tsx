@@ -10,5 +10,5 @@ export default function Vector() {
            img.title === 'World History';
   });
 
-  return <CategoryPageLayout title="Vector" images={vectorImages}/>;
+  return <CategoryPageLayout title="Vector" images={vectorImages} twoColumns={true} />;
 }

@@ -8,5 +8,5 @@ export default function Raster() {
     return img.tags.includes('drawings') && img.title !== 'World History';
   });
 
-  return <CategoryPageLayout title="Raster" images={rasterImages}/>;
+  return <CategoryPageLayout title="Raster" images={rasterImages} twoColumns={true} />;
 }

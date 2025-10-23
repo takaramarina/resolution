@@ -28,20 +28,24 @@ export default function CategoryPageLayout({ title, images, twoColumns = false }
         </div>
 
         {twoColumns ? (
-          <div className="grid grid-cols-2 gap-4 md:gap-8 pb-10 pt-8 items-end">
+          <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 gap-y-4 md:gap-y-8 pb-10 pt-8">
             {images.map((img, index) => (
-              <div key={index} className="w-full flex flex-col">
-                <a href={img.url}>
-                  <img
-                    src={img.src}
-                    alt={img.title || `Artwork ${index}`}
-                    className="w-full h-auto object-contain"
-                  />
-                </a>
-                <div className="text-center text-xs md:text-sm text-gray-700 mt-4 leading-relaxed">
-                  <div className="italic text-sm md:text-base mb-1" style={{ fontFamily: 'Gambetta-Semibold' }}>{img.title}</div>
-                  <div className="text-xs">{img.medium}</div>
-                  <div className="text-xs">{img.dimensions}</div>
+              <div key={index} className="w-full grid grid-rows-[1fr_auto]">
+                <div className="flex items-end">
+                  <a href={img.url} className="block w-full">
+                    <img
+                      src={img.src}
+                      alt={img.title || `Artwork ${index}`}
+                      className="w-full h-auto object-contain"
+                    />
+                  </a>
+                </div>
+                <div className="h-24 md:h-28 flex items-start">
+                  <div className="text-center text-xs md:text-sm text-gray-700 mt-4 leading-relaxed w-full">
+                    <div className="italic text-sm md:text-base mb-1" style={{ fontFamily: 'Gambetta-Semibold' }}>{img.title}</div>
+                    <div className="text-xs">{img.medium}</div>
+                    <div className="text-xs">{img.dimensions}</div>
+                  </div>
                 </div>
               </div>
             ))}
