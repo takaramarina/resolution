@@ -43,11 +43,10 @@ export default function Works() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      <h1 className="sticky top-[60px] md:top-[69px] z-40 bg-white text-3xl md:text-4xl font-bold text-left mb-0 md:mb-4 pt-6 md:pt-6 pb-0 md:pb-4 content-padding tracking-tight font-serif uppercase">
-        Works
-      </h1>
-
-      <main className="content-padding overflow-x-hidden pt-1 md:pt-8">
+      <main className="content-padding overflow-x-hidden pt-0 md:pt-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-left mb-8 tracking-tight font-serif uppercase">
+          Works
+        </h1>
         {/* Content */}
         <div className="flex flex-col pb-10">
           {allTags.map(renderSeriesPreview)}

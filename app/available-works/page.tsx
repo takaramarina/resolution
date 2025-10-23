@@ -14,11 +14,10 @@ export default function AvailableWorksSingleColumn() {
     <div className="min-h-screen bg-white">
       <Header />
       
-      <h1 className="sticky top-[60px] md:top-[69px] z-40 bg-white text-3xl md:text-4xl font-bold text-left mb-0 md:mb-4 pt-6 md:pt-6 pb-0 md:pb-4 content-padding tracking-tight font-serif uppercase">
-        Available Works
-      </h1>
-      
-      <main className="content-padding pt-1 md:pt-8">
+      <main className="content-padding pt-0 md:pt-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-left mb-8 tracking-tight font-serif uppercase">
+          Available Works
+        </h1>
         <div className="text-left text-sm mb-8 pt-4">
           Please contact <a href="mailto:fannymoneyonline@gmail.com" className="underline">fannymoneyonline@gmail.com</a> for all inquiries.
         </div>

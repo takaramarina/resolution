@@ -7,11 +7,10 @@ export default function About() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      <h1 className="sticky top-[60px] md:top-[69px] z-40 bg-white text-3xl md:text-4xl font-semibold text-left mb-0 md:mb-6 pt-6 md:pt-6 pb-0 md:pb-4 content-padding tracking-tight font-serif uppercase">
-        About
-      </h1>
-
-      <main className="content-padding overflow-x-hidden pt-1 md:pt-8">
+      <main className="content-padding overflow-x-hidden pt-0 md:pt-12">
+        <h1 className="text-3xl md:text-4xl font-semibold text-left mb-8 tracking-tight font-serif uppercase">
+          About
+        </h1>
         <div className="space-y-12 py-4">
           {/* Artist Info */}
           <section>
