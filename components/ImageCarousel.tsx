@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import OptimizedImage from "./OptimizedImage";
 
 export default function ImageCarousel({ 
   images, 
@@ -35,14 +36,19 @@ export default function ImageCarousel({
       </button>
 
       {/* Image Display - Clicking Opens Modal */}
-      <img
+      <OptimizedImage
         src={images[currentIndex]}
         alt={`Artwork ${currentIndex + 1}`}
-        className="w-full h-auto object-cover cursor-pointer"
+        width={800}
+        height={600}
+        className="w-full h-auto max-h-[60vh] md:max-h-[40vh] object-cover cursor-pointer"
         onClick={() => {
           setImageSrc(images[currentIndex]); // Set the modal image
           setIsModalOpen(true);
         }}
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={currentIndex === 0}
+        quality={85}
       />
 
       {/* Right Button */}

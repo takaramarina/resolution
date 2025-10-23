@@ -129,8 +129,7 @@ export default function Home() {
 
           {/* Text Content */}
           <div className="flex flex-col gap-8">
-            <div className="text-xl font-bold">
-              {artwork.title} <br />
+            <div className="text-xl font-bold font-serif">
               <em>{artwork.artworkTitle}</em>
             </div>
             <div className="text-lg">

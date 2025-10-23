@@ -12,17 +12,17 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex flex-col bg-white">
-      <div className="flex items-center justify-between px-5 py-5 md:px-[60px]">
+      <div className="flex items-center justify-between px-5 py-5 md:px-10 lg:px-40">
         <div className="text-l font-bold">
           <Link href="/">Reiji Shimane</Link>
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center gap-6 text-base">
+        <div className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/works" className="hover:underline">
             All Works
           </Link>
-          <Link href="/available-works" className="py-2 text-base hover:underline">
+          <Link href="/available-works" className="py-2 text-sm hover:underline">
             Available Works
           </Link>
           <Link href="/about" className="hover:underline">
@@ -31,7 +31,7 @@ export default function Header() {
           <Link href="/contact" className="hover:underline">
             Contact
           </Link>
-          <Link href="https://www.instagram.com/shimanereiji/" aria-label="Instagram">
+          <Link href="https://www.instagram.com/moon_rail/" aria-label="Instagram">
             <Instagram className="h-5 w-5" />
           </Link>
         </div>
@@ -52,9 +52,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Thin gray line */}
-      <div className="border-b border-gray-300 mx-5 md:mx-[60px]" />
-
       {/* Mobile Menu */}
       <div
         className={`md:hidden absolute top-0 left-0 w-full bg-white p-5 shadow-lg z-40 transition-transform transform ${
@@ -62,20 +59,20 @@ export default function Header() {
         }`}
       >
         <div className="flex flex-col items-center">
-          <Link href="/works" className="py-2 text-base hover:underline">
+          <Link href="/works" className="py-2 text-sm hover:underline">
             All Works
           </Link>
-          <Link href="/available-works" className="py-2 text-base hover:underline">
+          <Link href="/available-works" className="py-2 text-sm hover:underline">
             Available Works
           </Link>
-          <Link href="/about" className="py-2 text-base hover:underline">
+          <Link href="/about" className="py-2 text-sm hover:underline">
             About
           </Link>
-          <Link href="/contact" className="py-2 text-base hover:underline">
+          <Link href="/contact" className="py-2 text-sm hover:underline">
             Contact
           </Link>
           <Link
-            href="https://www.instagram.com/shimanereiji/"
+            href="https://www.instagram.com/moon_rail/"
             aria-label="Instagram"
             className="py-2"
           >

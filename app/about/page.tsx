@@ -4,11 +4,11 @@ import Footer from "../../components/Footer";
 
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-white overflow-x-hidden">
       <Header />
 
       <main className="px-5 md:px-10 lg:px-40 py-12 flex-grow">
-        <h1 className="text-2xl md:text-3xl font-semibold text-left mb-6 tracking-tight">
+        <h1 className="text-2xl md:text-3xl font-semibold text-left mb-6 tracking-tight font-serif">
           About
         </h1>
 
@@ -21,10 +21,10 @@ export default function About() {
 
         {/* Exhibitions & Shows */}
         <section className="w-full max-w-3xl mb-8">
-          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">Exhibitions & Shows</h2>
+          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4 font-serif">Exhibitions & Shows</h2>
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">"ぼくの好きなひと展"</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">"ぼくの好きなひと展"</h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">Den Gallery, Tokyo</p>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">July 2024</p>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-2">
@@ -37,10 +37,10 @@ export default function About() {
 
         {/* Education & Training */}
         <section className="w-full max-w-3xl mb-8">
-          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">Education & Skills</h2>
+          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4 font-serif">Education & Skills</h2>
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">Skills</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">Skills</h3>
               <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
                 {/* Professional Skills */}
                 <li>Artistic: Drawing (Ink and Graphite), Painting, Digital Art (Illustrator, Procreate)</li>
@@ -49,7 +49,7 @@ export default function About() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">BFA in Fine Arts, School of the Art Institute of Chicago</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">BFA in Fine Arts, School of the Art Institute of Chicago</h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">Chicago, 2022</p>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-1">
                 Focus on architecture, painting, and performing arts.
