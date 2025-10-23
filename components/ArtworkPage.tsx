@@ -43,8 +43,7 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
 
           {/* Text */}
           <div className="flex flex-col gap-8">
-            <div className="text-xl font-bold">
-              {artwork.artist} <br />
+            <div className="text-xl font-bold font-serif">
               <em>{artwork.title}</em>
             </div>
             <div className="text-lg">

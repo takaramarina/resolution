@@ -30,8 +30,7 @@ export default function Works() {
 
     return (
       <div key={tag} className="flex flex-col w-full gap-8 mb-20 items-left mx-auto">
-        <div className="border-b border-gray-300" />
-        <h2 className="text-lg font-bold capitalize text-left">
+        <h2 className="text-lg font-bold capitalize text-left font-serif">
           {tag.replace(/-/g, " ")}
         </h2>
 
@@ -45,7 +44,7 @@ export default function Works() {
       <Header />
 
       <main className="px-5 md:px-10 lg:px-40 md:py-10" >
-        <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight">
+        <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight font-serif">
           Works
         </h1>
 

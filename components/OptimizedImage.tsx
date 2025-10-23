@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useRef } from 'react';
 import Image from 'next/image';
 
 interface OptimizedImageProps {
@@ -9,6 +8,7 @@ interface OptimizedImageProps {
   width?: number;
   height?: number;
   className?: string;
+  containerClassName?: string;
   style?: React.CSSProperties;
   priority?: boolean;
   onClick?: () => void;
@@ -25,6 +25,7 @@ export default function OptimizedImage({
   width,
   height,
   className = '',
+  containerClassName = '',
   style,
   priority = false,
   onClick,
@@ -34,57 +35,22 @@ export default function OptimizedImage({
   placeholder = 'empty',
   blurDataURL,
 }: OptimizedImageProps) {
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
-
-  // Generate a simple blur data URL for better UX
-  const defaultBlurDataURL = 
-    'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PC9zdmc+';
-
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
-
-  const handleError = () => {
-    setHasError(true);
-    setIsLoading(false);
-  };
-
-  if (hasError) {
-    return (
-      <div className={`bg-gray-200 flex items-center justify-center ${className}`}>
-        <span className="text-gray-500 text-sm">Failed to load image</span>
-      </div>
-    );
-  }
-
   return (
-    <div className="relative">
-      {/* Loading spinner overlay */}
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 z-10">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
-        </div>
-      )}
-      
+    <div className={`relative ${containerClassName}`}>
       <Image
         src={src}
         alt={alt}
         width={fill ? undefined : width}
         height={fill ? undefined : height}
         fill={fill}
-        className={`transition-opacity duration-300 ${
-          isLoading ? 'opacity-0' : 'opacity-100'
-        } ${onClick ? 'cursor-pointer' : ''} ${className || ''}`}
+        className={`${onClick ? 'cursor-pointer' : ''} ${className || ''}`}
         style={style}
         onClick={onClick}
-        onLoad={handleLoad}
-        onError={handleError}
         priority={priority}
         sizes={sizes}
         quality={quality}
         placeholder={placeholder}
-        blurDataURL={blurDataURL || defaultBlurDataURL}
+        blurDataURL={blurDataURL}
       />
     </div>
   );

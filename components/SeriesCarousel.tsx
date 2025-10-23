@@ -7,9 +7,13 @@ import OptimizedImage from './OptimizedImage';
 
 export default function SeriesCarousel({ images }: { images: Artwork[] }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    dragFree: true,
+    containScroll: 'trimSnaps',
+  });
   const [thumbRef, thumbApi] = useEmblaCarousel({
-    dragFree: true
+    dragFree: true,
+    containScroll: 'trimSnaps',
   });
 
   const onSelect = useCallback(() => {
@@ -39,19 +43,20 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
                 key={index}
                 className="min-w-0 flex-[0_0_100%] flex justify-center items-center px-4"
               >
-                <div className="w-full max-w-[600px] h-[350px] flex items-center justify-center">
+                <div className="w-full max-w-[600px] h-[350px] flex items-center justify-center overflow-hidden">
                   {img.url ? (
-                    <a href={`/${img.url.replace(/\.tsx$/, "").toLowerCase()}`} className="flex items-center justify-center">
+                    <a href={`/${img.url.replace(/\.tsx$/, "").toLowerCase()}`} className="flex items-center justify-center h-full w-full">
                       <OptimizedImage
                         src={img.src}
                         alt={img.title || `Artwork ${index}`}
                         width={600}
                         height={350}
-                        className="max-w-full max-h-full object-contain cursor-pointer"
-                        style={{ width: "auto", height: "auto" }}
+                        containerClassName="w-full h-full flex items-center justify-center"
+                        className="object-contain cursor-pointer"
+                        style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
                         sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 600px"
                         priority={index === 0}
-                        quality={80}
+                        quality={index === 0 ? 75 : 60}
                       />
                     </a>
                   ) : (
@@ -60,11 +65,12 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
                       alt={img.title || `Artwork ${index}`}
                       width={600}
                       height={350}
-                      className="max-w-full max-h-full object-contain cursor-pointer"
-                      style={{ width: "auto", height: "auto" }}
+                      containerClassName="w-full h-full flex items-center justify-center"
+                      className="object-contain cursor-pointer"
+                      style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
                       sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 600px"
-                      priority={index === 0}
-                      quality={80}
+                        priority={index === 0}
+                        quality={index === 0 ? 75 : 60}
                     />
                   )}
                 </div>
@@ -75,7 +81,7 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
 
         {/* Image Metadata */}
         <div className="text-center text-gray-600 mb-6">
-          <h3 className="font-bold text-lg mb-1">
+          <h3 className="font-bold text-lg mb-1 font-serif">
             <span className="italic">{images[selectedIndex]?.title || "Untitled"}</span>
             {images[selectedIndex]?.title && images[selectedIndex]?.year ? `, ${images[selectedIndex]?.year}` : ""}
           </h3>
@@ -106,7 +112,7 @@ export default function SeriesCarousel({ images }: { images: Artwork[] }) {
                   height={80}
                   className="w-20 h-20 object-cover"
                   sizes="80px"
-                  quality={60}
+                  quality={50}
                 />
               </button>
             ))}

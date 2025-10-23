@@ -14,7 +14,7 @@ export default function AvailableWorksSingleColumn() {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="px-5 md:px-10 lg:px-40 py-10">
-        <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight">
+        <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight font-serif">
           Available Works
         </h1>
         <div className="text-left text-sm mb-8">

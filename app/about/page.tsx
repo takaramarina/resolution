@@ -8,7 +8,7 @@ export default function About() {
       <Header />
 
       <main className="px-5 md:px-10 lg:px-40 py-12 flex-grow">
-        <h1 className="text-2xl md:text-3xl font-semibold text-left mb-6 tracking-tight">
+        <h1 className="text-2xl md:text-3xl font-semibold text-left mb-6 tracking-tight font-serif">
           About
         </h1>
 

@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
         <main className="px-5 md:px-10 lg:px-40 py-10 flex-grow">
-          <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight">
+          <h1 className="text-2xl md:text-3xl font-bold text-left mb-4 tracking-tight font-serif">
             Contact
           </h1>
           <section className="w-full max-w-3xl mb-12">
