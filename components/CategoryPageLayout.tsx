@@ -16,7 +16,7 @@ export default function CategoryPageLayout({ title, images, twoColumns = false }
     <div className="min-h-screen bg-white">
       <Header />
       
-      <main className={twoColumns ? "content-padding pt-0 md:pt-12 px-2 md:px-5 lg:px-10" : "content-padding pt-0 md:pt-12"}>
+      <main className="content-padding pt-0 md:pt-12">
         <h1 className="text-3xl md:text-4xl font-bold text-left mb-8 tracking-tight font-serif uppercase">
           {title}
         </h1>
@@ -36,7 +36,7 @@ export default function CategoryPageLayout({ title, images, twoColumns = false }
                     <img
                       src={img.src}
                       alt={img.title || `Artwork ${index}`}
-                      className="w-full h-auto object-contain"
+                      className="w-full h-auto max-h-[70vh] object-contain"
                     />
                   </a>
                 </div>
