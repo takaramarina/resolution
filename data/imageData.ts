@@ -456,6 +456,7 @@ export const images: Artwork[] = [
     id: 6,
     slug: "Queens",
     src: "/images/drawings/Queens.webp",
+    highres: "/images/drawings/Queens.jpg",
     artist: "Reiji Shimane",
     title: "Queens",
     medium: "Graphite on paper, tape, adhesive sheet",
@@ -680,6 +681,7 @@ export const images: Artwork[] = [
     id: 3,
     slug: "World-History",
     src: "/images/drawings/World-History.webp",
+    highres: "/images/drawings/World-History.jpg",
     artist: "Reiji Shimane",
     title: "World History",
     medium: "Exclusive edition print",
@@ -883,7 +885,7 @@ export const images: Artwork[] = [
     description: "",
     tags: ["tsumiki", "digital-drawings", "Digital"],
     
-    url: "works/tsumiki/flexiblity"
+    url: "works/tsumiki/flexibility"
   },
   {
     id: 39,
