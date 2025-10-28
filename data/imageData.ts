@@ -52,6 +52,7 @@ export const images: Artwork[] = [
     id: 24,
     slug: "Filling",
     src: "/images/rotation/Filling.webp",
+    highres: "/images/rotation/Filling.jpg",
     artist: "Reiji Shimane",
     title: "Filling",
     medium: "Ink and oil pastels on wood panel",
@@ -66,6 +67,7 @@ export const images: Artwork[] = [
     id: 19,
     slug: "Organ",
     src: "/images/rotation/Organ.webp",
+    highres: "/images/rotation/Organ.jpg",
     artist: "Reiji Shimane",
     title: "Organ",
     medium: "Ink and oil pastels on wood panel",
@@ -90,23 +92,39 @@ export const images: Artwork[] = [
     url: "works/rotation/fukuoka"
   },
   {
-    id: 27,
-    slug: "Antihero",
-    src: "/images/rotation/Antihero.webp",
+    id: 65,
+    slug: "Bermuda",
+    src: "/images/rotation/Bermuda.webp",
+    highres: "/images/rotation/Bermuda.jpg",
     artist: "Reiji Shimane",
-    title: "Antihero",
+    title: "Bermuda",
     medium: "Ink and oil pastels on wood panel",
     dimensions: "90 x 90 x 2cm",
     year: 2025,
     description: "",
     tags: ["rotation", "Physical", "available works"],
-    
-    url: "works/rotation/antihero"
+
+    url: "works/rotation/bermuda"
   },
+  // {
+  //   id: 27,
+  //   slug: "Antihero",
+  //   src: "/images/rotation/Antihero.webp",
+  //   artist: "Reiji Shimane",
+  //   title: "Antihero",
+  //   medium: "Ink and oil pastels on wood panel",
+  //   dimensions: "90 x 90 x 2cm",
+  //   year: 2025,
+  //   description: "",
+  //   tags: ["rotation", "Physical", "available works"],
+    
+  //   url: "works/rotation/antihero"
+  // },
   {
     id: 23,
     slug: "Dream",
     src: "/images/rotation/Dream.webp",
+    highres: "/images/rotation/Dream.jpg",
     artist: "Reiji Shimane",
     title: "Dream",
     medium: "Ink and oil pastels on wood panel",
