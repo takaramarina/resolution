@@ -10,5 +10,5 @@ export default function Practice() {
            img.tags.includes('digital-drawings');
   });
 
-  return <CategoryPageLayout title="Practice" images={practiceImages} twoColumns={true} />;
+  return <CategoryPageLayout title="Practice" images={practiceImages} threeColumns={true} />;
 }
