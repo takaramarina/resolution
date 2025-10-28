@@ -38,14 +38,9 @@ export default function [ArtworkName]Page() {
 
 ### Step 1: Add Image Files
 ```bash
-# Add your source image
-/public/images/[category]/Your-Artwork-Name.jpg
-
-# Run optimization script
-node scripts/optimize-images.js ./public/images/[category] ./public/images-optimized/[category]
-
-# Copy WebP version to source directory
-cp public/images-optimized/[category]/Your-Artwork-Name-original.webp public/images/[category]/Your-Artwork-Name.webp
+# Add your images to the category folder
+/public/images/[category]/Your-Artwork-Name.jpg   # High-res version for modal
+/public/images/[category]/Your-Artwork-Name.webp  # Web-optimized version for display
 ```
 
 ### Step 2: Add to imageData.ts
@@ -103,9 +98,8 @@ Just modify the entry in `data/imageData.ts`:
 
 ### Option 2: Replace Images
 1. Replace the source image files in `/public/images/[category]/`
-2. Re-run the optimization script
-3. Update the WebP version
-4. Data automatically updates since pages are dynamic
+2. Ensure both `.jpg` (for high-res modal) and `.webp` (for web display) versions exist
+3. Data automatically updates since pages are dynamic
 
 ## 🚀 Benefits of This System
 
@@ -142,19 +136,12 @@ app/works/
 │       └── page.tsx               # Dynamic artwork page
 
 public/
-├── images/                        # Source images
-│   └── [category]/
-│       ├── Artwork-Name.jpg       # High-res version
-│       └── Artwork-Name.webp      # Web-optimized version
-└── images-optimized/              # Multiple size variants
+└── images/                        # Source images
     └── [category]/
-        ├── Artwork-Name-thumbnail.webp
-        ├── Artwork-Name-small.webp
-        ├── Artwork-Name-medium.webp
-        └── Artwork-Name-large.webp
+        ├── Artwork-Name.jpg       # High-res version (for modal)
+        └── Artwork-Name.webp      # Web-optimized version (for display)
 
 scripts/
-├── optimize-images.js             # Image optimization
 ├── convert-artwork-pages.js       # Mass page conversion
 └── fix-slug-mismatches.js         # Data consistency checker
 ```
@@ -181,7 +168,7 @@ scripts/
 ### Image not loading
 - Verify the image file exists at the specified path
 - Check that both `.jpg` and `.webp` versions exist
-- Ensure the optimization script ran successfully
+- Clear browser cache and refresh
 
 ### Modal image broken
 - Check that the `highres` field exists and points to a valid image

@@ -443,6 +443,36 @@ export const images: Artwork[] = [
     ============================================================
   */  
 
+    {
+    id: 66,
+    slug: "Beethoven",
+    src: "/images/drawings/Beethoven.webp",
+    highres: "/images/drawings/Beethoven.png",
+    artist: "Reiji Shimane",
+    title: "Beethoven",
+    medium: "Graphite on paper",
+  dimensions: "30 x 42 cm",
+  year: 2025,
+  description: "",
+    tags: ["drawings", "Physical"],
+    
+    url: "works/drawings/beethoven"
+  },
+  {
+    id: 67,
+    slug: "Dogs",
+    src: "/images/drawings/Dogs.webp",
+    highres: "/images/drawings/Dogs.png",
+    artist: "Reiji Shimane",
+    title: "Dogs",
+    medium: "Graphite on paper",
+  dimensions: "30 x 42 cm",
+  year: 2025,
+  description: "",
+    tags: ["drawings", "Physical"],
+
+    url: "works/drawings/dogs"
+  },
   {
     id: 4,
     slug: "Physical-Drawing",
