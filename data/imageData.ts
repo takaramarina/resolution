@@ -422,6 +422,62 @@ export const images: Artwork[] = [
     
     url: "works/notepaper/common-sense"
   },
+  {
+    id: 68,
+    slug: "Capture",
+    src: "/images/notepaper/Capture.webp",
+    artist: "Reiji Shimane",
+    title: "Capture",
+    medium: "Ink on paper",
+    dimensions: "210 x 297mm",
+    year: 2024,
+    description: "",
+    tags: ["notepaper", "Physical"],
+
+    url: "works/notepaper/capture"
+  },
+  {
+    id: 69,
+    slug: "Digital-Earth",
+    src: "/images/notepaper/Digital-Earth.webp",
+    artist: "Reiji Shimane",
+    title: "Digital Earth",
+    medium: "Ink on paper",
+    dimensions: "210 x 297mm",
+    year: 2024,
+    description: "",
+    tags: ["notepaper", "Physical"],
+
+    url: "works/notepaper/digital-earth"
+  },
+  {
+    id: 70,
+    slug: "Drawing-As-Vehicle",
+    src: "/images/notepaper/Drawing-As-Vehicle.webp",
+    artist: "Reiji Shimane",
+    title: "Drawing As Vehicle",
+    medium: "Ink on paper",
+    dimensions: "210 x 297mm",
+    year: 2024,
+    description: "",
+    tags: ["notepaper", "Physical"],
+
+    url: "works/notepaper/drawing-as-vehicle"
+  },
+  {
+    id: 71,
+    slug: "Sense",
+    src: "/images/notepaper/Sense.webp",
+    artist: "Reiji Shimane",
+    title: "Sense",
+    medium: "Ink on paper",
+    dimensions: "210 x 297mm",
+    year: 2024,
+    description: "",
+    tags: ["notepaper", "Physical"],
+
+    url: "works/notepaper/sense"
+  },
   // {
   //   id: 16,
   //   slug: "Strong-Canvas",
