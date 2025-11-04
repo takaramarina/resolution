@@ -80,3 +80,17 @@ main {
   transform: rotate(0deg); /* Default right arrow */
 }
 
+/* Slow spinning animation for rotation series modal images */
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 30s linear infinite;
+}
+

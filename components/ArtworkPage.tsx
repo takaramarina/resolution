@@ -10,6 +10,9 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
   const [imageSrc, setImageSrc] = useState("");
   const imageRef = useRef<HTMLImageElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+  
+  // Check if this artwork belongs to the rotation series
+  const isRotationSeries = artwork.tags.includes("rotation");
 
   const handleImageClick = (imgsrc: string) => {
     setImageSrc(imgsrc);
@@ -76,7 +79,9 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
                 ref={imageRef}
                 src={imageSrc}
                 alt="Full-screen view"
-                className="max-w-full max-h-full object-contain"
+                className={`max-w-full max-h-full object-contain ${
+                  isRotationSeries ? "animate-slow-spin" : ""
+                }`}
               />
             </div>
           </div>
