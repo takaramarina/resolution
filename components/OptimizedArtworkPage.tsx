@@ -1,32 +1,21 @@
+/**
+ * Generic artwork page wrapper with image preloading optimization
+ * Use this template for individual artwork pages
+ */
+
 "use client";
 import ArtworkPage from "@/components/ArtworkPage";
 import { images } from "@/data/imageData";
-import { notFound } from "next/navigation";
-import { use, useEffect, Suspense } from "react";
+import { useEffect } from "react";
+import { Suspense } from 'react';
 
-function DynamicArtworkContent({ 
-  params 
-}: { 
-  params: Promise<{ category: string; slug: string }> 
-}) {
-  // Unwrap the params Promise using React.use()
-  const { category, slug } = use(params);
-  
-  // Find artwork by slug (case-insensitive matching)
-  const artwork = images.find((art) => art.slug.toLowerCase() === slug.toLowerCase());
+interface OptimizedArtworkPageProps {
+  slug: string;
+  notFoundComponent?: React.ComponentType;
+}
 
-  // If no artwork found, show 404
-  if (!artwork) {
-    notFound();
-  }
-
-  // Optional: Verify the category matches the artwork's tags for SEO consistency
-  // This ensures URLs like /works/rotation/dream work correctly
-  const belongsToCategory = artwork.tags.includes(category);
-  
-  if (!belongsToCategory) {
-    notFound();
-  }
+function ArtworkContent({ slug, notFoundComponent: NotFound }: OptimizedArtworkPageProps) {
+  const artwork = images.find((art) => art.slug === slug);
 
   // Preload the artwork image for instant loading
   useEffect(() => {
@@ -64,21 +53,31 @@ function DynamicArtworkContent({
     }
   }, [artwork]);
 
+  if (!artwork) {
+    return NotFound ? <NotFound /> : <div>Not Found</div>;
+  }
+
   return <ArtworkPage artwork={artwork} />;
 }
 
-export default function DynamicArtworkPage({ 
-  params 
-}: { 
-  params: Promise<{ category: string; slug: string }> 
-}) {
+export default function OptimizedArtworkPage({ slug, notFoundComponent }: OptimizedArtworkPageProps) {
   return (
     <Suspense fallback={
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-gray-600">Loading artwork...</div>
       </div>
     }>
-      <DynamicArtworkContent params={params} />
+      <ArtworkContent slug={slug} notFoundComponent={notFoundComponent} />
     </Suspense>
   );
 }
+
+/**
+ * Example usage in individual artwork pages:
+ * 
+ * import OptimizedArtworkPage from '@/components/OptimizedArtworkPage';
+ * 
+ * export default function DreamPage() {
+ *   return <OptimizedArtworkPage slug="Dream" />;
+ * }
+ */

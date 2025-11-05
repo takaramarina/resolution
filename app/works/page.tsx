@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import SeriesCarousel from "@/components/SeriesCarousel";
+import { useImagePreload } from '@/hooks/useImagePreload';
 
 const allTags = [
   "rotation",
@@ -20,6 +21,24 @@ const allTags = [
 
 export default function Works() {
   const [filterAvailable, setFilterAvailable] = useState(false);
+
+  // Preload the first image from each series for faster carousel loading
+  const getFirstImageFromEachSeries = () => {
+    const firstImages: typeof images = [];
+    allTags.forEach(tag => {
+      let seriesImages = images.filter((img) => img.tags.includes(tag));
+      if (filterAvailable) {
+        seriesImages = seriesImages.filter((img) => img.tags.includes("available works"));
+      }
+      if (seriesImages.length > 0) {
+        firstImages.push(seriesImages[0]);
+      }
+    });
+    return firstImages;
+  };
+
+  const firstImagesFromSeries = getFirstImageFromEachSeries();
+  useImagePreload(firstImagesFromSeries, { count: Math.min(firstImagesFromSeries.length, 6), priority: true });
 
   const renderSeriesPreview = (tag: string) => {
     let seriesImages = images.filter((img) => img.tags.includes(tag));

@@ -8,6 +8,7 @@ import OptimizedImage from "./OptimizedImage";
 export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [imageSrc, setImageSrc] = useState("");
+  const [imageError, setImageError] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
   
@@ -17,10 +18,21 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
   const handleImageClick = (imgsrc: string) => {
     setImageSrc(imgsrc);
     setIsModalOpen(true);
+    setImageError(false); // Reset error state when opening modal
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
+    setImageError(false);
+  };
+
+  const handleModalImageError = () => {
+    // If high-res image fails to load, fallback to the regular src
+    if (imageSrc === (artwork.highres ?? artwork.src) && artwork.highres && artwork.highres !== artwork.src) {
+      setImageSrc(artwork.src);
+    } else {
+      setImageError(true);
+    }
   };
 
   return (
@@ -75,14 +87,22 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
               >
                 &times;
               </button>
-              <img
-                ref={imageRef}
-                src={imageSrc}
-                alt="Full-screen view"
-                className={`max-w-full max-h-full object-contain ${
-                  isRotationSeries ? "animate-slow-spin" : ""
-                }`}
-              />
+              {imageError ? (
+                <div className="text-white text-center p-8">
+                  <p className="text-xl mb-4">Unable to load high-resolution image</p>
+                  <p className="text-sm opacity-75">The image file may be missing or corrupted</p>
+                </div>
+              ) : (
+                <img
+                  ref={imageRef}
+                  src={imageSrc}
+                  alt="Full-screen view"
+                  className={`max-w-full max-h-full object-contain ${
+                    isRotationSeries ? "animate-slow-spin" : ""
+                  }`}
+                  onError={handleModalImageError}
+                />
+              )}
             </div>
           </div>
         )}
