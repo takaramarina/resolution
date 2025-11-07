@@ -802,7 +802,7 @@ export const images: Artwork[] = [
     tags: ["notepaper", "Physical"],
     url: "works/notepaper/Marigods-At-Work"
   },
-  
+
   // {
   //   id: 16,
   //   slug: "Strong-Canvas",
@@ -846,11 +846,10 @@ export const images: Artwork[] = [
     artist: "Reiji Shimane",
     title: "Dogs",
     medium: "Graphite on paper",
-  dimensions: "30 x 42 cm",
-  year: 2025,
-  description: "",
+    dimensions: "30 x 42 cm",
+    year: 2025,
+    description: "",
     tags: ["drawings", "Physical"],
-
     url: "works/drawings/dogs"
   },
   {
