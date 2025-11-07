@@ -918,14 +918,13 @@ export const images: Artwork[] = [
     id: 46,
     slug: "keisatsu",
     src: "/images/frog/警察.JPEG",
-        artist: "Reiji Shimane",
+    artist: "Reiji Shimane",
     title: "警察",
     medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
+    dimensions: "30 x 50cm",
+    year: 2020,
+    description: "",
     tags: ["frog", "print", "Digital", "available works"],
-    
     url: "works/frog/keisatsu"
   },
   {
