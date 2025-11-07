@@ -905,14 +905,13 @@ export const images: Artwork[] = [
     id: 48,
     slug: "rakugaki",
     src: "/images/frog/落書き.JPEG",
-        artist: "Reiji Shimane",
+    artist: "Reiji Shimane",
     title: "落書き",
     medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
+    dimensions: "30 x 50cm",
+    year: 2020,
+    description: "",
     tags: ["frog", "print", "Digital", "available works"],
-    
     url: "works/frog/rakugaki"
   },
   {
