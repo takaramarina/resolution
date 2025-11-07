@@ -802,6 +802,7 @@ export const images: Artwork[] = [
     tags: ["notepaper", "Physical"],
     url: "works/notepaper/Marigods-At-Work"
   },
+  
   // {
   //   id: 16,
   //   slug: "Strong-Canvas",
