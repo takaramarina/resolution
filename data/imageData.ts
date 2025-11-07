@@ -813,9 +813,9 @@ export const images: Artwork[] = [
   //   year: 2024,
   //   description: "",
   //   tags: ["notepaper", "Physical", "available works"],
-    
   //   url: "works/notepaper/strong-canvas"
   // },
+
   /* 
     ============================================================
     ======================== Graphite ==========================
