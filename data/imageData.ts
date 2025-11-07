@@ -859,9 +859,9 @@ export const images: Artwork[] = [
     artist: "Reiji Shimane",
     title: "Physical Drawing",
     medium: "Graphite on paper",
-  dimensions: "90 x 50cm",
-  year: 2024,
-  description: "",
+    dimensions: "90 x 50cm",
+    year: 2024,
+    description: "",
     tags: ["drawings", "Physical"],
     
     url: "works/drawings/physical-drawing"
