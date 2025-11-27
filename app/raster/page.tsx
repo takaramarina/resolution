@@ -10,10 +10,10 @@ function RasterContent() {
     return img.tags.includes('drawings') && img.title !== 'World History';
   });
 
-  // Preload the first 4 images for faster initial render (two column layout)
-  useImagePreload(rasterImages, { count: 4, priority: true });
+  // Preload the first image for faster initial render (single column layout)
+  useImagePreload(rasterImages, { count: 1, priority: true });
 
-  return <CategoryPageLayout title="Raster" images={rasterImages} twoColumns={true} />;
+  return <CategoryPageLayout title="Raster" images={rasterImages} twoColumns={false} />;
 }
 
 export default function Raster() {
