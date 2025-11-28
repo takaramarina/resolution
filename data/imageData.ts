@@ -824,6 +824,21 @@ export const images: Artwork[] = [
   */  
 
     {
+    id: 95,
+    slug: "Spra-60",
+    src: "/images/drawings/Spra-60.webp",
+    highres: "/images/drawings/Spra-60.jpg",
+    artist: "Reiji Shimane",
+    title: "Spra-60",
+    medium: "Exclusive edition print",
+    dimensions: "420 x 594mm",
+    year: 2025,
+    description: "",
+    tags: ["drawings", "Physical", "print", "available works"],
+    
+    url: "works/drawings/spra-60"
+  },
+    {
     id: 66,
     slug: "Beethoven",
     src: "/images/drawings/Beethoven.webp",
@@ -1101,21 +1116,7 @@ export const images: Artwork[] = [
   ======================== Drawings ==========================
   ============================================================
   */  
-  {
-    id: 95,
-    slug: "Spra-60",
-    src: "/images/drawings/Spra-60.webp",
-    highres: "/images/drawings/Spra-60.jpg",
-    artist: "Reiji Shimane",
-    title: "World History",
-    medium: "Exclusive edition print",
-    dimensions: "420 x 594mm",
-    year: 2025,
-    description: "",
-    tags: ["drawings", "Physical", "print", "available works"],
-    
-    url: "works/drawings/spra-60"
-  },
+  
   {
     id: 3,
     slug: "World-History",
