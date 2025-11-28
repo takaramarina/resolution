@@ -829,12 +829,12 @@ export const images: Artwork[] = [
     src: "/images/drawings/Spra-60.webp",
     highres: "/images/drawings/Spra-60.jpg",
     artist: "Reiji Shimane",
-    title: "Spra-60",
-    medium: "Exclusive edition print",
+    title: "Spra 60",
+    medium: "Graphite on Paper",
     dimensions: "420 x 594mm",
     year: 2025,
     description: "",
-    tags: ["drawings", "Physical", "print", "available works"],
+    tags: ["drawings", "Physical", "available works"],
     
     url: "works/drawings/spra-60"
   },
