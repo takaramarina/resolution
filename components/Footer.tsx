@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 py-8 content-padding" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
       {/* <div className="border-b border-gray-300 md:mx-[60px] mb-4" /> */}
-      <div className="flex flex-col items-left text-sm">
+      <div className="flex flex-col items-left text-sm uppercase" style={{ letterSpacing: '0.03em', lineHeight: '170%' }}>
         <Link href="/vector" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
           Vector
         </Link>
@@ -24,7 +24,7 @@ export default function Footer() {
         
         <a
           href="mailto:fannymoneyonline@gmail.com"
-          className="text-sm hover:text-gray-400"
+          className="text-sm hover:text-gray-400 lowercase"
         >
           fannymoneyonline@gmail.com
         </a>

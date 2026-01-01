@@ -110,14 +110,14 @@ export default function CategoryPageLayout({ title, images, twoColumns = false, 
               const priority = shouldLoadWithPriority(index, 'single');
               
               return (
-                <div key={index} className="w-full max-w-2xl">
-                  <a href={img.url}>
+                <div key={index} className="w-full flex flex-col items-center">
+                  <a href={img.url} className="flex justify-center">
                     <OptimizedImage
                       src={img.src}
                       alt={img.title || `Artwork ${index}`}
                       width={width}
                       height={height}
-                      className="max-w-[60vw] max-h-[35vh] md:max-h-[50vh] object-contain mx-auto"
+                      className="max-w-[60vw] max-h-[35vh] md:max-h-[50vh] object-contain"
                       priority={priority}
                       sizes={sizes}
                       quality={90}
