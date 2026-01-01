@@ -5,7 +5,7 @@ import { useState, Suspense } from "react";
 import { images } from "../../data/imageData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import SeriesCarousel from "@/components/SeriesCarousel";
+import OptimizedImage from "../../components/OptimizedImage";
 import { useImagePreload } from '@/hooks/useImagePreload';
 
 const allTags = [
@@ -53,7 +53,30 @@ export default function Works() {
           {tag.replace(/-/g, " ")}
         </h2>
 
-        <SeriesCarousel images={seriesImages} />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {seriesImages.slice(0, 8).map((img, index) => (
+            <Link key={index} href={img.url} className="block">
+              <OptimizedImage
+                src={img.src}
+                alt={img.title || `${tag} artwork ${index + 1}`}
+                width={300}
+                height={300}
+                className="w-full h-auto object-cover hover:opacity-80 transition-opacity"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                priority={index < 4}
+              />
+            </Link>
+          ))}
+        </div>
+        
+        {seriesImages.length > 8 && (
+          <Link 
+            href={`/works/${tag}`}
+            className="text-sm text-gray-600 hover:text-black transition-colors"
+          >
+            View all {seriesImages.length} works →
+          </Link>
+        )}
       </div>
     );
   };
