@@ -28,6 +28,9 @@ export default function Header() {
           <Link href="/practice" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             Practice
           </Link>
+          <Link href="/available-works" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+            Available Works
+          </Link>
           <Link href="/about" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             About
           </Link>
@@ -70,6 +73,9 @@ export default function Header() {
           </Link>
           <Link href="/practice" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             Practice
+          </Link>
+          <Link href="/available-works" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+            Available Works
           </Link>
           <Link href="/about" className="py-2 text-sm hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
             About

@@ -15,6 +15,9 @@ export default function Footer() {
         <Link href="/practice" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
           Practice
         </Link>
+        <Link href="/available-works" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
+          Available Works
+        </Link>
         <Link href="/about" className="hover:underline" style={{ fontFamily: 'GeneralSans-Regular' }}>
           About
         </Link>
@@ -23,10 +26,10 @@ export default function Footer() {
         </Link>
         
         <a
-          href="mailto:fannymoneyonline@gmail.com"
+          href="mailto:takara.marina+reijiinquiry@gmail.com"
           className="text-sm hover:text-gray-400 lowercase"
         >
-          fannymoneyonline@gmail.com
+          takara.marina+reijiinquiry@gmail.com
         </a>
 
         {/* Social Links */}

@@ -18,8 +18,7 @@ export default function About() {
               Reiji Shimane (b. 1997) is a global artist currently based in Tokyo.
             </p>
           </section>
-
-          {/* Exhibitions & Shows */}
+{/* 
           <section>
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-6 font-serif">Exhibitions & Shows</h2>
             <div className="space-y-6">
@@ -34,7 +33,6 @@ export default function About() {
             </div>
           </section>
 
-          {/* Education & Training */}
           <section>
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-6 font-serif">Education & Skills</h2>
             <div className="space-y-6">
@@ -55,7 +53,6 @@ export default function About() {
             </div>
           </section>
 
-          {/* CV Links */}
           <section>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
               See full professional CV {" "}
@@ -67,7 +64,7 @@ export default function About() {
                  here
               </a>).
             </p>
-          </section>
+          </section> */}
         </div>
       </main>
       <Footer />
