@@ -905,7 +905,7 @@ export const images: Artwork[] = [
     dimensions: "50 x 90cm",
     year: 2023,
     description: "",
-    tags: ["drawings", "Physical", "available works"],
+    tags: ["drawings", "Physical"],
     url: "works/drawings/queens"
   },
 
