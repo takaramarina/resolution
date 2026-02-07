@@ -26,10 +26,10 @@ export default function Footer() {
         </Link>
         
         <a
-          href="mailto:takara.marina+reijiinquiry@gmail.com"
+          href="mailto:fannymoneyonline@gmail.com"
           className="text-sm hover:text-gray-400 lowercase"
         >
-          takara.marina+reijiinquiry@gmail.com
+          fannymoneyonline@gmail.com
         </a>
 
         {/* Social Links */}

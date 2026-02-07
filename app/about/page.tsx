@@ -18,10 +18,17 @@ export default function About() {
               Reiji Shimane (b. 1997) is a global artist currently based in Tokyo.
             </p>
           </section>
-{/* 
           <section>
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-6 font-serif">Exhibitions & Shows</h2>
             <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">"The Next Room"</h3>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">OCD Gallery, NYC</p>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">February 2025</p>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-2">
+                  "The Next Room" is a group exhibition featuring six emerging artists, bringing together sculpture, painting, and drawing. Reiji Shimane presents a series of new graphite drawings exploring themes of memory and language.
+                </p>
+              </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">"ぼくの好きなひと展"</h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Den Gallery, Tokyo</p>
@@ -33,7 +40,7 @@ export default function About() {
             </div>
           </section>
 
-          <section>
+          {/* <section>
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-6 font-serif">Education & Skills</h2>
             <div className="space-y-6">
               <div>
