@@ -31,7 +31,7 @@ export const images: Artwork[] = [
     dimensions: "90 x 90 x 2cm",
     year: 2025,
     description: "",
-    tags: ["rotation", "Physical", "available works"],
+    tags: ["rotation", "Physical"],
     
     url: "works/rotation/formula-1"
   },
@@ -59,7 +59,7 @@ export const images: Artwork[] = [
     dimensions: "90 x 90 x 2cm",
     year: 2025,
     description: "",
-    tags: ["rotation", "Physical", "available works"],
+    tags: ["rotation", "Physical"],
     
     url: "works/rotation/filling"
   },
@@ -159,7 +159,7 @@ export const images: Artwork[] = [
     dimensions: "90 x 90 x 2cm",
     year: 2025,
     description: "",
-    tags: ["rotation", "Physical", "available works"],
+    tags: ["rotation", "Physical"],
     
     url: "works/rotation/sauna"
   },
