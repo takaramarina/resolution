@@ -18,6 +18,9 @@ interface CategoryPageLayoutProps {
 export default function CategoryPageLayout({ title, images, twoColumns = false, threeColumns = false }: CategoryPageLayoutProps) {
   const [showAvailableOnly, setShowAvailableOnly] = useState(false);
   
+  // Don't show the availability filter on the Available Works page itself
+  const showAvailabilityFilter = title !== "Available Works";
+  
   // Filter images based on availability toggle
   const filteredImages = useMemo(() => {
     if (!showAvailableOnly) return images;
@@ -29,32 +32,34 @@ export default function CategoryPageLayout({ title, images, twoColumns = false, 
       <Header />
       
       <main className="content-padding pt-0 md:pt-12">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2 md:mb-4 gap-4 md:gap-0">
+        <div className={`flex flex-col md:flex-row md:justify-between md:items-center mb-2 md:mb-4 gap-4 md:gap-0 ${!showAvailabilityFilter ? 'md:justify-start' : ''}`}>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight font-serif uppercase">
             {title}
           </h1>
           
           {/* Availability Filter Toggle */}
-          <button
-            onClick={() => setShowAvailableOnly(!showAvailableOnly)}
-            className={`px-4 py-2 rounded-full text-sm font-medium uppercase tracking-wider transition-all duration-300 flex items-center gap-2 w-fit ${
-              showAvailableOnly 
-                ? 'bg-black text-white' 
-                : 'bg-gray-200 text-black hover:bg-gray-300'
-            }`}
-            style={{ fontFamily: 'GeneralSans-Regular' }}
-          >
-            {showAvailableOnly ? (
-              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-              </svg>
-            )}
-            Available works
-          </button>
+          {showAvailabilityFilter && (
+            <button
+              onClick={() => setShowAvailableOnly(!showAvailableOnly)}
+              className={`px-4 py-2 rounded-full text-sm font-medium uppercase tracking-wider transition-all duration-300 flex items-center gap-2 w-fit ${
+                showAvailableOnly 
+                  ? 'bg-black text-white' 
+                  : 'bg-gray-200 text-black hover:bg-gray-300'
+              }`}
+              style={{ fontFamily: 'GeneralSans-Regular' }}
+            >
+              {showAvailableOnly ? (
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+              )}
+              Available works
+            </button>
+          )}
         </div>
         {/* <div className="text-left text-sm mb-8 pt-4">
           Please contact <a href="mailto:fannymoneyonline@gmail.com" className="underline">fannymoneyonline@gmail.com</a> for all inquiries.
