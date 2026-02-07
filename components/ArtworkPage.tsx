@@ -14,6 +14,9 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
   
   // Check if this artwork belongs to the rotation series
   const isRotationSeries = artwork.tags.includes("rotation");
+  
+  // Check if this artwork is available for purchase
+  const isAvailable = artwork.tags.includes("available works");
 
   const handleImageClick = (imgsrc: string) => {
     setImageSrc(imgsrc);
@@ -58,8 +61,20 @@ export default function ArtworkPage({ artwork }: { artwork: Artwork }) {
 
           {/* Text */}
           <div className="flex flex-col gap-8">
-            <div className="text-xl font-bold" style={{ fontFamily: 'Gambetta-Semibold' }}>
-              <em>{artwork.title}</em>
+            <div className="flex flex-col gap-3">
+              <div className="text-xl font-bold" style={{ fontFamily: 'Gambetta-Semibold' }}>
+                <em>{artwork.title}</em>
+              </div>
+              {isAvailable && (
+                <div className="inline-flex w-fit">
+                  <span 
+                    className="bg-red-300 text-white px-4 py-2 rounded-full text-sm font-medium uppercase tracking-wider"
+                    style={{ fontFamily: 'GeneralSans-Regular' }}
+                  >
+                    Available
+                  </span>
+                </div>
+              )}
             </div>
             <div className="text-lg">
               {artwork.medium} <br />

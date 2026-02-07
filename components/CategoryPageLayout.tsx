@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import PurchaseInquiryButton from '@/components/PurchaseInquiryButton';
 import OptimizedImage from '@/components/OptimizedImage';
 import { getOptimizedDimensions, getResponsiveSizes, shouldLoadWithPriority, generateBlurDataURL } from '@/lib/imageUtils';
+import { useState, useMemo } from 'react';
 
 interface CategoryPageLayoutProps {
   title: string;
@@ -15,14 +16,46 @@ interface CategoryPageLayoutProps {
 }
 
 export default function CategoryPageLayout({ title, images, twoColumns = false, threeColumns = false }: CategoryPageLayoutProps) {
+  const [showAvailableOnly, setShowAvailableOnly] = useState(false);
+  
+  // Filter images based on availability toggle
+  const filteredImages = useMemo(() => {
+    if (!showAvailableOnly) return images;
+    return images.filter(img => img.tags.includes('available works'));
+  }, [images, showAvailableOnly]);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
       
       <main className="content-padding pt-0 md:pt-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-left mb-8 tracking-tight font-serif uppercase">
-          {title}
-        </h1>
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2 md:mb-4 gap-4 md:gap-0">
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight font-serif uppercase">
+            {title}
+          </h1>
+          
+          {/* Availability Filter Toggle */}
+          <button
+            onClick={() => setShowAvailableOnly(!showAvailableOnly)}
+            className={`px-4 py-2 rounded-full text-sm font-medium uppercase tracking-wider transition-all duration-300 flex items-center gap-2 w-fit ${
+              showAvailableOnly 
+                ? 'bg-black text-white' 
+                : 'bg-gray-200 text-black hover:bg-gray-300'
+            }`}
+            style={{ fontFamily: 'GeneralSans-Regular' }}
+          >
+            {showAvailableOnly ? (
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              </svg>
+            )}
+            Available works
+          </button>
+        </div>
         {/* <div className="text-left text-sm mb-8 pt-4">
           Please contact <a href="mailto:fannymoneyonline@gmail.com" className="underline">fannymoneyonline@gmail.com</a> for all inquiries.
         </div> */}
@@ -31,8 +64,8 @@ export default function CategoryPageLayout({ title, images, twoColumns = false, 
         </div>
 
         {threeColumns ? (
-          <div className="grid grid-cols-3 gap-x-2 md:gap-x-6 gap-y-4 md:gap-y-8 pb-10 pt-8">
-            {images.map((img, index) => {
+          <div className="grid grid-cols-3 gap-x-2 md:gap-x-6 gap-y-4 md:gap-y-8 pb-10 pt-4 md:pt-8">
+            {filteredImages.map((img, index) => {
               const { width, height } = getOptimizedDimensions('three-column');
               const sizes = getResponsiveSizes('three-column');
               const priority = shouldLoadWithPriority(index, 'three-column');
@@ -67,8 +100,8 @@ export default function CategoryPageLayout({ title, images, twoColumns = false, 
             })}
           </div>
         ) : twoColumns ? (
-          <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 gap-y-4 md:gap-y-8 pb-10 pt-8">
-            {images.map((img, index) => {
+          <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 gap-y-4 md:gap-y-8 pb-10 pt-4 md:pt-8">
+            {filteredImages.map((img, index) => {
               const { width, height } = getOptimizedDimensions('two-column');
               const sizes = getResponsiveSizes('two-column');
               const priority = shouldLoadWithPriority(index, 'two-column');
@@ -103,8 +136,8 @@ export default function CategoryPageLayout({ title, images, twoColumns = false, 
             })}
           </div>
         ) : (
-          <div className="flex flex-col gap-[10vh] md:gap-[30vh] items-center pb-10 pt-8">
-            {images.map((img, index) => {
+          <div className="flex flex-col gap-[10vh] md:gap-[30vh] items-center pb-10 pt-4 md:pt-8">
+            {filteredImages.map((img, index) => {
               const { width, height } = getOptimizedDimensions('single');
               const sizes = getResponsiveSizes('single');
               const priority = shouldLoadWithPriority(index, 'single');
