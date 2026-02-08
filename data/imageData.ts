@@ -832,12 +832,28 @@ export const images: Artwork[] = [
     title: "Spra 60",
     medium: "Graphite on Paper",
     dimensions: "420 x 594mm",
-    year: 2025,
+    year: 2026,
     description: "",
     tags: ["drawings", "Physical", "available works"],
     
     url: "works/drawings/spra-60"
   },
+  {
+    id: 96,
+    slug: "Hotpot",
+    src: "/images/drawings/Hotpot.webp",
+    highres: "/images/drawings/Hotpot.jpg",
+    artist: "Reiji Shimane",
+    title: "Hotpot",
+    medium: "Graphite on Paper",
+    dimensions: "420 x 594mm",
+    year: 2026,
+    description: "",
+    tags: ["drawings", "Physical", "available works"],
+    
+    url: "works/drawings/hotpot"
+  },
+
     {
     id: 66,
     slug: "Beethoven",
