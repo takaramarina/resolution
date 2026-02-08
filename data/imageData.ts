@@ -123,6 +123,56 @@ export const images: Artwork[] = [
     url: "works/drawings/queens"
   },
   /* 
+  ============================================================
+  ======================== Drawings ==========================
+  ============================================================
+  */  
+  
+  {
+    id: 3,
+    slug: "World-History",
+    src: "/images/drawings/World-History.webp",
+    highres: "/images/drawings/World-History.jpg",
+    artist: "Reiji Shimane",
+    title: "World History",
+    medium: "Exclusive edition print",
+    dimensions: "90 x 50cm",
+    year: 2024,
+    description: "",
+    tags: ["drawings", "Physical", "print", "available works"],
+    
+    url: "works/drawings/world-history"
+  },
+  // {
+  //   id: 2,
+  //   slug: "whimsy",
+  //   src: "/images/drawings/Whimsy.webp",
+  //   artist: "Reiji Shimane",
+  //   title: "Whimsy",
+  //   medium: "Ink on paper, digital drawing",
+  //   dimensions: "2024px x 2024px",
+  //   year: 2024,
+  //   description: "",
+  //   tags: ["drawings", "Physical"],
+    
+  //   url: "works/drawings/whimsy"
+  // },
+  // {
+  //   id: 1,
+  //   slug: "powerup",
+  //   src: "/images/drawings/PowerUp.webp",
+  //   artist: "Reiji Shimane",
+  //   title: "PowerUp",
+  //   medium: "Ink on paper",
+  // dimensions: "21 x 30cm",
+  // year: 2024,
+  // description: "",
+  //   tags: ["drawings", "Physical"],
+    
+  //   url: "works/drawings/powerup"
+  // },
+  
+  /* 
     ============================================================
     ======================== Rotation ==========================
     ============================================================
@@ -270,6 +320,268 @@ export const images: Artwork[] = [
     
     url: "works/rotation/sauna"
   },
+  /* 
+  ============================================================
+  ================= Linguistic Characters ====================
+  ============================================================
+  */  
+  {
+    id: 10,
+    slug: "Stretching-Time-to-Be-On-Time",
+    src: "/images/linguistic-characters/Stretching-Time-to-Be-On-Time.webp",
+    artist: "Reiji Shimane",
+    title: "Stretching Time to Be On Time",
+    medium: "Ink on mounted cork",
+    dimensions: "60 x 90cm",
+    year: 2024,
+    description: "",
+    tags: ["linguistic-characters", "Physical", "available works"],
+    
+    url: "works/linguistic-characters/stretching-time-to-be-on-time"
+  },
+  {
+    id: 7,
+    slug: "Materiality-in-Sound",
+    src: "/images/linguistic-characters/Materiality-in-Sound.webp",
+    artist: "Reiji Shimane",
+    title: "Materiality in Sound",
+    medium: "Ink on mounted cork",
+    dimensions: "60 x 90cm",
+    year: 2024,
+    description: "",
+    tags: ["linguistic-characters", "Physical", "available works"],
+    
+    url: "works/linguistic-characters/materiality-in-sound"
+  },
+  {
+    id: 9,
+    slug: "Scale-of-Emotion",
+    src: "/images/linguistic-characters/Scale-of-Emotion.webp",
+    artist: "Reiji Shimane",
+    title: "Scale of Emotion",
+    medium: "Ink on mounted cork",
+    dimensions: "60 x 90cm",
+    year: 2024,
+    description: "",
+    tags: ["linguistic-characters", "Physical", "available works"],
+    
+    url: "works/linguistic-characters/scale-of-emotion"
+  },
+  {
+    id: 8,
+    slug: "Resolution-in-Speech",
+    src: "/images/linguistic-characters/Resolution-in-Speech.webp",
+    artist: "Reiji Shimane",
+    title: "Resolution in Speech",
+    medium: "Ink on mounted cork",
+    dimensions: "60 x 90cm",
+    year: 2024,
+    description: "",
+    tags: ["linguistic-characters", "Physical", "available works"],
+    
+    url: "works/linguistic-characters/resolution-in-speech"
+  },
+   /* 
+  ============================================================
+  ==================== Frog ======================
+  ============================================================
+  */  
+
+  {
+    id: 48,
+    slug: "rakugaki",
+    src: "/images/frog/落書き.JPEG",
+    artist: "Reiji Shimane",
+    title: "落書き",
+    medium: "Exclusive edition print",
+    dimensions: "30 x 50cm",
+    year: 2020,
+    description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    url: "works/frog/rakugaki"
+  },
+  {
+    id: 46,
+    slug: "keisatsu",
+    src: "/images/frog/警察.JPEG",
+    artist: "Reiji Shimane",
+    title: "警察",
+    medium: "Exclusive edition print",
+    dimensions: "30 x 50cm",
+    year: 2020,
+    description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    url: "works/frog/keisatsu"
+  },
+  {
+    id: 55,
+    slug: "koma",
+    src: "/images/frog/コマ.JPEG",
+        artist: "Reiji Shimane",
+    title: "コマ",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/koma"
+  },
+  {
+    id: 43,
+    slug: "aozora-kyoushitsu",
+    src: "/images/frog/青空教室.JPEG",
+        artist: "Reiji Shimane",
+    title: "青空教室",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/aozora-kyoushitsu"
+  },
+  {
+    id: 44,
+    slug: "mon",
+    src: "/images/frog/門.JPEG",
+        artist: "Reiji Shimane",
+    title: "門",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/mon"
+  },
+  {
+      id: 45,
+      slug: "akago",
+      src: "/images/frog/赤子.JPEG",
+      highres: "/images/frog/赤子.JPEG",
+      artist: "Reiji Shimane",
+      title: "赤子",
+      medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+      tags: ["Digital", "frog", "print", "available works"],
+      url: "works/frog/akago"
+    },
+  {
+    id: 47,
+    slug: "hyoushoushiki",
+    src: "/images/frog/表彰式.JPEG",
+        artist: "Reiji Shimane",
+    title: "表彰式",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/hyoushoushiki"
+  },
+  {
+    id: 49,
+    slug: "ehon",
+    src: "/images/frog/絵本.JPEG",
+        artist: "Reiji Shimane",
+    title: "絵本",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/ehon"
+  },
+  {
+    id: 50,
+    slug: "suna-asobi",
+    src: "/images/frog/砂遊び.JPG",
+        artist: "Reiji Shimane",
+    title: "砂遊び",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/suna-asobi"
+  },
+  {
+    id: 51,
+    slug: "eiga",
+    src: "/images/frog/映画.JPEG",
+        artist: "Reiji Shimane",
+    title: "映画",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/eiga"
+  },
+  {
+    id: 52,
+    slug: "kazoku-foto",
+    src: "/images/frog/家族ふぉと.JPEG",
+        artist: "Reiji Shimane",
+    title: "家族ふぉと",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/kazoku-foto"
+  },
+  {
+    id: 53,
+    slug: "bosu",
+    src: "/images/frog/ボス.JPEG",
+        artist: "Reiji Shimane",
+    title: "ボス",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/bosu"
+  },
+  {
+    id: 54,
+    slug: "sabori",
+    src: "/images/frog/サボり.JPEG",
+        artist: "Reiji Shimane",
+    title: "サボり",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/sabori"
+  },
+  {
+    id: 56,
+    slug: "new-zukkoke",
+    src: "/images/frog/newずっこけ.JPEG",
+        artist: "Reiji Shimane",
+    title: "newずっこけ",
+    medium: "Exclusive edition print",
+      dimensions: "30 x 50cm",
+      year: 2020,
+      description: "",
+    tags: ["frog", "print", "Digital", "available works"],
+    
+    url: "works/frog/new-zukkoke"
+  },
+
   /*
     ============================================================
     ======================== Notepaper =========================
@@ -923,318 +1235,8 @@ export const images: Artwork[] = [
   //   tags: ["notepaper", "Physical", "available works"],
   //   url: "works/notepaper/strong-canvas"
   // },
-    /* 
-  ============================================================
-  ==================== Frog ======================
-  ============================================================
-  */  
-
-  {
-    id: 48,
-    slug: "rakugaki",
-    src: "/images/frog/落書き.JPEG",
-    artist: "Reiji Shimane",
-    title: "落書き",
-    medium: "Exclusive edition print",
-    dimensions: "30 x 50cm",
-    year: 2020,
-    description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    url: "works/frog/rakugaki"
-  },
-  {
-    id: 46,
-    slug: "keisatsu",
-    src: "/images/frog/警察.JPEG",
-    artist: "Reiji Shimane",
-    title: "警察",
-    medium: "Exclusive edition print",
-    dimensions: "30 x 50cm",
-    year: 2020,
-    description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    url: "works/frog/keisatsu"
-  },
-  {
-    id: 55,
-    slug: "koma",
-    src: "/images/frog/コマ.JPEG",
-        artist: "Reiji Shimane",
-    title: "コマ",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/koma"
-  },
-  {
-    id: 43,
-    slug: "aozora-kyoushitsu",
-    src: "/images/frog/青空教室.JPEG",
-        artist: "Reiji Shimane",
-    title: "青空教室",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/aozora-kyoushitsu"
-  },
-  {
-    id: 44,
-    slug: "mon",
-    src: "/images/frog/門.JPEG",
-        artist: "Reiji Shimane",
-    title: "門",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/mon"
-  },
-  {
-      id: 45,
-      slug: "akago",
-      src: "/images/frog/赤子.JPEG",
-      highres: "/images/frog/赤子.JPEG",
-      artist: "Reiji Shimane",
-      title: "赤子",
-      medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-      tags: ["Digital", "frog", "print", "available works"],
-      url: "works/frog/akago"
-    },
-  {
-    id: 47,
-    slug: "hyoushoushiki",
-    src: "/images/frog/表彰式.JPEG",
-        artist: "Reiji Shimane",
-    title: "表彰式",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/hyoushoushiki"
-  },
-  {
-    id: 49,
-    slug: "ehon",
-    src: "/images/frog/絵本.JPEG",
-        artist: "Reiji Shimane",
-    title: "絵本",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/ehon"
-  },
-  {
-    id: 50,
-    slug: "suna-asobi",
-    src: "/images/frog/砂遊び.JPG",
-        artist: "Reiji Shimane",
-    title: "砂遊び",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/suna-asobi"
-  },
-  {
-    id: 51,
-    slug: "eiga",
-    src: "/images/frog/映画.JPEG",
-        artist: "Reiji Shimane",
-    title: "映画",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/eiga"
-  },
-  {
-    id: 52,
-    slug: "kazoku-foto",
-    src: "/images/frog/家族ふぉと.JPEG",
-        artist: "Reiji Shimane",
-    title: "家族ふぉと",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/kazoku-foto"
-  },
-  {
-    id: 53,
-    slug: "bosu",
-    src: "/images/frog/ボス.JPEG",
-        artist: "Reiji Shimane",
-    title: "ボス",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/bosu"
-  },
-  {
-    id: 54,
-    slug: "sabori",
-    src: "/images/frog/サボり.JPEG",
-        artist: "Reiji Shimane",
-    title: "サボり",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/sabori"
-  },
-  {
-    id: 56,
-    slug: "new-zukkoke",
-    src: "/images/frog/newずっこけ.JPEG",
-        artist: "Reiji Shimane",
-    title: "newずっこけ",
-    medium: "Exclusive edition print",
-      dimensions: "30 x 50cm",
-      year: 2020,
-      description: "",
-    tags: ["frog", "print", "Digital", "available works"],
-    
-    url: "works/frog/new-zukkoke"
-  },
-
-  /* 
-  ============================================================
-  ======================== Drawings ==========================
-  ============================================================
-  */  
+   
   
-  {
-    id: 3,
-    slug: "World-History",
-    src: "/images/drawings/World-History.webp",
-    highres: "/images/drawings/World-History.jpg",
-    artist: "Reiji Shimane",
-    title: "World History",
-    medium: "Exclusive edition print",
-    dimensions: "90 x 50cm",
-    year: 2024,
-    description: "",
-    tags: ["drawings", "Physical", "print", "available works"],
-    
-    url: "works/drawings/world-history"
-  },
-  // {
-  //   id: 2,
-  //   slug: "whimsy",
-  //   src: "/images/drawings/Whimsy.webp",
-  //   artist: "Reiji Shimane",
-  //   title: "Whimsy",
-  //   medium: "Ink on paper, digital drawing",
-  //   dimensions: "2024px x 2024px",
-  //   year: 2024,
-  //   description: "",
-  //   tags: ["drawings", "Physical"],
-    
-  //   url: "works/drawings/whimsy"
-  // },
-  // {
-  //   id: 1,
-  //   slug: "powerup",
-  //   src: "/images/drawings/PowerUp.webp",
-  //   artist: "Reiji Shimane",
-  //   title: "PowerUp",
-  //   medium: "Ink on paper",
-  // dimensions: "21 x 30cm",
-  // year: 2024,
-  // description: "",
-  //   tags: ["drawings", "Physical"],
-    
-  //   url: "works/drawings/powerup"
-  // },
-  
-  /* 
-  ============================================================
-  ================= Linguistic Characters ====================
-  ============================================================
-  */  
-  {
-    id: 10,
-    slug: "Stretching-Time-to-Be-On-Time",
-    src: "/images/linguistic-characters/Stretching-Time-to-Be-On-Time.webp",
-    artist: "Reiji Shimane",
-    title: "Stretching Time to Be On Time",
-    medium: "Ink on mounted cork",
-    dimensions: "60 x 90cm",
-    year: 2024,
-    description: "",
-    tags: ["linguistic-characters", "Physical", "available works"],
-    
-    url: "works/linguistic-characters/stretching-time-to-be-on-time"
-  },
-  {
-    id: 7,
-    slug: "Materiality-in-Sound",
-    src: "/images/linguistic-characters/Materiality-in-Sound.webp",
-    artist: "Reiji Shimane",
-    title: "Materiality in Sound",
-    medium: "Ink on mounted cork",
-    dimensions: "60 x 90cm",
-    year: 2024,
-    description: "",
-    tags: ["linguistic-characters", "Physical", "available works"],
-    
-    url: "works/linguistic-characters/materiality-in-sound"
-  },
-  {
-    id: 9,
-    slug: "Scale-of-Emotion",
-    src: "/images/linguistic-characters/Scale-of-Emotion.webp",
-    artist: "Reiji Shimane",
-    title: "Scale of Emotion",
-    medium: "Ink on mounted cork",
-    dimensions: "60 x 90cm",
-    year: 2024,
-    description: "",
-    tags: ["linguistic-characters", "Physical", "available works"],
-    
-    url: "works/linguistic-characters/scale-of-emotion"
-  },
-  {
-    id: 8,
-    slug: "Resolution-in-Speech",
-    src: "/images/linguistic-characters/Resolution-in-Speech.webp",
-    artist: "Reiji Shimane",
-    title: "Resolution in Speech",
-    medium: "Ink on mounted cork",
-    dimensions: "60 x 90cm",
-    year: 2024,
-    description: "",
-    tags: ["linguistic-characters", "Physical", "available works"],
-    
-    url: "works/linguistic-characters/resolution-in-speech"
-  },
   
   /* 
   ============================================================
