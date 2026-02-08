@@ -17,6 +17,113 @@ export const images: Artwork[] = [
 
   /* 
     ============================================================
+    ======================== Graphite ==========================
+    ============================================================
+  */  
+
+    {
+    id: 95,
+    slug: "Spra-60",
+    src: "/images/drawings/Spra-60.webp",
+    highres: "/images/drawings/Spra-60.jpg",
+    artist: "Reiji Shimane",
+    title: "Spra 60",
+    medium: "Graphite on Paper",
+    dimensions: "420 x 594mm",
+    year: 2026,
+    description: "",
+    tags: ["drawings", "Physical"],
+    
+    url: "works/drawings/spra-60"
+  },
+  {
+    id: 96,
+    slug: "Hotpot",
+    src: "/images/drawings/Hotpot.webp",
+    highres: "/images/drawings/Hotpot.jpg",
+    artist: "Reiji Shimane",
+    title: "Hotpot",
+    medium: "Graphite on Paper",
+    dimensions: "420 x 594mm",
+    year: 2026,
+    description: "",
+    tags: ["drawings", "Physical", "available works"],
+    
+    url: "works/drawings/hotpot"
+  },
+
+    {
+    id: 66,
+    slug: "Beethoven",
+    src: "/images/drawings/Beethoven.webp",
+    highres: "/images/drawings/Beethoven.png",
+    artist: "Reiji Shimane",
+    title: "Beethoven",
+    medium: "Graphite on paper",
+  dimensions: "30 x 42 cm",
+  year: 2025,
+  description: "",
+    tags: ["drawings", "Physical"],
+    
+    url: "works/drawings/beethoven"
+  },
+  {
+    id: 67,
+    slug: "Dogs",
+    src: "/images/drawings/Dogs.webp",
+    highres: "/images/drawings/Dogs.png",
+    artist: "Reiji Shimane",
+    title: "Dogs",
+    medium: "Graphite on paper",
+    dimensions: "30 x 42 cm",
+    year: 2025,
+    description: "",
+    tags: ["drawings", "Physical"],
+    url: "works/drawings/dogs"
+  },
+  {
+    id: 4,
+    slug: "Physical-Drawing",
+    src: "/images/drawings/Physical-Drawing.webp",
+    artist: "Reiji Shimane",
+    title: "Physical Drawing",
+    medium: "Graphite on paper",
+    dimensions: "90 x 50cm",
+    year: 2024,
+    description: "",
+    tags: ["drawings", "Physical"],
+    
+    url: "works/drawings/physical-drawing"
+  },
+  {
+    id: 5,
+    slug: "Digital-Drawing",
+    src: "/images/drawings/Digital-Drawing.webp",
+    artist: "Reiji Shimane",
+    title: "Digital Drawing",
+    medium: "Graphite on paper",
+    dimensions: "90 x 50cm",
+    year: 2024,
+    description: "",
+    tags: ["drawings", "Physical"],
+    url: "works/drawings/digital-drawing"
+  },
+  {
+    id: 6,
+    slug: "Queens",
+    src: "/images/drawings/Queens.webp",
+    highres: "/images/drawings/Queens.jpg",
+    artist: "Reiji Shimane",
+    title: "Queens",
+    medium: "Graphite on paper, tape, adhesive sheet",
+    dimensions: "50 x 90cm",
+    year: 2023,
+    description: "",
+    tags: ["drawings", "Physical"],
+    url: "works/drawings/queens"
+  },
+  /* 
+    ============================================================
     ======================== Rotation ==========================
     ============================================================
   */  
@@ -816,116 +923,6 @@ export const images: Artwork[] = [
   //   tags: ["notepaper", "Physical", "available works"],
   //   url: "works/notepaper/strong-canvas"
   // },
-
-  /* 
-    ============================================================
-    ======================== Graphite ==========================
-    ============================================================
-  */  
-
-    {
-    id: 95,
-    slug: "Spra-60",
-    src: "/images/drawings/Spra-60.webp",
-    highres: "/images/drawings/Spra-60.jpg",
-    artist: "Reiji Shimane",
-    title: "Spra 60",
-    medium: "Graphite on Paper",
-    dimensions: "420 x 594mm",
-    year: 2026,
-    description: "",
-    tags: ["drawings", "Physical", "available works"],
-    
-    url: "works/drawings/spra-60"
-  },
-  {
-    id: 96,
-    slug: "Hotpot",
-    src: "/images/drawings/Hotpot.webp",
-    highres: "/images/drawings/Hotpot.jpg",
-    artist: "Reiji Shimane",
-    title: "Hotpot",
-    medium: "Graphite on Paper",
-    dimensions: "420 x 594mm",
-    year: 2026,
-    description: "",
-    tags: ["drawings", "Physical", "available works"],
-    
-    url: "works/drawings/hotpot"
-  },
-
-    {
-    id: 66,
-    slug: "Beethoven",
-    src: "/images/drawings/Beethoven.webp",
-    highres: "/images/drawings/Beethoven.png",
-    artist: "Reiji Shimane",
-    title: "Beethoven",
-    medium: "Graphite on paper",
-  dimensions: "30 x 42 cm",
-  year: 2025,
-  description: "",
-    tags: ["drawings", "Physical"],
-    
-    url: "works/drawings/beethoven"
-  },
-  {
-    id: 67,
-    slug: "Dogs",
-    src: "/images/drawings/Dogs.webp",
-    highres: "/images/drawings/Dogs.png",
-    artist: "Reiji Shimane",
-    title: "Dogs",
-    medium: "Graphite on paper",
-    dimensions: "30 x 42 cm",
-    year: 2025,
-    description: "",
-    tags: ["drawings", "Physical"],
-    url: "works/drawings/dogs"
-  },
-  {
-    id: 4,
-    slug: "Physical-Drawing",
-    src: "/images/drawings/Physical-Drawing.webp",
-    artist: "Reiji Shimane",
-    title: "Physical Drawing",
-    medium: "Graphite on paper",
-    dimensions: "90 x 50cm",
-    year: 2024,
-    description: "",
-    tags: ["drawings", "Physical"],
-    
-    url: "works/drawings/physical-drawing"
-  },
-  {
-    id: 5,
-    slug: "Digital-Drawing",
-    src: "/images/drawings/Digital-Drawing.webp",
-    artist: "Reiji Shimane",
-    title: "Digital Drawing",
-    medium: "Graphite on paper",
-    dimensions: "90 x 50cm",
-    year: 2024,
-    description: "",
-    tags: ["drawings", "Physical"],
-    url: "works/drawings/digital-drawing"
-  },
-  {
-    id: 6,
-    slug: "Queens",
-    src: "/images/drawings/Queens.webp",
-    highres: "/images/drawings/Queens.jpg",
-    artist: "Reiji Shimane",
-    title: "Queens",
-    medium: "Graphite on paper, tape, adhesive sheet",
-    dimensions: "50 x 90cm",
-    year: 2023,
-    description: "",
-    tags: ["drawings", "Physical"],
-    url: "works/drawings/queens"
-  },
-
-
     /* 
   ============================================================
   ==================== Frog ======================
