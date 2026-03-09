@@ -118,11 +118,11 @@ export default function Contact() {
                     Email
                   </h3>
                   <a 
-                    href="mailto:takara.marina+reijiinquiry@gmail.com"
+                    href="mailto:fannymoneyonline@gmail.com"
                     className="text-gray-600 hover:text-black transition-colors"
                     style={{ fontFamily: 'GeneralSans-Regular' }}
                   >
-                    takara.marina+reijiinquiry@gmail.com
+                    fannymoneyonline@gmail.com
                   </a>
                 </div>
 
