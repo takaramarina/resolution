@@ -24,9 +24,9 @@ export default function About() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2 font-serif">"The Next Room"</h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">OCD Gallery, NYC</p>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">February 2025</p>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">February - March 2026</p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-2">
-                  "The Next Room" is a group exhibition featuring six emerging artists, bringing together sculpture, painting, and drawing. Reiji Shimane presents a series of new graphite drawings exploring themes of memory and language.
+                  "The Next Room" was a group exhibition featuring six emerging artists, bringing together sculpture, painting, and drawing. Reiji Shimane presented a series of new graphite drawings exploring themes of memory and language, as well as interactive performances of live drawings with the audience.
                 </p>
               </div>
               <div>
