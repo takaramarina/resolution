@@ -22,6 +22,36 @@ export const images: Artwork[] = [
   */  
 
     {
+    id: 98,
+    slug: "Moon-Rail",
+    src: "/images/drawings/Moon-Rail.webp",
+    highres: "/images/drawings/Moon-Rail.jpg",
+    artist: "Reiji Shimane",
+    title: "Moon Rail",
+    medium: "Graphite on paper",
+    dimensions: "23.4 x 33.1 inches",
+    year: 2026,
+    description: "",
+    tags: ["drawings", "Physical"],
+    
+    url: "works/drawings/moon-rail"
+  },
+    {
+    id: 97,
+    slug: "Golden-Path",
+    src: "/images/drawings/Golden-Path.webp",
+    highres: "/images/drawings/Golden-Path.jpg",
+    artist: "Reiji Shimane",
+    title: "Golden Path",
+    medium: "Graphite, ballpoint pen on paper",
+    dimensions: "23.4 x 33.1 inches",
+    year: 2026,
+    description: "",
+    tags: ["drawings", "Physical"],
+    
+    url: "works/drawings/golden-path"
+  },
+    {
     id: 95,
     slug: "Spra-60",
     src: "/images/drawings/Spra-60.webp",
